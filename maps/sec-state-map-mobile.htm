@@ -149,7 +149,7 @@
 			"race_number": 104
 			};
 
-		var legend = [
+		var candidates = [
 			{ name: "RAIMONDO",
 			   party_code: "DEM",
 			   color: "0076b4",
@@ -168,7 +168,7 @@
 		];
 
 	String.prototype.capitalize = function() {
-    	return this.charAt(0).toUpperCase() + this.slice(1).toLowerCase();
+    return this.charAt(0).toUpperCase() + this.slice(1).toLowerCase();
 	};
 	function createTestVotes() {
 		// global: map_init.data_source
@@ -198,9 +198,9 @@
 		return parties[key] || '';
 	}
 
-	function getLegendLastName(full_name) {
+	function getCandidateLastName(full_name) {
 		// global legend
-		return _.find(legend, function(candidate) { 
+		return _.find(candidates, function(candidate) { 
 			return candidate.full_name === full_name;
 		}).name;
 	}
@@ -224,14 +224,13 @@
 
 	function lookupCandidateBaseColor(fullName) {
 		// global: legend
-		return _.find(legend, function(candidate) {
-			return candidate.full_name === fullName;
+		return _.find(candidates, function(candidate) {
+			return fullName.indexOf(candidate.name) !== -1;
 		}).color;
 	}
 
 	// maps an input domain to an output range
 	// domain is array with two values: min and max
-
 	function createScale(domain, range) {
 		return function(value) {
 			if (value <= domain[0]) {
@@ -249,7 +248,7 @@
 	function getLegendColor(leader) {
 		// global: legend
 		var steps = 3;
-		var candidate_count = legend.length;
+		var candidate_count = candidates.length;
 		var min_winner_pct = parseInt(100/candidate_count) + 1;
 		var color = lookupCandidateBaseColor(leader.name);
 
@@ -261,33 +260,16 @@
 		return palette[paletteIndex];
 	}
 
-
-	function buildLegend () {
-		var html ='<table class="map_legend">';
-		race_name = getRaceName(map_init.race_number);
-		html += '<tr>';
-		html += '<td colspan="2"><div class="race_name">' + race_name + '</div></td>';
-		html += '</tr>';
-		for (var index=0; index<legend.length; index++) {
-			html += '<tr>';
-			html += '<td><div class="color_box" style="background:#' + legend[index].color + ';"></div></td>';
-			html += '<td><div class="candidate_name">' + legend[index].name + '</div></td>';
-			html += '</tr>';
-		}
-		html +='</table>';
-		return html;
-	}
-
-function buildLegend2() {
+function buildLegend() {
 	var html = '<div class="map_legend2">';
 	race_name = getRaceName(map_init.race_number);
 	html += '<div class="race_name">' + race_name + "</div>";
-	for (var index = 0; index < legend.length; index++) {
+	for (var index = 0; index < candidates.length; index++) {
 		html +=
 			'<div class="color_box" style="background:#' +
-			legend[index].color +
+			candidates[index].color +
 			';"></div>';
-		html += '<div class="candidate_name">' + legend[index].name + "</div>";
+		html += '<div class="candidate_name">' + candidates[index].name + "</div>";
 	}
 	html += "</div>";
 	html += '<div style="clear:both;"></div>';
@@ -295,64 +277,16 @@ function buildLegend2() {
 }
 
 function mapOnMouseOver(location){
-
 	var new_location = location.replace(" ","_");
 	new_location = new_location.toLowerCase();
-	results = get_results_by_race(map_init.data_source[new_location],map_init.race_number);
-	var html = showResultsTableTipMobile(results,location);
-	Tip(html,BGCOLOR,'#FFFFFF',BORDERCOLOR,'#96A3AF',PADDING,'5','SHADOW',true);
-//	Tip(html);
+	results = get_results_by_race(map_init.data_source[new_location], map_init.race_number);
+	var html = showResultsTableTip(results, location);
+	Tip(html, BGCOLOR, '#FFFFFF', BORDERCOLOR, '#96A3AF', PADDING, '5', 'SHADOW', true);
 }
 
-function showResultsTableTip2(results,str) {
-	var html = "";
-	var new_str = str.replace(" ","_");
-	new_str = new_str.toLowerCase();
-	results = get_results_by_race(map_init.data_source[new_str],map_init.race_number);
-	html += '<input type="hidden" id="buttonEID" value="' + results.name.toLowerCase() + '"><input type="hidden" id="pView" value="map"><input type="hidden" id="pFilter" value="' + results.contest_number + '"><input type="hidden" id="fNameHolder" value="statewide">\
-	   <div class="key-races general-election">\
-	      <div id="race-header">\
-	         <h3>' + str + '</h3>\
-	      </div>\
-	      <div id="prec-container">\
-	         <div id="prec-header" class="left">Precincts</div>\
-	         <div id="prec-header" class="right">Reported</div>\
-	         <div id="prec-header" class="right">Percent</div>\
-	         <div style="clear: both;"></div>\
-	         <div id="prec-content" class="thirty">' + results.precinct_count + '</div>\
-	         <div id="prec-content">' + results.precincts_reporting + '</div>\
-	         <div id="prec-content">' + (parseInt(results.precincts_reporting)/parseInt(results.precinct_count)) * 100 + '%</div>\
-	         <div style="clear: both;"></div>\
-	      </div>\
-	      <div class="candidates-header-container">\
-	         <div class="candidates-header-large">\
-	            <h4>CANDIDATES</h4>\
-	         </div>\
-	         <div class="candidates-header">Votes</div>\
-	         <div class="candidates-header pct">Pct</div>\
-	         <div style="clear: both;"></div>\
-	      </div>';
-	      for (var x=0;x<results.candidates.length;x++) {
-	      html += '<div id="candidate-row"' + ((x==0) ? ' class="solid-border">' : '>');
-	         html+='<div class="icon-col">';
-			 var icon = (results.candidates[x].name.toLowerCase() == 'write-in') ? 'clear.gif' : results.candidates[x].party_code.capitalize() + '_icon.png';
-	         html+='<img src="http://res.providencejournal.com/politics/assets/images/' + icon + '"></div>\
-	         <div class="candidate-col">' + results.candidates[x].name + '<br><span class="party-name"><span class="candidate-party">' + getParty(results.candidates[x].party_code) + '</span></span></div>\
-	         <div class="candidate-col-votes">' + results.candidates[x].votes + '</div>\
-	         <div class="candidate-col-percent">' + results.candidates[x].pct_votes.format("0.0%") + '</div>\
-	         <div style="clear: both;"></div>\
-	      </div>';
-	      }
-	      html += '</div>\
-		  	   <div id="disclaimer-container">\
-		  	      <div id="disclaimer"></div>\
-		  	   </div>';
-	return html;
-}
-
-function showResultsTableTipMobile(results,str) {
+function showResultsTableTip(results, str) {
 	var threshhold = 5;  // any candidate with less than this percent of the vote put into the "Other" category
-	var html = "";
+	var html = '';
 	var new_str = str.replace(" ","_");
 	new_str = new_str.toLowerCase();
 	results = get_results_by_race(map_init.data_source[new_str],map_init.race_number);
@@ -377,7 +311,7 @@ function showResultsTableTipMobile(results,str) {
 	      	 	other_pct_votes += results.candidates[x].pct_votes;
 	      	 }
 	      	 else {
-				 var last_name = getLegendLastName(results.candidates[x].name);
+				 var last_name = getCandidateLastName(results.candidates[x].name);
 				 html += '<div id="candidate-row"' + ((x==0) ? ' class="solid-border">' : '>');
 				 html += '<div class="candidate-col">' + last_name.capitalize() + '<br><span class="party-name"><span class="candidate-party">' + getParty(results.candidates[x].party_code) + '</span></span></div>\
 				 <div class="candidate-col-votes">' + results.candidates[x].votes.format("0,000") + '</div>\
@@ -405,9 +339,7 @@ function showResultsTableTipMobile(results,str) {
 
 	return html;
 }
-</script>
 
-<script type="text/javascript" >
  $(document).ready(function() {
  	createTestVotes();
  	mapResizeWidth(map_init.map_width);
@@ -419,7 +351,7 @@ function showResultsTableTipMobile(results,str) {
 	$('.map img').attr('width',maxXY.x);
 	$('.map img').attr('height',maxXY.y);
 
- 	var label_div_content = "";
+ 	var label_div_content = '';
 
 	$("area").each (function (i) {
 
@@ -499,7 +431,7 @@ $('#label_div').html(label_div_content);
 		//		$('.' + this_town).addClass(new_class);
 	}
 	$('.map').maphilight();
-	$('.legend_div2').html(buildLegend2());
+	$('.legend_div2').html(buildLegend());
 
 	// place legend div
 	var legend_width = parseInt($('.map_legend').css('width'));
