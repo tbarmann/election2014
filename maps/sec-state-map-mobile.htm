@@ -149,7 +149,7 @@
 			"race_number": 104
 			};
 
-		var legend = [
+		var candidates = [
 			{ name: "RAIMONDO",
 			   party_code: "DEM",
 			   color: "0076b4",
@@ -198,9 +198,9 @@
 		return parties[key] || '';
 	}
 
-	function getLegendLastName(full_name) {
+	function getCandidateLastName(full_name) {
 		// global legend
-		return _.find(legend, function(candidate) { 
+		return _.find(candidates, function(candidate) { 
 			return candidate.full_name === full_name;
 		}).name;
 	}
@@ -224,14 +224,13 @@
 
 	function lookupCandidateBaseColor(fullName) {
 		// global: legend
-		return _.find(legend, function(candidate) {
-			return candidate.full_name === fullName;
+		return _.find(candidates, function(candidate) {
+			return fullName.indexOf(candidate.name) !== -1;
 		}).color;
 	}
 
 	// maps an input domain to an output range
 	// domain is array with two values: min and max
-
 	function createScale(domain, range) {
 		return function(value) {
 			if (value <= domain[0]) {
@@ -249,7 +248,7 @@
 	function getLegendColor(leader) {
 		// global: legend
 		var steps = 3;
-		var candidate_count = legend.length;
+		var candidate_count = candidates.length;
 		var min_winner_pct = parseInt(100/candidate_count) + 1;
 		var color = lookupCandidateBaseColor(leader.name);
 
@@ -265,12 +264,12 @@ function buildLegend2() {
 	var html = '<div class="map_legend2">';
 	race_name = getRaceName(map_init.race_number);
 	html += '<div class="race_name">' + race_name + "</div>";
-	for (var index = 0; index < legend.length; index++) {
+	for (var index = 0; index < candidates.length; index++) {
 		html +=
 			'<div class="color_box" style="background:#' +
-			legend[index].color +
+			candidates[index].color +
 			';"></div>';
-		html += '<div class="candidate_name">' + legend[index].name + "</div>";
+		html += '<div class="candidate_name">' + candidates[index].name + "</div>";
 	}
 	html += "</div>";
 	html += '<div style="clear:both;"></div>';
@@ -309,7 +308,7 @@ function showResultsTableTipMobile(results,str) {
 	      	 	other_pct_votes += results.candidates[x].pct_votes;
 	      	 }
 	      	 else {
-				 var last_name = getLegendLastName(results.candidates[x].name);
+				 var last_name = getCandidateLastName(results.candidates[x].name);
 				 html += '<div id="candidate-row"' + ((x==0) ? ' class="solid-border">' : '>');
 				 html += '<div class="candidate-col">' + last_name.capitalize() + '<br><span class="party-name"><span class="candidate-party">' + getParty(results.candidates[x].party_code) + '</span></span></div>\
 				 <div class="candidate-col-votes">' + results.candidates[x].votes.format("0,000") + '</div>\
