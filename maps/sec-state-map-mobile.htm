@@ -260,7 +260,7 @@
 		return palette[paletteIndex];
 	}
 
-function buildLegend2() {
+function buildLegend() {
 	var html = '<div class="map_legend2">';
 	race_name = getRaceName(map_init.race_number);
 	html += '<div class="race_name">' + race_name + "</div>";
@@ -431,7 +431,7 @@ $('#label_div').html(label_div_content);
 		//		$('.' + this_town).addClass(new_class);
 	}
 	$('.map').maphilight();
-	$('.legend_div2').html(buildLegend2());
+	$('.legend_div2').html(buildLegend());
 
 	// place legend div
 	var legend_width = parseInt($('.map_legend').css('width'));
