@@ -1,0 +1,1707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+	<idinfo>
+		<citation>
+			<citeinfo>
+				<origin>Cambridge Systematics</origin>
+				<pubdate>September 11, 2009</pubdate>
+				<title Sync="TRUE">RI_QC_20100512</title>
+				<geoform Sync="TRUE">vector digital data</geoform>
+				<onlink>\\CREWES-CAM\D$\Projects\ICAT\State_Highway_Networks\Shapefile\DC_QC_010109.shp</onlink>
+				<ftname Sync="TRUE">RI_QC_20100512</ftname></citeinfo>
+		</citation>
+		<descript>
+			<abstract>This file is part of the ICAT State Highway Network, which contains the complete road network database submitted by the state DOT, with attribute fields reformatted according to the ICAT highway template, and an attribute field identifying those road segments that are part of the ICAT highway network.</abstract>
+			<purpose>To provide state highway network datasets for use with the ICAT Highway Network.</purpose>
+			<supplinf>Attribute Domain Values are included in this metadata. To view Attribute Domain Values via ArcCatalog, choose one of the following Stylesheets from the Metadata toolbar: FGDC FAQ, FGDC Classic, FGDC, or XML.</supplinf>
+			<langdata Sync="TRUE">en</langdata></descript>
+		<timeperd>
+			<timeinfo>
+				<sngdate>
+					<caldate>May 24, 2010</caldate>
+				</sngdate>
+			</timeinfo>
+			<current>Data is current as of date listed.</current>
+		</timeperd>
+		<status>
+			<progress>Complete</progress>
+			<update>The data set may be updated periodically.</update>
+		</status>
+		<spdom>
+			<bounding>
+				<westbc Sync="TRUE">-71.861023</westbc>
+				<eastbc Sync="TRUE">-71.121177</eastbc>
+				<northbc Sync="TRUE">42.018812</northbc>
+				<southbc Sync="TRUE">41.148552</southbc>
+			</bounding>
+			<lboundng><leftbc Sync="TRUE">-71.861023</leftbc><rightbc Sync="TRUE">-71.121177</rightbc><bottombc Sync="TRUE">41.148552</bottombc><topbc Sync="TRUE">42.018812</topbc></lboundng></spdom>
+		<keywords>
+			<theme>
+				<themekt>REQUIRED: Reference to a formally registered thesaurus or a similar authoritative source of theme keywords.</themekt>
+				<themekey>ICAT</themekey>
+				<themekey>State Highway Network</themekey>
+				<themekey>Integrated Corridor Analysis Tool</themekey>
+			</theme>
+			<place>
+				<placekey>Rhode Island</placekey>
+				<placekey>RhodeIsland</placekey></place>
+		</keywords>
+		<accconst>This shapefile is designed to be access with ESRI GIS products. There are no access constraints.</accconst>
+		<useconst>The data and file are for use by the public, provided credit is given to the I-95 Corridor Coalition for its use.</useconst>
+		<ptcontac>
+			<cntinfo>
+				<cntperp>
+					<cntper>Bruce Spear</cntper>
+					<cntorg>Cambridge Systematics</cntorg>
+				</cntperp>
+				<cntpos>Senior Associate</cntpos>
+				<cntaddr>
+					<addrtype>mailing and physical address</addrtype>
+					<address>100 CambridgePark Driver, Suite 4000</address>
+					<city>Cambridge</city>
+					<state>MA</state>
+					<postal>02140</postal>
+					<country>USA</country>
+				</cntaddr>
+				<cntvoice>617-234-0417</cntvoice>
+				<cntfax>617-354-1542</cntfax>
+				<cntemail>bspear@camsys.com</cntemail>
+			</cntinfo>
+		</ptcontac>
+		<datacred>This data set is available because of the efforts of the I-95 Corridor Coalition.!</datacred>
+		<native Sync="TRUE">Microsoft Windows XP Version 5.1 (Build 2600) Service Pack 3; ESRI ArcCatalog 9.3.1.3000</native>
+		<natvform Sync="TRUE">Shapefile</natvform></idinfo>
+	<dataqual>
+		<lineage>
+			<procstep>
+				<procdesc>Metadata imported.</procdesc>
+				<srcused>C:\DOCUME~1\screwe\LOCALS~1\Temp\xml1C1.tmp</srcused>
+				<procdate>20100510</procdate>
+				<proctime>16543300</proctime>
+			</procstep>
+			<procstep><procdesc Sync="TRUE">Metadata imported.</procdesc><srcused Sync="TRUE">C:\DOCUME~1\screwe\LOCALS~1\Temp\xml3C1.tmp</srcused><procdate Sync="TRUE">20100528</procdate><proctime Sync="TRUE">10404700</proctime></procstep></lineage>
+	</dataqual>
+	<spdoinfo>
+		<direct Sync="TRUE">Vector</direct>
+		<ptvctinf>
+			<sdtsterm Name="RI_QC_20100512">
+				<sdtstype Sync="TRUE">String</sdtstype>
+				<ptvctcnt Sync="TRUE">69656</ptvctcnt>
+			</sdtsterm>
+			<esriterm Name="RI_QC_20100512"><efeatyp Sync="TRUE">Simple</efeatyp><efeageom Sync="TRUE">Polyline</efeageom><esritopo Sync="TRUE">FALSE</esritopo><efeacnt Sync="TRUE">69656</efeacnt><spindex Sync="TRUE">TRUE</spindex><linrefer Sync="TRUE">FALSE</linrefer></esriterm></ptvctinf>
+	</spdoinfo>
+	<spref>
+		<horizsys>
+			<geograph>
+				<latres Sync="TRUE">0.000000</latres>
+				<longres Sync="TRUE">0.000000</longres>
+				<geogunit Sync="TRUE">Decimal degrees</geogunit>
+			</geograph>
+			<geodetic>
+				<horizdn Sync="TRUE">North American Datum of 1983</horizdn>
+				<ellips Sync="TRUE">Geodetic Reference System 80</ellips>
+				<semiaxis Sync="TRUE">6378137.000000</semiaxis>
+				<denflat Sync="TRUE">298.257222</denflat>
+			</geodetic>
+			<cordsysn><geogcsn Sync="TRUE">GCS_North_American_1983</geogcsn></cordsysn></horizsys>
+	</spref>
+	<eainfo>
+		<detailed Name="RI_QC_20100512">
+			<enttyp>
+				<enttypl Sync="TRUE">RI_QC_20100512</enttypl>
+				<enttypt Sync="TRUE">Feature Class</enttypt><enttypc Sync="TRUE">69656</enttypc></enttyp>
+			<attr>
+				<attrlabl>FID</attrlabl>
+				<attrdef>Internal feature number.</attrdef>
+				<attrdefs>ESRI</attrdefs>
+				<attrdomv>
+					<udom>Sequential unique whole numbers that are automatically generated.</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">FID</attalias><attrtype Sync="TRUE">OID</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Shape</attrlabl>
+				<attrdef>Feature geometry.</attrdef>
+				<attrdefs>ESRI</attrdefs>
+				<attrdomv>
+					<udom>Coordinates defining the features.</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">Shape</attalias><attrtype Sync="TRUE">Geometry</attrtype><attwidth Sync="TRUE">0</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>LENGTH</attrlabl>
+				<attrdef>Calculated length of road arc</attrdef>
+				<attrdefs>ESRI</attrdefs>
+				<attalias Sync="TRUE">Length</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">19</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>OID_</attrlabl>
+				<attalias Sync="TRUE">OID_</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">9</attwidth></attr>
+			<attr>
+				<attrlabl>ROADID</attrlabl>
+				<attrdef>Unique record identifier (permanent)</attrdef>
+				<attrdefs>Internally generated by ICAT</attrdefs>
+				<attalias Sync="TRUE">RoadID</attalias><attrtype Sync="TRUE">Integer</attrtype><attwidth Sync="TRUE">9</attwidth><atprecis Sync="TRUE">9</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>STATEFIPS</attrlabl>
+				<attrdef>State 2-digit FIPS code</attrdef>
+				<attrdefs>Federal Information Processing Standards</attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>01</edomv>
+						<edomvd>Alabama</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>02</edomv>
+						<edomvd>Alaska</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>04</edomv>
+						<edomvd>Arizona</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>05</edomv>
+						<edomvd>Arkansas</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>06</edomv>
+						<edomvd>California</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>08</edomv>
+						<edomvd>Colorado</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>09</edomv>
+						<edomvd>Connecticut</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>10</edomv>
+						<edomvd>Delaware</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>11</edomv>
+						<edomvd>District of Columbia</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>12</edomv>
+						<edomvd>Florida</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>13</edomv>
+						<edomvd>Georgia</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>15</edomv>
+						<edomvd>Hawaii</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>16</edomv>
+						<edomvd>Idaho</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>17</edomv>
+						<edomvd>Illinois</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>18</edomv>
+						<edomvd>Indiana</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>19</edomv>
+						<edomvd>Iowa</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>20</edomv>
+						<edomvd>Kansas</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>21</edomv>
+						<edomvd>Kentucky</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>22</edomv>
+						<edomvd>Louisiana</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>23</edomv>
+						<edomvd>Maine</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>24</edomv>
+						<edomvd>Maryland</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>25</edomv>
+						<edomvd>Massachusetts</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>26</edomv>
+						<edomvd>Michigan</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>27</edomv>
+						<edomvd>Minnesota</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>28</edomv>
+						<edomvd>Mississippi</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>29</edomv>
+						<edomvd>Missouri</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>30</edomv>
+						<edomvd>Montana</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>31</edomv>
+						<edomvd>Nebraska</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>32</edomv>
+						<edomvd>Nevada</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>33</edomv>
+						<edomvd>New Hampshire</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>34</edomv>
+						<edomvd>New Jersey</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>35</edomv>
+						<edomvd>New Mexico</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>36</edomv>
+						<edomvd>New York</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>37</edomv>
+						<edomvd>North Carolina</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>38</edomv>
+						<edomvd>North Dakota</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>39</edomv>
+						<edomvd>Ohio</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>40</edomv>
+						<edomvd>Oklahoma</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>41</edomv>
+						<edomvd>Oregon</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>42</edomv>
+						<edomvd>Pennsylvania</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>44</edomv>
+						<edomvd>Rhode Island</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>45</edomv>
+						<edomvd>South Carolina</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>46</edomv>
+						<edomvd>South Dakota</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>47</edomv>
+						<edomvd>Tennessee</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>48</edomv>
+						<edomvd>Texas</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>49</edomv>
+						<edomvd>Utah</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>50</edomv>
+						<edomvd>Vermont</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>51</edomv>
+						<edomvd>Virginia</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>53</edomv>
+						<edomvd>Washington</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>54</edomv>
+						<edomvd>West Virginia</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>55</edomv>
+						<edomvd>Wisconsin</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>56</edomv>
+						<edomvd>Wyoming</edomvd>
+					</edom>
+				</attrdomv>
+				<attalias Sync="TRUE">StateFIPS</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">2</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>COUNTYFIPS</attrlabl>
+				<attrdef>County 3-digit FIPS code</attrdef>
+				<attrdefs>Federal Information Processing Standards</attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>000</edomv>
+						<edomvd>Not specified</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>001</edomv>
+						<edomvd>Kent</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>003</edomv>
+						<edomvd>New Castle</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>005</edomv>
+						<edomvd>Sussex</edomvd>
+					</edom>
+				</attrdomv>
+				<attalias Sync="TRUE">CountyFIPS</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">3</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>MCDFIPS</attrlabl>
+				<attrdef>City/town unique identifier (e.g., MCD FIPS) (Minor Civil Division)</attrdef>
+				<attrdefs>Federal Information Processing Standards</attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>00000000</edomv>
+						<edomvd>Not reported</edomvd>
+					</edom>
+				</attrdomv>
+				<attalias Sync="TRUE">MCDFIPS</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">8</attwidth></attr>
+			<attr>
+				<attrlabl>MPO</attrlabl>
+				<attrdef>Metropolitian Planning Organization Identifier</attrdef>
+				<attrdefs>State data</attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>0</edomv>
+						<edomvd>Not reported</edomvd>
+					</edom>
+				</attrdomv>
+				<attalias Sync="TRUE">MPO</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">9</attwidth></attr>
+			<attr>
+				<attrlabl>RURALURBAN</attrlabl>
+				<attrdef>FHWA rural/urban designation (e.g., rural, small urban, urbanized)</attrdef>
+				<attrdefs>State data or NHPN/HPMS</attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>NULL</edomv>
+						<edomvd>Not reported</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>1</edomv>
+						<edomvd>Rural</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>2</edomv>
+						<edomvd>Small Urban Area</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>3</edomv>
+						<edomvd>Small Urbanized Area</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>4</edomv>
+						<edomvd>Large Urbanized Area</edomvd>
+					</edom>
+				</attrdomv>
+				<attalias Sync="TRUE">RuralUrban</attalias><attrtype Sync="TRUE">SmallInteger</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">4</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>URBANAREA</attrlabl>
+				<attrdef>Urban/urbanized area unique identifier (e.g., Urban FIPS)</attrdef>
+				<attrdefs>State data or NHPN/HPMS</attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>0</edomv>
+						<edomvd>Not reported</edomvd>
+					</edom>
+				</attrdomv>
+				<attalias Sync="TRUE">UrbanArea</attalias><attrtype Sync="TRUE">Integer</attrtype><attwidth Sync="TRUE">9</attwidth><atprecis Sync="TRUE">9</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>JURISDICT</attrlabl>
+				<attrdef>Governmental agency or entity having jurisdiction over road segment</attrdef>
+				<attrdefs>State data or NHPN/HPMS</attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>NULL</edomv>
+						<edomvd>Not reported</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>0</edomv>
+						<edomvd>Not reported</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>1</edomv>
+						<edomvd>State Highway Agency</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>2</edomv>
+						<edomvd>County Highway Agency</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>3</edomv>
+						<edomvd>MCD Highway Agency</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>5</edomv>
+						<edomvd>Private</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>6</edomv>
+						<edomvd>Toll Authority</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>7</edomv>
+						<edomvd>Other Federal Agency</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>8</edomv>
+						<edomvd>Port Authority</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>9</edomv>
+						<edomvd>None of the Above</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>21</edomv>
+						<edomvd>Other State Agency</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>25</edomv>
+						<edomvd>Other Local Agency</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>50</edomv>
+						<edomvd>Indian Tribe Nation</edomvd>
+					</edom>
+				</attrdomv>
+				<attalias Sync="TRUE">Jurisdict</attalias><attrtype Sync="TRUE">SmallInteger</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">4</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>ROADNAME</attrlabl>
+				<attrdef>Local road name</attrdef>
+				<attrdefs>State data or NHPN</attrdefs>
+				<attrdomv>
+					<udom>See value in data.</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">RoadName</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">64</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>SIGN1TYPE</attrlabl>
+				<attrdef>Primary sign route type code (e.g., Interstate, US, State Route)</attrdef>
+				<attrdefs>State data or NHPN</attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>NULL</edomv>
+						<edomvd>Not reported</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>1</edomv>
+						<edomvd>Not signed</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>2</edomv>
+						<edomvd>Interstate</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>3</edomv>
+						<edomvd>U.S.</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>4</edomv>
+						<edomvd>State</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>5</edomv>
+						<edomvd>Off-Interstate Business Marker</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>6</edomv>
+						<edomvd>County</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>7</edomv>
+						<edomvd>Township</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>8</edomv>
+						<edomvd>Municipal</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>9</edomv>
+						<edomvd>Parkway Marker or Forest Route Marker</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>10</edomv>
+						<edomvd>None of the above</edomvd>
+					</edom>
+				</attrdomv>
+				<attalias Sync="TRUE">Sign1Type</attalias><attrtype Sync="TRUE">SmallInteger</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">4</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>SIGN1</attrlabl>
+				<attrdef>Primary sign route designation (e.g., 95, 1A)</attrdef>
+				<attrdefs>State data or NHPN</attrdefs>
+				<attrdomv>
+					<udom>NULL or 0 = Not signed. Else see value in data.</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">Sign1</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">16</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>SIGN1QUAL</attrlabl>
+				<attrdef>Primary sign route qualifier (e.g., Business Route, Spur, Bypass)</attrdef>
+				<attrdefs>State data or NHPN</attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>0</edomv>
+						<edomvd>Not reported</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>1</edomv>
+						<edomvd>No Qualifier or Not Signed</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>2</edomv>
+						<edomvd>Alternate</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>3</edomv>
+						<edomvd>Business Route</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>4</edomv>
+						<edomvd>Bypass</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>5</edomv>
+						<edomvd>Spur</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>6</edomv>
+						<edomvd>Loop</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>7</edomv>
+						<edomvd>Proposed</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>8</edomv>
+						<edomvd>Temporary</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>9</edomv>
+						<edomvd>Truck Route</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>10</edomv>
+						<edomvd>None of the Above</edomvd>
+					</edom>
+				</attrdomv>
+				<attalias Sync="TRUE">Sign1Qual</attalias><attrtype Sync="TRUE">SmallInteger</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">4</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>SIGN2TYPE</attrlabl>
+				<attrdef>2nd sign route type code</attrdef>
+				<attrdefs>State data or NHPN</attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>NULL</edomv>
+						<edomvd>Not reported</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>1</edomv>
+						<edomvd>Not Signed</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>2</edomv>
+						<edomvd>Interstate</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>3</edomv>
+						<edomvd>U.S.</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>4</edomv>
+						<edomvd>State</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>5</edomv>
+						<edomvd>Off-Interstate Business Marker</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>6</edomv>
+						<edomvd>County</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>7</edomv>
+						<edomvd>Township</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>8</edomv>
+						<edomvd>Municipal</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>9</edomv>
+						<edomvd>Parkway Marker or Forest Route Marker</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>10</edomv>
+						<edomvd>None of the Above</edomvd>
+					</edom>
+				</attrdomv>
+				<attalias Sync="TRUE">Sign2Type</attalias><attrtype Sync="TRUE">SmallInteger</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">4</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>SIGN2</attrlabl>
+				<attrdef>2nd sign route designation</attrdef>
+				<attrdefs>State data or NHPN</attrdefs>
+				<attrdomv>
+					<udom>NULL or 0 = Not signed. Else see value in data.</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">Sign2</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">16</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>SIGN2QUAL</attrlabl>
+				<attrdef>2nd sign route qualifier</attrdef>
+				<attrdefs>State data or NHPN</attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>0</edomv>
+						<edomvd>Not reported</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>1</edomv>
+						<edomvd>No Qualifier or Not Signed</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>2</edomv>
+						<edomvd>Alternate</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>3</edomv>
+						<edomvd>Business Route</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>4</edomv>
+						<edomvd>Bypass</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>5</edomv>
+						<edomvd>Spur</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>6</edomv>
+						<edomvd>Loop</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>7</edomv>
+						<edomvd>Proposed</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>8</edomv>
+						<edomvd>Temporary</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>9</edomv>
+						<edomvd>Truck Route</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>10</edomv>
+						<edomvd>None of the Above</edomvd>
+					</edom>
+				</attrdomv>
+				<attalias Sync="TRUE">Sign2Qual</attalias><attrtype Sync="TRUE">SmallInteger</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">4</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>SIGN3TYPE</attrlabl>
+				<attrdef>3nd sign route type code</attrdef>
+				<attrdefs>State data or NHPN</attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>NULL</edomv>
+						<edomvd>Not reported</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>1</edomv>
+						<edomvd>Not Signed</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>2</edomv>
+						<edomvd>Interstate</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>3</edomv>
+						<edomvd>U.S.</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>4</edomv>
+						<edomvd>State</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>5</edomv>
+						<edomvd>Off-Interstate Business Marker</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>6</edomv>
+						<edomvd>County</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>7</edomv>
+						<edomvd>Township</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>8</edomv>
+						<edomvd>Municipal</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>9</edomv>
+						<edomvd>Parkway Marker or Forest Route Marker</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>10</edomv>
+						<edomvd>None of the Above</edomvd>
+					</edom>
+				</attrdomv>
+				<attalias Sync="TRUE">Sign3Type</attalias><attrtype Sync="TRUE">SmallInteger</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">4</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>SIGN3</attrlabl>
+				<attrdef>3rd sign route designation</attrdef>
+				<attrdefs>State data or NHPN</attrdefs>
+				<attrdomv>
+					<udom>NULL or 0 = Not signed. Else see value in data.</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">Sign3</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">16</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>SIGN3QUAL</attrlabl>
+				<attrdef>3nd sign route qualifier</attrdef>
+				<attrdefs>State data or NHPN</attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>0</edomv>
+						<edomvd>Not reported</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>1</edomv>
+						<edomvd>No Qualifier or Not Signed</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>2</edomv>
+						<edomvd>Alternate</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>3</edomv>
+						<edomvd>Business Route</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>4</edomv>
+						<edomvd>Bypass</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>5</edomv>
+						<edomvd>Spur</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>6</edomv>
+						<edomvd>Loop</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>7</edomv>
+						<edomvd>Proposed</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>8</edomv>
+						<edomvd>Temporary</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>9</edomv>
+						<edomvd>Truck Route</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>10</edomv>
+						<edomvd>None of the Above</edomvd>
+					</edom>
+				</attrdomv>
+				<attalias Sync="TRUE">Sign3Qual</attalias><attrtype Sync="TRUE">SmallInteger</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">4</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>ISICAT</attrlabl>
+				<attrdef>ICAT status</attrdef>
+				<attrdomv>
+					<edom>
+						<edomv>0</edomv>
+						<edomvd>Not ICAT</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>1</edomv>
+						<edomvd>Part of NHPN</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>2</edomv>
+						<edomvd>Arterial or higher</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>3</edomv>
+						<edomvd>Manually added</edomvd>
+					</edom>
+				</attrdomv>
+				<attalias Sync="TRUE">IsICAT</attalias><attrtype Sync="TRUE">SmallInteger</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">4</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr><attrlabl Sync="TRUE">Sign4Type</attrlabl><attalias Sync="TRUE">Sign4Type</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">4</attwidth></attr><attr><attrlabl Sync="TRUE">Sign4</attrlabl><attalias Sync="TRUE">Sign4</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">16</attwidth></attr><attr><attrlabl Sync="TRUE">Sign4Qual</attrlabl><attalias Sync="TRUE">Sign4Qual</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">4</attwidth></attr><attr><attrlabl Sync="TRUE">Sign5Type</attrlabl><attalias Sync="TRUE">Sign5Type</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">4</attwidth></attr><attr><attrlabl Sync="TRUE">Sign5</attrlabl><attalias Sync="TRUE">Sign5</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">16</attwidth></attr><attr><attrlabl Sync="TRUE">Sign5Qual</attrlabl><attalias Sync="TRUE">Sign5Qual</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">4</attwidth></attr><attr>
+				<attrlabl>NHPNID</attrlabl>
+				<attrdef>Unique identifier for NHPN feature containing this road segment (National Highway Planning Network)</attrdef>
+				<attrdefs>Conflated from NHPN</attrdefs>
+				<attalias Sync="TRUE">NHPNID</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">9</attwidth></attr>
+			<attr>
+				<attrlabl>FAFID</attrlabl>
+				<attrdef>Unique identifier for FAF feature containing this road segment (Freight Analysis Framework)</attrdef>
+				<attrdefs>Conflated from FAF</attrdefs>
+				<attalias Sync="TRUE">FAFID</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">9</attwidth></attr>
+			<attr>
+				<attrlabl>USLRSKEY</attrlabl>
+				<attrdef>HPMS national LRS identifier (12-digit HPMS route identifier)</attrdef>
+				<attrdefs>State data or NHPN</attrdefs>
+				<attalias Sync="TRUE">USLRSKey</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">17</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>USLRSFRMP</attrlabl>
+				<attrdef>Beginning milepoint of HPMS segment containing this road segment</attrdef>
+				<attrdefs>State data or NHPN</attrdefs>
+				<attalias Sync="TRUE">USLRSFrMP</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">19</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>USLRSTOMP</attrlabl>
+				<attrdef>Ending milepoint of HPMS segment containing this road segment</attrdef>
+				<attrdefs>State data or NHPN</attrdefs>
+				<attalias Sync="TRUE">USLRSToMP</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">19</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>STLRSKEY</attrlabl>
+				<attrdef>Unique route identifier in State LRS</attrdef>
+				<attrdefs>State data</attrdefs>
+				<attalias Sync="TRUE">StLRSKey</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">17</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>STLRSFRMP</attrlabl>
+				<attrdef>Beginning milepoint for this road segment on State LRS</attrdef>
+				<attrdefs>State data</attrdefs>
+				<attalias Sync="TRUE">StLRSFrMP</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">19</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>STLRSTOMP</attrlabl>
+				<attrdef>Ending milepoint for this road segment on State LRS</attrdef>
+				<attrdefs>State data</attrdefs>
+				<attalias Sync="TRUE">StLRSToMP</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">19</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>TMC1</attrlabl>
+				<attrdef>1st Traffic Message Channel code associated with this road segment</attrdef>
+				<attrdefs>Conflated from TMC listing</attrdefs>
+				<attalias Sync="TRUE">TMC1</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">10</attwidth></attr>
+			<attr>
+				<attrlabl>TMC2</attrlabl>
+				<attrdef>2nd Traffic Message Channel code associated with this road segment</attrdef>
+				<attrdefs>Conflated from TMC listing</attrdefs>
+				<attalias Sync="TRUE">TMC2</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">10</attwidth></attr>
+			<attr>
+				<attrlabl>STATUS</attrlabl>
+				<attrdef>Operational status of road segment (open, proposed)</attrdef>
+				<attrdefs>State data or NHPN/HPMS</attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>0</edomv>
+						<edomvd>Proposed/Under construction</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>1</edomv>
+						<edomvd>Open to traffic</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>3</edomv>
+						<edomvd>Inactive/Closed/Deleted</edomvd>
+					</edom>
+				</attrdomv>
+				<attalias Sync="TRUE">Status</attalias><attrtype Sync="TRUE">SmallInteger</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">4</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>FUNCCLASS</attrlabl>
+				<attrdef>FHWA functional class code</attrdef>
+				<attrdefs>State data or NHPN/HPMS</attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>NULL</edomv>
+						<edomvd>Not reported</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>0</edomv>
+						<edomvd>Not reported</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>1</edomv>
+						<edomvd>Interstate</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>2</edomv>
+						<edomvd>Principal Arterial - Other Freeways and Expressways</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>3</edomv>
+						<edomvd>Principal Arterial - Other</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>4</edomv>
+						<edomvd>Minor Arterial</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>5</edomv>
+						<edomvd>Major Collector</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>6</edomv>
+						<edomvd>Minor Collector (rural only)</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>7</edomv>
+						<edomvd>Local</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>99</edomv>
+						<edomvd>Other (e.g., Ramp)</edomvd>
+					</edom>
+				</attrdomv>
+				<attalias Sync="TRUE">FuncClass</attalias><attrtype Sync="TRUE">SmallInteger</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">4</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>NHS</attrlabl>
+				<attrdef>FHWA National Highway System designation code</attrdef>
+				<attrdefs>State data or NHPN/HPMS</attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>0</edomv>
+						<edomvd>Default - Not on the NHS</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>1</edomv>
+						<edomvd>NHS</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>10</edomv>
+						<edomvd>NHS connector</edomvd>
+					</edom>
+				</attrdomv>
+				<attalias Sync="TRUE">NHS</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">4</attwidth></attr>
+			<attr>
+				<attrlabl>STRAHNET</attrlabl>
+				<attrdef>FHWA Strategic Highway Network designation code</attrdef>
+				<attrdefs>State data or NHPN/HPMS</attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>0</edomv>
+						<edomvd>Default - Not on STRAHNET</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>1</edomv>
+						<edomvd>Regular STRAHNET</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>2</edomv>
+						<edomvd>STRAHNET Connector</edomvd>
+					</edom>
+				</attrdomv>
+				<attalias Sync="TRUE">STRAHNET</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">4</attwidth></attr>
+			<attr>
+				<attrlabl>TRUCKROUTE</attrlabl>
+				<attrdef>Truck route designation code</attrdef>
+				<attrdefs>State data or FAF</attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>NULL</edomv>
+						<edomvd>Not a designated truck route</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>1</edomv>
+						<edomvd>State truck route not on the National Network</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>2</edomv>
+						<edomvd>National Network (NN) route</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>5</edomv>
+						<edomvd>No trucks allowed</edomvd>
+					</edom>
+				</attrdomv>
+				<attalias Sync="TRUE">TruckRoute</attalias><attrtype Sync="TRUE">SmallInteger</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">4</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>ISSCENIC</attrlabl>
+				<attrdef>Designated scenic byway</attrdef>
+				<attrdefs>State data or FHWA</attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>0</edomv>
+						<edomvd>Not a designated scenic byway</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>1</edomv>
+						<edomvd>State Scenic Byway not National Scenic Byway</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>2</edomv>
+						<edomvd>National Scenic Byway</edomvd>
+					</edom>
+				</attrdomv>
+				<attalias Sync="TRUE">IsScenic</attalias><attrtype Sync="TRUE">SmallInteger</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">4</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>ISEVACRTE</attrlabl>
+				<attrdef>Designated evacuation route (y/n)</attrdef>
+				<attrdefs>State data</attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>0</edomv>
+						<edomvd>Not reported</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>Y</edomv>
+						<edomvd>Designated evacuation route</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>N</edomv>
+						<edomvd>Not designated evacuation route</edomvd>
+					</edom>
+				</attrdomv>
+				<attalias Sync="TRUE">IsEvacRte</attalias><attrtype Sync="TRUE">SmallInteger</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">4</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>ISTOLL</attrlabl>
+				<attrdef>Toll road (y/n)</attrdef>
+				<attrdefs>State data or NHPN/HPMS</attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>0</edomv>
+						<edomvd>Not reported</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>Y</edomv>
+						<edomvd>Toll road</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>N</edomv>
+						<edomvd>Not toll road</edomvd>
+					</edom>
+				</attrdomv>
+				<attalias Sync="TRUE">IsToll</attalias><attrtype Sync="TRUE">SmallInteger</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">4</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>ISHOV</attrlabl>
+				<attrdef>HOV roadway or lanes (y/n) (High Occupancy Vehicle)</attrdef>
+				<attrdefs>State data or NHPN/HPMS</attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>0</edomv>
+						<edomvd>Not reported</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>Y</edomv>
+						<edomvd>HOV roadway or lane</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>N</edomv>
+						<edomvd>Not HOV roadway or lane</edomvd>
+					</edom>
+				</attrdomv>
+				<attalias Sync="TRUE">IsHOV</attalias><attrtype Sync="TRUE">SmallInteger</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">4</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>TRAFFLOW</attrlabl>
+				<attrdef>Traffic flow direction on road segment (e.g., one-way, two-way, reversible)</attrdef>
+				<attrdefs>State data or NHPN/HPMS</attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>NULL</edomv>
+						<edomvd>Not reported</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>1</edomv>
+						<edomvd>One-way traffic</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>2</edomv>
+						<edomvd>Two-way traffic</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>3</edomv>
+						<edomvd>Reversible one-way traffic</edomvd>
+					</edom>
+				</attrdomv>
+				<attalias Sync="TRUE">TrafFlow</attalias><attrtype Sync="TRUE">SmallInteger</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">4</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>FACTYPE</attrlabl>
+				<attrdef>Type of structure where road segment is located (e.g., bridge, tunnel, ramp)</attrdef>
+				<attrdefs>State data or NHPN/HPMS</attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>NULL</edomv>
+						<edomvd>Not reported</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>0</edomv>
+						<edomvd>Not reported</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>4</edomv>
+						<edomvd>Ramp</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>5</edomv>
+						<edomvd>Other/Non-mainline</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>6</edomv>
+						<edomvd>Mainline</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>7</edomv>
+						<edomvd>Bridge</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>8</edomv>
+						<edomvd>Tunnel</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>9</edomv>
+						<edomvd>Double-deck</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>10</edomv>
+						<edomvd>Ferry Route</edomvd>
+					</edom>
+				</attrdomv>
+				<attalias Sync="TRUE">FacType</attalias><attrtype Sync="TRUE">SmallInteger</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">4</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>SURFTYPE</attrlabl>
+				<attrdef>Type of surface on travel way (e.g., paved, unpaved)</attrdef>
+				<attrdefs>State data or NHPN/HPMS</attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>NULL</edomv>
+						<edomvd>Not reported</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>0</edomv>
+						<edomvd>Not reported</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>1</edomv>
+						<edomvd>Unpaved</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>13</edomv>
+						<edomvd>Paved</edomvd>
+					</edom>
+				</attrdomv>
+				<attalias Sync="TRUE">SurfType</attalias><attrtype Sync="TRUE">SmallInteger</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">4</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>MEDIANTYPE</attrlabl>
+				<attrdef>Type of median separating directional traffic (e.g., curb, barrier, grass)</attrdef>
+				<attrdefs>State data or NHPN/HPMS</attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>NULL</edomv>
+						<edomvd>Not reported</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>0</edomv>
+						<edomvd>Not reported</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>1</edomv>
+						<edomvd>None</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>2</edomv>
+						<edomvd>Unprotected</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>3</edomv>
+						<edomvd>Curbed</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>8</edomv>
+						<edomvd>Positive barrier</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>9</edomv>
+						<edomvd>Other</edomvd>
+					</edom>
+				</attrdomv>
+				<attalias Sync="TRUE">MedianType</attalias><attrtype Sync="TRUE">SmallInteger</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">4</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>ACCCTLTYPE</attrlabl>
+				<attrdef>Type of access control on road segment (e.g, full, partial, none)</attrdef>
+				<attrdefs>State data or NHPN/HPMS</attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>NULL</edomv>
+						<edomvd>Not reported</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>0</edomv>
+						<edomvd>Not reported</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>1</edomv>
+						<edomvd>Full Access Control</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>2</edomv>
+						<edomvd>Partial Access Control</edomvd>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>3</edomv>
+						<edomvd>No Access Control</edomvd>
+					</edom>
+				</attrdomv>
+				<attalias Sync="TRUE">AccCtlType</attalias><attrtype Sync="TRUE">SmallInteger</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">4</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>THRULANES</attrlabl>
+				<attrdef>Number of through travel lanes</attrdef>
+				<attrdefs>State data or NHPN/HPMS</attrdefs>
+				<attalias Sync="TRUE">ThruLanes</attalias><attrtype Sync="TRUE">SmallInteger</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">4</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>SPEEDLIMIT</attrlabl>
+				<attrdef>Posted speed limit on road segment (miles per hour)</attrdef>
+				<attrdefs>State data or NHPN/HPMS</attrdefs>
+				<attalias Sync="TRUE">SpeedLimit</attalias><attrtype Sync="TRUE">SmallInteger</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">4</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>AADT</attrlabl>
+				<attrdef>Annual Average Daily Traffic Volume</attrdef>
+				<attrdefs>State data or NHPN/HPMS</attrdefs>
+				<attalias Sync="TRUE">AADT</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">9</attwidth></attr>
+			<attr>
+				<attrlabl>SHAPE_LENG</attrlabl>
+				<attalias Sync="TRUE">Shape_Leng</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">19</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+		</detailed>
+	</eainfo>
+	<distinfo>
+		<distrib>
+			<cntinfo>
+				<cntperp>
+					<cntper>Bruce Spear</cntper>
+					<cntorg>Cambridge Systematics</cntorg>
+				</cntperp>
+				<cntpos>Senior Associate</cntpos>
+				<cntaddr>
+					<addrtype>mailing and physical address</addrtype>
+					<address>100 CambridgePark Drive, Suite 400</address>
+					<city>Cambridge</city>
+					<state>MA</state>
+					<postal>02140</postal>
+					<country>USA</country>
+				</cntaddr>
+				<cntvoice>617-234-0417</cntvoice>
+				<cntfax>617-354-1542</cntfax>
+				<cntemail>bspear@camsys.com</cntemail>
+			</cntinfo>
+		</distrib>
+		<resdesc>Downloadable Data</resdesc>
+		<stdorder>
+			<digform>
+				<digtinfo>
+					<transize>3.748</transize>
+					<dssize Sync="TRUE">12.060</dssize></digtinfo>
+			</digform>
+		</stdorder>
+	</distinfo>
+	<metainfo>
+		<metd Sync="TRUE">20100528</metd>
+		<metc>
+			<cntinfo>
+				<cntperp>
+					<cntper>Sarahjoy Crewe</cntper>
+					<cntorg>Cambridge Systematics</cntorg>
+				</cntperp>
+				<cntpos>GIS Analyst</cntpos>
+				<cntaddr>
+					<addrtype>mailing and physical address</addrtype>
+					<address>100 CambridgePark Drive, Suite 400</address>
+					<city>Cambridge</city>
+					<state>MA</state>
+					<postal>02140</postal>
+					<country>USA</country>
+				</cntaddr>
+				<cntvoice>617-234-0547</cntvoice>
+				<cntfax>617-354-1542</cntfax>
+				<cntemail>screwe@camsys.com</cntemail>
+			</cntinfo>
+		</metc>
+		<metstdn Sync="TRUE">FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+		<metstdv Sync="TRUE">FGDC-STD-001-1998</metstdv>
+		<mettc Sync="TRUE">local time</mettc>
+		<metextns>
+			<onlink>http://www.esri.com/metadata/esriprof80.html</onlink>
+			<metprof>ESRI Metadata Profile</metprof>
+		</metextns>
+		<metextns>
+			<onlink>http://www.esri.com/metadata/esriprof80.html</onlink>
+			<metprof>ESRI Metadata Profile</metprof>
+		</metextns>
+		<langmeta Sync="TRUE">en</langmeta><metextns><onlink Sync="TRUE">http://www.esri.com/metadata/esriprof80.html</onlink><metprof Sync="TRUE">ESRI Metadata Profile</metprof></metextns></metainfo>
+	<Esri><MetaID>{E5A46D7D-9FA5-47F6-B75A-B1822F728EF6}</MetaID><CreaDate>20100528</CreaDate><CreaTime>10404700</CreaTime><SyncOnce>FALSE</SyncOnce><SyncDate>20100528</SyncDate><SyncTime>10484000</SyncTime><ModDate>20100528</ModDate><ModTime>10484000</ModTime></Esri><dataIdInfo><envirDesc Sync="TRUE">Microsoft Windows XP Version 5.1 (Build 2600) Service Pack 3; ESRI ArcCatalog 9.3.1.3000</envirDesc><dataLang><languageCode Sync="TRUE" value="en"></languageCode></dataLang><idCitation><resTitle Sync="TRUE">RI_QC_20100512</resTitle><presForm><PresFormCd Sync="TRUE" value="005"></PresFormCd></presForm></idCitation><spatRpType><SpatRepTypCd Sync="TRUE" value="001"></SpatRepTypCd></spatRpType><dataExt><geoEle><GeoBndBox esriExtentType="native"><westBL Sync="TRUE">-71.861023</westBL><eastBL Sync="TRUE">-71.121177</eastBL><northBL Sync="TRUE">42.018812</northBL><southBL Sync="TRUE">41.148552</southBL><exTypeCode Sync="TRUE">1</exTypeCode></GeoBndBox></geoEle></dataExt><geoBox esriExtentType="decdegrees"><westBL Sync="TRUE">-71.861023</westBL><eastBL Sync="TRUE">-71.121177</eastBL><northBL Sync="TRUE">42.018812</northBL><southBL Sync="TRUE">41.148552</southBL><exTypeCode Sync="TRUE">1</exTypeCode></geoBox></dataIdInfo><mdLang><languageCode Sync="TRUE" value="en"></languageCode></mdLang><mdStanName Sync="TRUE">ISO 19115 Geographic Information - Metadata</mdStanName><mdStanVer Sync="TRUE">DIS_ESRI1.0</mdStanVer><mdChar><CharSetCd Sync="TRUE" value="004"></CharSetCd></mdChar><mdHrLv><ScopeCd Sync="TRUE" value="005"></ScopeCd></mdHrLv><mdHrLvName Sync="TRUE">dataset</mdHrLvName><distInfo><distributor><distorTran><onLineSrc><orDesc Sync="TRUE">002</orDesc><linkage Sync="TRUE">file://\\CREWES-CAM\D$\Projects\ICAT\DataCAT\State_Highway_Networks\RhodeIsland\orig\shape\RI_QC_20100512.shp</linkage><protocol Sync="TRUE">Local Area Network</protocol></onLineSrc><transSize Sync="TRUE">12.060</transSize></distorTran><distorFormat><formatName Sync="TRUE">Shapefile</formatName></distorFormat></distributor></distInfo><refSysInfo><RefSystem><refSysID><identCode Sync="TRUE">GCS_North_American_1983</identCode></refSysID></RefSystem></refSysInfo><spatRepInfo><VectSpatRep><topLvl><TopoLevCd Sync="TRUE" value="001"></TopoLevCd></topLvl><geometObjs Name="RI_QC_20100512"><geoObjTyp><GeoObjTypCd Sync="TRUE" value="001"></GeoObjTypCd></geoObjTyp><geoObjCnt Sync="TRUE">69656</geoObjCnt></geometObjs></VectSpatRep></spatRepInfo><mdDateSt Sync="TRUE">20100528</mdDateSt></metadata>

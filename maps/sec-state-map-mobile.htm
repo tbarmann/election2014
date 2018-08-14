@@ -1,0 +1,588 @@
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,600,800' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="./css/general_map.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="./css/elections.css" type="text/css" media="screen" />
+
+	<style type="text/css" media="screen">
+	.map {
+		left:0;
+	}
+
+	.legend_div2 {
+		width:260px;
+		position:static;
+		border: 1px solid #f3f3f4;
+		padding:13px;
+		background-color:#fafafb;
+		margin-bottom:13px;
+	}
+
+	.map_legend {
+	border:0;
+	width:100%;
+	position:static;
+	}
+
+	.legend_div2 .candidate_name {
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-weight:bold;
+	font-size:11px;
+	color:#96a3af;
+	float:left;
+	margin-right:18px;
+	}
+
+	.legend_div2 .color_box {
+	border:0;
+	width:13px;
+	height:13px;
+	float:left;
+	margin-right:5px;
+	}
+
+	.legend_div2 .race_name {
+	font-size:14px;
+	text-align:left;
+	font-family: 'Droid Serif', serif;
+	font-weight:900;
+	text-transform: uppercase;
+	margin-bottom:13px;
+	display:none;
+	}
+
+	.map_container {
+	width:290px;
+	}
+
+	.key-races.general-election {
+	width:180px;
+	margin-top:0;
+	border-bottom:0;
+	padding-left:1px;
+	}
+
+	.general-election #race-header h3 {
+	margin-bottom:5px;
+	margin-top:5px;
+	}
+
+	#race-header h3 {
+		padding-top:0px;
+	}
+
+	.general-election .candidate-col, .candidate-col{
+	width:40%;
+	margin:5px 13px 5px 0;
+	}
+	.general-election .candidate-col-votes, .candidate-col-votes{
+	width:26%;
+
+	}
+	.general-election .candidate-col-percent, .candidate-col-percent {
+	 width:20%;
+	 text-align:right;
+	 }
+
+	#prec-container {
+	border-bottom:0;
+	padding-top:10px;
+	border-top: 3px solid #96A3AF;
+
+	}
+	.general-election #prec-header.left {
+	width:auto;
+	}
+
+	.general-election #prec-header {
+		letter-spacing:normal;
+	}
+
+	.general-election #prec-content {
+		line-spacing:auto;
+		width:auto;
+		float:right;
+	}
+
+	.general-election .candidates-header-large {
+		width:40%;
+	}
+
+	.general-election .candidates-header {
+		width:26%;
+	}
+
+	.general-election .candidates-header.pct {
+		width:20%;
+		float:right;
+	}
+
+	#WzTtDiV {
+	/* width:200px; */
+	}
+	</style>
+
+	<script type="text/javascript" src="./js/jquery-1.8.3.js"></script>
+	<script type="text/javascript" src="./js/election_results_widget2.js"></script>
+	<script type="text/javascript" src="./data/governor_by_town.json"></script>
+	<script type="text/javascript" src="./js/jquery.metadata.js"></script>
+	<script type="text/javascript" src="./js/jquery.maphilight.js"></script>
+	<script type="text/javascript" src="./js/map_functions4-3.js"></script>
+	<script type="text/javascript" src="./js/underscore-min.js"></script>
+	<script type="text/javascript" src="./js/number.format.js"></script>
+
+	<script type="text/javascript">
+
+		var viewportWidth = window.innerWidth * 0.95;
+
+		var map_init = {
+			"map_width": viewportWidth,
+			"stroke_width":1,
+			"default_hide_labels":false,
+			"legend_width_offset": 20,
+			"legend_left_offset" : 0,
+			"legend_top_offset": 0,
+			"data_source": governor_by_town,
+			"race_number": 104
+			};
+
+		var legend = [
+			{ name: "RAIMONDO",
+			   party_code: "DEM",
+			   color: "0076b4",
+			   full_name: 'Gina M. RAIMONDO'
+			},
+			{ name : "FUNG",
+			  party_code : "REP",
+			  color : "c2002f",
+			  full_name: 'Allan W. FUNG'
+			},
+			{ name : "HEALEY",
+			  party_code : "MOD",
+			  color : "57bb50",
+			  full_name: 'Robert J. HEALEY, JR.'
+			}
+		];
+
+	String.prototype.capitalize = function() {
+    	return this.charAt(0).toUpperCase() + this.slice(1).toLowerCase();
+	};
+	function createTestVotes() {
+		// global: map_init.data_source
+		var distribution = [300000,5000,300000,10,10];
+		for (var prop in map_init.data_source) {
+			var thisProp = map_init.data_source[prop];
+				var precinct_count = map_init.data_source[prop].precinct_count;
+				map_init.data_source[prop].precincts_reporting = precinct_count;
+				$.each(thisProp.contests,function(j){
+					$.each(this.candidates, function(k) {
+					//	console.log(map_init.data_source[prop].contests[j].candidates[k].name);
+							map_init.data_source[prop].contests[j].candidates[k].votes=_.random(0,distribution[k]);
+					});
+				});
+		}
+	}
+
+	function getParty(abbr) {
+		var parties = {
+			'dem':'Dem',
+			'rep':'Rep',
+			'ind':'Ind',
+			'mod':'Mod'
+		};
+
+		var key = abbr.toLowerCase();
+		return parties[key] || '';
+	}
+
+	function getLegendLastName(full_name) {
+		// global legend
+		return _.find(legend, function(candidate) { 
+			return candidate.full_name === full_name;
+		}).name;
+	}
+
+	function getRaceName(contest_number){
+		// global: map_init.data_source
+		var contest_name = null;
+		var first_prop = {};
+		for (var prop in map_init.data_source) {
+			first_prop = map_init.data_source[prop];
+			break;
+		}
+		$.each(first_prop.contests,function(){
+			if (this.contest_number == contest_number) {
+				contest_name = this.name;
+				return;
+			}
+		});
+		return contest_name;
+	}
+
+	function lookupCandidateBaseColor(fullName) {
+		// global: legend
+		return _.find(legend, function(candidate) {
+			return candidate.full_name === fullName;
+		}).color;
+	}
+
+	// maps an input domain to an output range
+	// domain is array with two values: min and max
+
+	function createScale(domain, range) {
+		return function(value) {
+			if (value <= domain[0]) {
+				return range[0];
+			}
+			if (value >= domain[1]) {
+				return range[1];
+			}
+			var domainSpread = domain[1] - domain[0];
+			var rangeSpread = (range[1] - range[0])
+			return Math.floor(((value - domain[0]) * rangeSpread) / domainSpread);
+		}
+	}
+
+	function getLegendColor(leader) {
+		// global: legend
+		var steps = 3;
+		var candidate_count = legend.length;
+		var min_winner_pct = parseInt(100/candidate_count) + 1;
+		var color = lookupCandidateBaseColor(leader.name);
+
+		// get 1 more than needed - the first color will be white, which we get rid of
+		var palette = mixPalette("FFFFFF", color, steps + 1);
+		palette.shift(); // get rid of first element since it is pure white
+		var scale = createScale([min_winner_pct, 100], [0, steps]);
+		var paletteIndex = scale(leader.pct_votes);
+		return palette[paletteIndex];
+	}
+
+
+	function buildLegend () {
+		var html ='<table class="map_legend">';
+		race_name = getRaceName(map_init.race_number);
+		html += '<tr>';
+		html += '<td colspan="2"><div class="race_name">' + race_name + '</div></td>';
+		html += '</tr>';
+		for (var index=0; index<legend.length; index++) {
+			html += '<tr>';
+			html += '<td><div class="color_box" style="background:#' + legend[index].color + ';"></div></td>';
+			html += '<td><div class="candidate_name">' + legend[index].name + '</div></td>';
+			html += '</tr>';
+		}
+		html +='</table>';
+		return html;
+	}
+
+function buildLegend2() {
+	var html = '<div class="map_legend2">';
+	race_name = getRaceName(map_init.race_number);
+	html += '<div class="race_name">' + race_name + "</div>";
+	for (var index = 0; index < legend.length; index++) {
+		html +=
+			'<div class="color_box" style="background:#' +
+			legend[index].color +
+			';"></div>';
+		html += '<div class="candidate_name">' + legend[index].name + "</div>";
+	}
+	html += "</div>";
+	html += '<div style="clear:both;"></div>';
+	return html;
+}
+
+function mapOnMouseOver(location){
+
+	var new_location = location.replace(" ","_");
+	new_location = new_location.toLowerCase();
+	results = get_results_by_race(map_init.data_source[new_location],map_init.race_number);
+	var html = showResultsTableTipMobile(results,location);
+	Tip(html,BGCOLOR,'#FFFFFF',BORDERCOLOR,'#96A3AF',PADDING,'5','SHADOW',true);
+//	Tip(html);
+}
+
+function showResultsTableTip2(results,str) {
+	var html = "";
+	var new_str = str.replace(" ","_");
+	new_str = new_str.toLowerCase();
+	results = get_results_by_race(map_init.data_source[new_str],map_init.race_number);
+	html += '<input type="hidden" id="buttonEID" value="' + results.name.toLowerCase() + '"><input type="hidden" id="pView" value="map"><input type="hidden" id="pFilter" value="' + results.contest_number + '"><input type="hidden" id="fNameHolder" value="statewide">\
+	   <div class="key-races general-election">\
+	      <div id="race-header">\
+	         <h3>' + str + '</h3>\
+	      </div>\
+	      <div id="prec-container">\
+	         <div id="prec-header" class="left">Precincts</div>\
+	         <div id="prec-header" class="right">Reported</div>\
+	         <div id="prec-header" class="right">Percent</div>\
+	         <div style="clear: both;"></div>\
+	         <div id="prec-content" class="thirty">' + results.precinct_count + '</div>\
+	         <div id="prec-content">' + results.precincts_reporting + '</div>\
+	         <div id="prec-content">' + (parseInt(results.precincts_reporting)/parseInt(results.precinct_count)) * 100 + '%</div>\
+	         <div style="clear: both;"></div>\
+	      </div>\
+	      <div class="candidates-header-container">\
+	         <div class="candidates-header-large">\
+	            <h4>CANDIDATES</h4>\
+	         </div>\
+	         <div class="candidates-header">Votes</div>\
+	         <div class="candidates-header pct">Pct</div>\
+	         <div style="clear: both;"></div>\
+	      </div>';
+	      for (var x=0;x<results.candidates.length;x++) {
+	      html += '<div id="candidate-row"' + ((x==0) ? ' class="solid-border">' : '>');
+	         html+='<div class="icon-col">';
+			 var icon = (results.candidates[x].name.toLowerCase() == 'write-in') ? 'clear.gif' : results.candidates[x].party_code.capitalize() + '_icon.png';
+	         html+='<img src="http://res.providencejournal.com/politics/assets/images/' + icon + '"></div>\
+	         <div class="candidate-col">' + results.candidates[x].name + '<br><span class="party-name"><span class="candidate-party">' + getParty(results.candidates[x].party_code) + '</span></span></div>\
+	         <div class="candidate-col-votes">' + results.candidates[x].votes + '</div>\
+	         <div class="candidate-col-percent">' + results.candidates[x].pct_votes.format("0.0%") + '</div>\
+	         <div style="clear: both;"></div>\
+	      </div>';
+	      }
+	      html += '</div>\
+		  	   <div id="disclaimer-container">\
+		  	      <div id="disclaimer"></div>\
+		  	   </div>';
+	return html;
+}
+
+function showResultsTableTipMobile(results,str) {
+	var threshhold = 5;  // any candidate with less than this percent of the vote put into the "Other" category
+	var html = "";
+	var new_str = str.replace(" ","_");
+	new_str = new_str.toLowerCase();
+	results = get_results_by_race(map_init.data_source[new_str],map_init.race_number);
+	html += '<input type="hidden" id="buttonEID" value="' + results.name.toLowerCase() + '"><input type="hidden" id="pView" value="map"><input type="hidden" id="pFilter" value="' + results.contest_number + '"><input type="hidden" id="fNameHolder" value="statewide">\
+	   <div class="key-races general-election">\
+	      <div id="race-header">\
+	         <h3>' + str + '</h3>\
+	      </div>\
+	      <div class="candidates-header-container">\
+	         <div class="candidates-header-large">\
+	            <h4>NAME</h4>\
+	         </div>\
+	         <div class="candidates-header">Votes</div>\
+	         <div class="candidates-header pct">Pct</div>\
+	         <div style="clear: both;"></div>\
+	      </div>';
+	      var other_votes=0;
+	      var other_pct_votes=0;
+	      for (var x=0;x<results.candidates.length;x++) {
+	      	 if (results.candidates[x].pct_votes < threshhold) {
+	      	 	other_votes += parseInt(results.candidates[x].votes);
+	      	 	other_pct_votes += results.candidates[x].pct_votes;
+	      	 }
+	      	 else {
+				 var last_name = getLegendLastName(results.candidates[x].name);
+				 html += '<div id="candidate-row"' + ((x==0) ? ' class="solid-border">' : '>');
+				 html += '<div class="candidate-col">' + last_name.capitalize() + '<br><span class="party-name"><span class="candidate-party">' + getParty(results.candidates[x].party_code) + '</span></span></div>\
+				 <div class="candidate-col-votes">' + results.candidates[x].votes.format("0,000") + '</div>\
+				 <div class="candidate-col-percent">' + results.candidates[x].pct_votes.format("0.0%") + '</div>\
+				 <div style="clear: both;"></div>\
+				 </div>';
+			}
+	      }
+	      if (other_votes>0) {
+				 html += '<div id="candidate-row">';
+				 html += '<div class="candidate-col">Other</div>\
+				 <div class="candidate-col-votes">' + other_votes.format("0,000") + '</div>\
+				 <div class="candidate-col-percent">' + other_pct_votes.format("0.0%") + '</div>\
+				 <div style="clear: both;"></div>\
+				 </div>';
+			}
+
+      	  var reporting_pct = (parseInt(results.precincts_reporting)/parseInt(results.precinct_count)) * 100;
+	      html += '<div id="prec-container">\
+				 <div id="prec-header" class="left">Precincts in</div>\
+				 <div id="prec-content">' + reporting_pct.format("0.0%") + '</div>\
+				 <div style="clear: both;"></div>\
+			  	</div>\
+			  </div>';
+
+	return html;
+}
+</script>
+
+<script type="text/javascript" >
+ $(document).ready(function() {
+ 	createTestVotes();
+ 	mapResizeWidth(map_init.map_width);
+
+ 	 // set image to the correct dimensions
+	var maxXY = getMaxXY("area");
+	$('.map').css('width',maxXY.x + 'px');
+	$('.map').css('height',maxXY.y + 'px');
+	$('.map img').attr('width',maxXY.x);
+	$('.map img').attr('height',maxXY.y);
+
+ 	var label_div_content = "";
+
+	$("area").each (function (i) {
+
+		//get the onMouseOver attribute
+		var thisOnMouseOver = $(this).attr('onMouseOver');
+
+		// Extract the parameter - this is the town name
+		var thisOnMouseOverArray = thisOnMouseOver.split("'");
+		var this_town = thisOnMouseOverArray[1];
+
+		var this_town_lower = this_town.replace(" ","_").toLowerCase();
+
+	// get the coordinate pairs for this polygon area and put them in an array
+	var coordStr = $(this).attr('coords');
+	var coordArry = coordStr.split(',');
+	var xArry = [];
+	var yArry = [];
+
+	// split off the x's in one array, the y's in another
+	for (x=0;x<coordArry.length;x+=2) {
+		xArry.push(parseInt(coordArry[x]));
+		yArry.push(parseInt(coordArry[x+1]));
+	}
+	// get max,min, average for the x's and y's
+	// the average x,y will be the center of the square that bounds the polygon
+	var xmax = Math.max.apply(Math, xArry);
+	var xmin = Math.min.apply(Math, xArry);
+	var ymax = Math.max.apply(Math, yArry);
+	var ymin = Math.min.apply(Math, yArry);
+	var xavg = parseInt((xmax-xmin)/2) + xmin;
+	var yavg = parseInt((ymax-ymin)/2) + ymin;
+
+	var xsum=0;
+	for (var j=0;j<xArry.length;j++)
+		xsum += xArry[j];
+
+	var ysum=0;
+	for (var j=0;j<yArry.length;j++)
+		ysum += yArry[j];
+
+	// create a style based on the average x,y coordinates
+	this_style = 'left:' + xavg + 'px; top:' + yavg + 'px; ';
+
+	// create a div and put in the style with the coordinates
+	label_div_content += '<div onMouseOver="mapOnMouseOver(\'' + this_town + '\');" class="map_label ' + this_town_lower + '_label"';
+	label_div_content += ' style="' + this_style + '" ';
+	label_div_content += '>' + this_town  + '</div>';
+
+});  // end of each
+$('#label_div').html(label_div_content);
+
+	$(function color_map() {
+	// color the map
+	for (var this_town in map_init.data_source) {
+		var results = get_results_by_race(map_init.data_source[this_town],map_init.race_number);
+		if (results.precincts_reporting == 0)
+			var color = 'DDDDDD';
+		else {
+			// sort candidates by number of votes, decending
+			// that will leave the leader in the first array position [0]
+
+			results.candidates.sort (function(a, b) {return parseInt(b.votes) - parseInt(a.votes)});
+			var leader = results.candidates[0];
+			var color = getLegendColor(leader);
+		}
+
+		$("area").each (function (i) {
+
+			var thisOnMouseOver = $(this).attr('onMouseOver');
+			// Extract the parameter - this is the town name
+			var thisOnMouseOverArray = thisOnMouseOver.split("'");
+			var town = thisOnMouseOverArray[1];
+			var strokeWidth = (map_init.hasOwnProperty('stroke_width')) ? map_init.stroke_width : 1;
+			town = town.toLowerCase();
+			town = town.replace(" ","_");
+
+			if (town==this_town) {
+						var new_class = this_town + " {strokeColor:'FFFFFF',strokeWidth:" + strokeWidth + ",fillColor:'" + color + "',fillOpacity:1,alwaysOn:true}";
+				$(this).addClass(new_class);
+			}
+		});
+		//		$('.' + this_town).addClass(new_class);
+	}
+	$('.map').maphilight();
+	$('.legend_div2').html(buildLegend2());
+
+	// place legend div
+	var legend_width = parseInt($('.map_legend').css('width'));
+	var container_width = parseInt($('.map_container').css('width'))+map_init.legend_width_offset;
+	$('.map_legend').css('left',(map_init.legend_left_offset)+'px');
+	$('.map_legend').css('top',map_init.legend_top_offset + 'px');
+	});
+
+	$("area").mouseleave(function() {
+  		UnTip();
+	});
+ 	$(".map_label").mouseleave(function() {
+   		UnTip();
+	});
+
+});
+</script>
+
+</head>
+
+<body>
+<script type="text/javascript" src="./js/wz_tooltip.js"></script>
+
+<div class="map_container">
+	<!-- <div class="legend_div"></div> -->
+	<div class="legend_div2"></div>
+	<img id="map_img" class="map" src="blank.png" width="450" height="600" border="0" ismap="1" usemap="#map" />
+	<div id="label_div"></div>
+	<div class="credit">The Providence Journal/Timothy C. Barmann</div>
+	<div class="source"></div>
+</div>
+
+<map name="map" id="us_president">
+<area shape="polygon" onMouseOver="mapOnMouseOver('Cumberland')"  coords="398,143,397,139,394,136,387,138,382,134,385,124,377,124,374,119,368,116,365,112,361,111,358,107,357,98,348,84,341,81,337,75,332,72,329,59,322,56,318,51,311,49,327,26,334,18,335,6,398,5,398,42,398,143">
+<area shape="polygon" onMouseOver="mapOnMouseOver('Woonsocket')"  coords="335,6,334,18,327,26,311,49,288,45,274,37,268,15,276,15,277,10,301,7,335,6">
+<area shape="polygon" onMouseOver="mapOnMouseOver('North Smithfield')"  coords="277,10,276,15,268,15,274,37,288,45,311,49,309,54,311,56,311,63,310,68,312,73,310,75,311,85,313,89,308,89,298,90,255,96,226,98,218,47,213,11,277,10">
+<area shape="polygon" onMouseOver="mapOnMouseOver('Burrillville')"  coords="213,11,218,47,226,98,194,101,154,101,56,104,55,17,77,15,198,12,213,11">
+<area shape="polygon" onMouseOver="mapOnMouseOver('Lincoln')"  coords="308,89,313,89,311,85,310,75,312,73,310,68,311,63,311,56,309,54,311,49,318,51,322,56,329,59,332,72,337,75,341,81,348,84,357,98,358,107,361,111,365,112,368,116,374,119,377,124,385,124,382,134,387,138,379,141,377,145,380,157,365,160,328,166,321,139,308,89">
+<area shape="polygon" onMouseOver="mapOnMouseOver('Smithfield')"  coords="226,98,255,96,298,90,308,89,321,139,328,166,303,170,239,182,237,165,226,98">
+<area shape="polygon" onMouseOver="mapOnMouseOver('Glocester')"  coords="226,98,237,165,239,182,198,183,178,183,143,184,89,185,58,186,57,163,56,104,154,101,194,101,226,98">
+<area shape="polygon" onMouseOver="mapOnMouseOver('Central Falls')"  coords="387,138,394,136,397,139,398,143,397,147,399,149,399,154,380,157,377,145,379,141,387,138">
+<area shape="polygon" onMouseOver="mapOnMouseOver('Pawtucket')"  coords="437,178,403,183,403,179,399,179,400,183,397,184,375,184,374,181,369,181,365,160,380,157,399,154,399,149,397,147,398,143,404,142,433,138,431,156,437,177,437,178">
+<area shape="polygon" onMouseOver="mapOnMouseOver('North Providence')"  coords="328,166,365,160,369,181,354,178,323,206,322,204,319,204,317,198,315,195,316,192,312,187,310,177,303,170,328,166">
+<area shape="polygon" onMouseOver="mapOnMouseOver('Johnston')"  coords="239,182,303,170,310,177,312,187,316,192,315,195,317,198,319,204,322,204,323,206,323,209,329,211,332,216,331,219,324,220,328,234,326,241,330,241,328,243,327,248,321,251,318,250,315,251,309,256,302,256,297,258,289,259,276,256,273,254,261,255,255,258,251,258,239,182">
+<area shape="polygon" onMouseOver="mapOnMouseOver('Providence')"  coords="399,261,390,261,379,262,380,267,375,270,373,277,363,272,366,261,355,262,353,259,350,250,350,244,347,239,331,241,330,241,326,241,328,234,324,220,331,219,332,216,329,211,323,209,323,206,354,178,369,181,374,181,375,184,397,184,400,183,400,190,402,192,400,195,401,200,399,203,401,210,399,216,393,220,393,227,386,227,380,234,386,247,389,246,397,254,399,261">
+<area shape="polygon" onMouseOver="mapOnMouseOver('East Providence')"  coords="403,183,437,178,430,197,436,207,428,216,426,221,433,237,431,246,433,250,437,252,439,257,441,259,442,268,446,271,449,275,447,276,423,298,422,295,416,298,419,301,419,306,416,306,414,300,414,288,411,285,408,284,411,276,411,272,406,264,407,262,404,256,405,253,399,251,400,250,394,241,390,230,393,228,399,217,407,208,408,203,405,203,409,192,406,191,406,186,403,183">
+<area shape="polygon" onMouseOver="mapOnMouseOver('Scituate')"  coords="143,184,178,183,198,183,239,182,251,258,254,278,258,302,261,323,225,324,197,325,162,326,158,298,152,251,147,216,143,184">
+<area shape="polygon" onMouseOver="mapOnMouseOver('Foster')"  coords="143,184,147,216,152,251,158,298,162,326,94,328,61,329,61,313,60,256,58,186,89,185,143,184">
+<area shape="polygon" onMouseOver="mapOnMouseOver('Cranston')"  coords="251,258,255,258,261,255,273,254,276,256,289,259,297,258,302,256,309,256,315,251,318,250,321,251,327,248,328,243,330,241,331,241,347,239,350,244,350,250,353,259,355,262,366,261,363,272,373,277,375,270,380,267,379,262,390,261,399,261,395,262,390,265,390,271,392,275,391,280,394,282,391,285,387,286,386,282,383,281,373,284,371,287,365,285,363,288,357,291,352,291,350,299,344,302,346,312,341,312,339,316,339,319,337,321,313,321,272,323,261,323,258,302,254,278,251,258">
+<area shape="polygon" onMouseOver="mapOnMouseOver('Warren')"  coords="500,340,472,346,474,341,478,338,477,326,474,315,475,312,484,318,481,311,483,308,481,307,482,296,479,288,497,299,507,314,526,342,527,346,521,354,513,358,514,348,512,340,506,336,503,337,500,329,495,330,499,336,500,340">
+<area shape="polygon" onMouseOver="mapOnMouseOver('West Warwick')"  coords="272,323,313,321,312,328,309,333,308,337,306,337,303,342,296,344,290,349,285,361,299,360,300,379,301,397,273,398,273,366,272,323">
+<area shape="polygon" onMouseOver="mapOnMouseOver('Coventry')"  coords="261,323,272,323,273,366,273,398,262,399,218,400,198,401,175,401,139,402,63,404,61,329,94,328,162,326,197,325,225,324,261,323">
+<area shape="polygon" onMouseOver="mapOnMouseOver('Bristol')"  coords="472,346,500,340,505,348,509,358,513,370,519,380,519,386,517,391,515,393,512,390,505,395,504,400,503,408,499,418,495,418,492,416,490,410,492,400,488,399,484,393,482,386,482,379,476,376,474,378,475,388,474,396,471,399,468,398,467,403,467,410,464,410,462,404,462,397,460,386,463,376,466,378,471,371,473,352,472,346">
+<area shape="polygon" onMouseOver="mapOnMouseOver('Tiverton')"  coords="608,506,566,518,538,526,535,524,535,519,538,515,537,513,540,511,540,505,542,497,541,491,542,487,537,484,537,480,540,477,541,472,545,470,540,461,538,457,538,446,541,446,547,460,550,463,552,456,548,448,541,445,537,439,539,432,539,423,543,402,550,389,552,383,568,387,568,391,604,399,602,417,601,435,598,440,596,452,598,460,599,462,605,473,608,506">
+<area shape="polygon" onMouseOver="mapOnMouseOver('East Greenwich')"  coords="301,397,346,396,346,401,339,409,340,412,336,414,335,412,329,419,329,424,326,424,326,428,318,433,318,437,315,441,310,448,313,453,313,463,282,463,263,464,262,437,262,399,273,398,301,397">
+<area shape="polygon" onMouseOver="mapOnMouseOver('West Greenwich')"  coords="262,399,262,437,263,464,247,465,203,465,181,465,174,468,101,467,81,468,61,469,62,443,63,404,139,402,175,401,198,401,218,400,262,399">
+<area shape="polygon" onMouseOver="mapOnMouseOver('North Kingstown')"  coords="366,573,343,573,342,568,347,559,344,557,341,561,343,565,340,566,339,573,340,576,334,578,308,580,294,576,291,561,284,543,285,514,286,492,285,473,282,463,313,463,313,453,310,448,315,441,318,437,318,433,326,428,331,424,334,424,340,434,343,430,344,424,349,419,348,417,356,410,359,411,364,407,368,406,377,412,376,423,378,433,381,437,377,442,370,441,371,445,375,444,377,450,374,455,372,455,369,461,371,464,379,464,379,477,379,478,369,482,364,482,358,484,351,492,349,483,345,485,342,488,336,486,336,489,344,492,345,496,349,498,347,502,348,506,352,507,356,513,358,512,360,515,358,520,354,520,357,526,362,526,363,533,368,537,368,541,371,543,369,546,371,551,371,562,369,564,366,573">
+<area shape="polygon" onMouseOver="mapOnMouseOver('Exeter')"  coords="263,464,282,463,285,473,286,492,285,514,284,543,291,561,294,576,275,572,249,563,207,549,201,506,123,517,99,520,93,520,59,526,61,469,81,468,101,467,174,468,181,465,203,465,247,465,263,464">
+<area shape="polygon" onMouseOver="mapOnMouseOver('Jamestown')"  coords="401,501,406,495,413,499,416,511,416,522,412,532,415,547,411,562,413,565,416,564,418,567,416,573,411,578,411,583,416,595,420,597,418,601,414,600,412,602,407,600,406,604,403,604,402,600,399,589,395,589,396,601,398,608,396,616,391,615,391,626,383,633,382,624,383,618,388,613,385,605,386,595,383,585,392,584,395,589,398,588,398,584,396,585,397,576,401,570,391,560,389,550,392,538,395,533,394,526,395,518,396,512,398,511,401,501">
+<area shape="polygon" onMouseOver="mapOnMouseOver('Richmond')"  coords="123,517,201,506,207,549,210,571,211,574,210,581,210,590,215,593,217,600,213,603,219,615,220,618,217,624,210,629,207,629,203,635,200,636,195,637,194,634,190,633,184,636,177,632,176,626,172,621,165,622,158,619,156,623,153,633,150,636,150,639,146,646,147,647,141,650,137,650,133,653,129,648,121,649,119,655,116,646,120,638,122,638,121,632,125,627,124,621,118,620,118,614,121,608,119,607,121,602,124,601,123,593,120,591,122,586,121,573,125,570,125,568,128,566,132,559,143,551,145,545,139,545,139,541,136,533,138,533,135,523,131,522,129,525,123,519,123,517">
+<area shape="polygon" onMouseOver="mapOnMouseOver('Little Compton')"  coords="538,526,566,518,608,506,613,551,614,579,611,579,600,583,597,588,599,594,593,597,594,599,582,603,580,607,574,609,573,611,575,618,574,619,566,619,553,623,551,615,555,616,555,604,557,600,555,591,549,585,549,580,543,576,544,570,548,561,544,555,545,550,542,544,544,530,538,526">
+<area shape="polygon" onMouseOver="mapOnMouseOver('Middletown')"  coords="465,508,482,524,495,534,521,561,516,568,514,577,509,584,509,586,512,592,518,591,518,596,515,603,509,606,511,597,507,593,501,590,493,588,491,594,487,599,480,589,477,588,465,570,456,553,457,551,455,542,456,536,460,530,457,525,465,508">
+<area shape="polygon" onMouseOver="mapOnMouseOver('Hopkinton')"  coords="123,517,123,519,129,525,131,522,135,523,138,533,136,533,139,541,139,545,145,545,143,551,132,559,128,566,125,568,125,570,121,573,122,586,120,591,123,593,124,601,121,602,119,607,121,608,118,614,118,620,124,621,125,627,121,632,122,638,120,638,116,646,119,655,113,657,113,661,111,667,112,675,115,676,115,682,112,684,112,688,109,688,109,685,103,686,96,683,95,678,90,677,82,685,81,688,76,684,75,689,72,693,67,693,69,698,62,696,60,694,54,693,50,681,55,678,53,676,55,673,54,668,55,629,57,589,59,526,93,520,99,520,123,517">
+<area shape="polygon" onMouseOver="mapOnMouseOver('Newport')"  coords="456,553,465,570,477,588,468,592,469,598,468,607,469,610,465,612,463,617,462,626,459,629,455,629,457,625,453,624,452,626,449,622,446,621,443,625,436,627,435,630,432,627,427,628,421,632,419,629,417,621,414,620,415,615,417,615,422,610,426,608,433,600,437,599,435,606,437,609,447,602,453,601,453,591,452,588,447,588,448,585,448,575,447,569,449,564,447,563,447,558,443,557,443,552,447,551,450,554,456,553">
+<area shape="polygon" onMouseOver="mapOnMouseOver('Charlestown')"  coords="200,636,203,635,207,629,210,629,215,632,219,632,222,635,199,719,197,719,198,721,198,724,193,724,193,720,188,721,186,718,181,719,181,715,182,711,181,708,174,707,175,713,178,715,174,717,174,724,170,730,167,730,166,734,160,734,152,731,145,730,138,737,136,740,139,749,147,745,158,742,170,737,173,734,179,735,177,728,181,728,185,730,185,736,173,739,146,748,138,752,129,759,121,763,118,755,124,753,124,750,127,744,127,740,123,740,120,742,113,748,110,747,109,688,112,688,112,684,115,682,115,676,112,675,111,667,113,661,113,657,119,655,121,649,129,648,133,653,137,650,141,650,147,647,146,646,150,639,150,636,153,633,156,623,158,619,165,622,172,621,176,626,177,632,184,636,190,633,194,634,195,637,200,636">
+<area shape="polygon" onMouseOver="mapOnMouseOver('New Shoreham')"  coords="448,702,448,705,445,715,442,719,440,725,438,736,440,742,445,748,448,748,451,756,456,758,457,761,455,770,452,772,443,773,438,775,435,775,429,776,425,775,416,778,409,777,400,771,399,763,401,759,401,755,405,739,411,736,415,730,417,720,420,725,417,729,418,731,421,730,424,736,426,738,435,739,434,735,435,731,431,727,432,724,432,717,423,721,420,719,425,717,426,713,429,704,430,692,432,688,436,691,442,692,448,702">
+<area shape="polygon" onMouseOver="mapOnMouseOver('Barrington')"  coords="447,270,477,287,476,293,474,296,475,301,474,310,473,314,473,318,471,319,465,309,462,307,458,307,454,301,451,301,451,296,454,292,461,293,464,289,463,285,457,282,454,284,450,280,451,279,447,270">
+<area shape="polygon" onMouseOver="mapOnMouseOver('Barrington')"  coords="423,298,447,276,449,290,447,292,447,298,455,308,461,311,465,311,469,320,473,321,475,325,474,329,468,335,465,339,466,345,464,350,460,346,459,342,461,334,456,331,449,329,433,329,432,325,431,316,428,315,425,309,422,306,423,298">
+<area shape="polygon" onMouseOver="mapOnMouseOver('Narragansett')"  coords="343,573,366,573,365,577,366,594,368,596,368,607,366,610,365,607,358,608,359,619,361,622,362,626,358,629,356,637,352,640,347,639,341,631,343,619,342,616,344,611,343,607,344,595,344,579,343,573">
+<area shape="polygon" onMouseOver="mapOnMouseOver('Narragansett')"  coords="307,654,314,648,323,643,326,643,329,640,334,638,336,639,339,634,341,632,345,640,344,643,338,648,337,661,339,665,339,677,332,685,331,691,326,693,322,701,321,705,314,719,317,727,315,730,310,728,301,717,291,714,289,712,292,709,291,705,302,706,302,704,308,695,307,689,304,688,306,679,303,679,302,672,307,666,305,657,307,654">
+<area shape="polygon" onMouseOver="mapOnMouseOver('Portsmouth')"  coords="521,561,495,534,482,524,465,508,470,498,476,495,478,489,476,482,479,478,479,474,482,473,483,469,488,457,488,449,486,444,489,439,495,438,497,436,499,430,507,423,517,424,521,421,522,418,527,415,530,405,532,407,530,411,532,415,535,424,532,426,530,425,523,428,520,428,516,432,517,434,524,435,526,439,515,445,515,459,512,472,513,481,518,491,519,502,517,509,518,516,520,519,519,527,519,530,518,536,519,540,526,545,521,561">
+
+<area shape="polygon" onMouseOver="mapOnMouseOver('Portsmouth')"  coords="436,420,437,417,434,414,429,420,437,428,441,430,451,432,455,436,459,438,462,445,462,458,461,465,457,473,452,484,444,489,439,487,436,481,435,472,438,460,441,457,441,454,443,448,445,440,441,436,430,431,426,432,423,429,421,414,427,407,424,400,426,398,426,394,429,392,430,398,435,403,434,410,439,417,436,420">
+
+<area shape="polygon" onMouseOver="mapOnMouseOver('South Kingstown')"  coords="197,726,197,725,198,724,198,721,199,719,222,635,219,632,215,632,210,629,217,624,220,618,219,615,213,603,217,600,215,593,210,590,210,581,211,574,210,571,207,549,249,563,275,572,294,576,308,580,334,578,340,576,342,580,342,586,344,588,343,603,342,608,343,611,339,618,341,622,339,628,333,633,328,640,323,643,314,648,307,654,299,662,293,664,294,668,290,671,295,675,290,679,291,683,289,689,287,690,287,698,284,702,277,702,275,699,271,690,267,690,267,694,272,694,273,698,272,703,269,704,267,701,266,714,273,712,273,710,278,705,283,704,282,709,284,709,284,710,283,710,282,712,276,712,268,716,261,715,254,716,229,722,219,726,204,728,196,730,197,726">
+<area shape="polygon" onMouseOver="mapOnMouseOver('Warwick')"  coords="346,396,301,397,300,379,299,360,285,361,290,349,296,344,303,342,306,337,308,337,309,333,312,328,313,321,337,321,339,319,339,316,341,312,346,312,344,302,350,299,352,291,357,291,363,288,365,285,371,287,373,284,383,281,386,282,387,286,391,285,398,302,397,305,402,307,399,313,391,316,395,323,399,327,402,332,410,337,419,337,411,343,412,354,411,362,413,366,412,369,407,373,405,377,405,386,401,393,392,387,390,378,392,375,390,368,392,361,399,358,397,357,390,360,391,362,387,368,388,373,382,373,379,368,376,370,377,373,368,374,363,372,358,372,354,370,350,371,347,369,349,366,344,361,339,360,340,364,344,365,342,370,342,375,346,386,344,388,346,396">
+<area shape="polygon" onMouseOver="mapOnMouseOver('Warwick')"  coords="344,424,343,430,340,434,334,424,331,424,326,428,326,424,329,424,329,419,335,412,336,414,339,414,343,409,346,407,349,401,350,392,355,393,362,388,366,393,376,397,375,404,363,405,358,410,357,409,350,414,344,424">
+<area shape="polygon" onMouseOver="mapOnMouseOver('Westerly')"  coords="54,668,55,673,53,676,55,678,50,681,54,693,60,694,62,696,69,698,67,693,72,693,75,689,76,684,81,688,82,685,90,677,95,678,96,683,103,686,109,685,109,688,110,747,110,748,110,749,110,760,110,762,100,764,91,768,82,765,81,760,78,756,75,758,72,758,69,755,60,761,55,760,45,764,44,771,52,766,59,768,61,764,68,762,73,761,76,763,79,758,82,765,76,765,58,770,50,771,36,775,24,779,4,789,2,785,4,783,2,781,5,774,10,775,11,771,16,769,12,765,22,758,23,756,27,758,27,754,30,749,27,745,30,742,27,737,22,734,21,726,21,723,25,719,25,714,26,709,24,706,25,701,20,696,17,691,19,685,16,679,17,674,19,673,23,673,31,670,35,665,42,665,51,669,54,668">
+</map>
+
+</body></html>

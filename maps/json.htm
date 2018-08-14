@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+   <script type="text/javascript">
+
+
+var jdata;
+var keys = new Array();
+
+function parsej (data) {
+    jdata = data;
+    for (var key in jdata[0]) {
+			keys.push(key);
+//			alert(key);
+
+	}
+}
+
+function getData(district) {
+
+	for (var row in jdata) {
+		if (jdata[row]['District'] == district) {
+			var html="";
+			for (var key in keys) {
+				if (html.length > 0)
+					html += "<br/>";
+				html+=keys[key] + ": " + jdata[row][keys[key]];
+			}
+			return html;
+		}
+	}
+
+
+
+
+}
+
+</script>
+
+
+
+<script type="text/javascript">
+
+jdata = [{"District":"1","Candidates":"RICHARD P CORSO  (I), MARYELLEN  GOODWIN  (D)","Count":"2","Communities":" Providence"},{"District":"2","Candidates":"ROBERT WEBB KENNY III (R), JUAN M PICHARDO  (D), LUIS  PIMENTEL  (D)","Count":"3","Communities":" Providence"},{"District":"3","Candidates":"STEPHEN L JAGOLINZER  (I), MORRIS J MARKOVITZ  (R), RHODA E PERRY  (D), MIRIAM ANN ROSS  (I)","Count":"4","Communities":" Providence"},{"District":"4","Candidates":"RAYMOND A DE STEFANIS  (D), THOMAS J ROSSI  (I), DOMINICK J RUGGERIO  (D), RAYMOND A DE STEFANIS  (D), THOMAS J ROSSI  (I), DOMINICK J RUGGERIO  (D)","Count":"3","Communities":" Providence,  North Providence"},{"District":"5","Candidates":"PAUL V JABOUR  (D)","Count":"1","Communities":" Providence"},{"District":"6","Candidates":"MARIO  MANCEBO  (D), HAROLD M METTS  (D)","Count":"2","Communities":" Providence"},{"District":"7","Candidates":"FRANK A CICCONE III (D), CATHERINE E GRAZIANO  (I), FRANK A CICCONE III (D), CATHERINE E GRAZIANO  (I)","Count":"2","Communities":" Providence,  North Providence"},{"District":"8","Candidates":"JAMES E DOYLE II (D)","Count":"1","Communities":" Pawtucket"},{"District":"9","Candidates":"WILLIAM JOSEPH ANDERSON  (I), PETER F CALCI JR (D), MICHAEL J PINGA  (D)","Count":"3","Communities":" West Warwick"},{"District":"10","Candidates":"VIRGINIA L BUTTERWORTH  (R), WALTER S FELAG JR (D), VIRGINIA L BUTTERWORTH  (R), WALTER S FELAG JR (D), VIRGINIA L BUTTERWORTH  (R), WALTER S FELAG JR (D)","Count":"2","Communities":" Bristol,  Tiverton,  Warren"},{"District":"11","Candidates":"CHARLES J LEVESQUE  (D), CHRISTOPHER SCOTT OTTIANO  (R), CHARLES J LEVESQUE  (D), CHRISTOPHER SCOTT OTTIANO  (R)","Count":"2","Communities":" Bristol,  Portsmouth"},{"District":"12","Candidates":"LOUIS P DIPALMA  (D), LOUIS P DIPALMA  (D), LOUIS P DIPALMA  (D), LOUIS P DIPALMA  (D)","Count":"1","Communities":" Little Compton,  Middletown,  Newport,  Tiverton"},{"District":"13","Candidates":"GEOFFREY WILLIAM COOK  (R), M TERESA PAIVA-WEED  (D), GEOFFREY WILLIAM COOK  (R), M TERESA PAIVA-WEED  (D)","Count":"2","Communities":" Jamestown,  Newport"},{"District":"14","Candidates":"DANIEL  DA PONTE  (D), DAVID  SULLIVAN  (R), DANIEL  DA PONTE  (D), DAVID  SULLIVAN  (R), DANIEL  DA PONTE  (D), DAVID  SULLIVAN  (R)","Count":"2","Communities":" East Providence,  Providence,  Pawtucket"},{"District":"15","Candidates":"MARC PHILIP DOUGHTY  (I), JOHN F MCBURNEY III (D)","Count":"2","Communities":" Pawtucket"},{"District":"16","Candidates":"BRANDON F BROWN  (I), ERNEST J CABRAL  (R), ELIZABETH A CROWLEY  (D), HIPOLITO E FONTES  (D), DANIEL J ISSA  (D), BRANDON F BROWN  (I), ERNEST J CABRAL  (R), ELIZABETH A CROWLEY  (D), HIPOLITO E FONTES  (D), DANIEL J ISSA  (D), BRANDON F BROWN  (I), ERNEST J CABRAL  (R), ELIZABETH A CROWLEY  (D), HIPOLITO E FONTES  (D), DANIEL J ISSA  (D)","Count":"5","Communities":" Central Falls,  Cumberland,  Pawtucket"},{"District":"17","Candidates":"LOUIS E AZAR  (D), LINDA BUTERA NOBLE  (D), EDWARD J ONEILL  (I), LOUIS E AZAR  (D), LINDA BUTERA NOBLE  (D), EDWARD J ONEILL  (I), LOUIS E AZAR  (D), LINDA BUTERA NOBLE  (D), EDWARD J ONEILL  (I)","Count":"3","Communities":" Lincoln,  North Providence,  Pawtucket"},{"District":"18","Candidates":"FRANK A DEVALL JR (D), STEPHEN M GERLING  (R), JAMES  MILLER  (I), ISADORE S RAMOS  (I)","Count":"4","Communities":" East Providence"},{"District":"19","Candidates":"DANIEL P CONNORS  (D), JOHN J CULLEN  (D), BETHANY L MOURA  (R), ANTHONY M NOBREGA  (D), RYAN WILLIAM PEARSON  (D), DANIEL P CONNORS  (D), JOHN J CULLEN  (D), BETHANY L MOURA  (R), ANTHONY M NOBREGA  (D), RYAN WILLIAM PEARSON  (D)","Count":"5","Communities":" Cumberland,  Lincoln"},{"District":"20","Candidates":"ROGER G JALETTE SR (D), STEVEN T ORSINI  (R), ROGER A PICARD  (D)","Count":"3","Communities":" Woonsocket"},{"District":"21","Candidates":"JOHN R ASSALONE  (I), LEO R BLAIS  (R), ANTHONY J COLALUCA  (D), NICHOLAS D KETTLE  (R), JOHN R ASSALONE  (I), LEO R BLAIS  (R), ANTHONY J COLALUCA  (D), NICHOLAS D KETTLE  (R), JOHN R ASSALONE  (I), LEO R BLAIS  (R), ANTHONY J COLALUCA  (D), NICHOLAS D KETTLE  (R)","Count":"4","Communities":" Coventry,  Foster,  Scituate"},{"District":"22","Candidates":"DAVID B BIBEAULT  (R), JOHN J TASSONI JR (D), DAVID B BIBEAULT  (R), JOHN J TASSONI JR (D)","Count":"2","Communities":" North Smithfield,  Smithfield"},{"District":"23","Candidates":"PAUL W FOGARTY  (D), JULIAN P FORGUE  (R), PAUL W FOGARTY  (D), JULIAN P FORGUE  (R), PAUL W FOGARTY  (D), JULIAN P FORGUE  (R)","Count":"2","Communities":" Burrillville,  Glocester,  North Smithfield"},{"District":"24","Candidates":"MARC A COTE  (D), MARC A COTE  (D)","Count":"1","Communities":" North Smithfield,  Woonsocket"},{"District":"25","Candidates":"JOSEPH P ACCETTURO  (D), MILAN T AZAR  (D), NIKHOL E BENTLEY  (I), JOSEPH A COMELLA  (D), RICHARD R FASCIA  (R), FRANK  LOMBARDO III (D), ERIC B OCONNOR  (I), DENNIS ROBERT PARRILLO  (D), LOUIS M PRATA  (D), ALAN J ROSS  (I), PAUL D SANTILLI  (D), JOHN F VANNER  (D)","Count":"12","Communities":" Johnston"},{"District":"26","Candidates":"SEAN P GATELY  (R), BEATRICE A LANZI  (D)","Count":"2","Communities":" Cranston"},{"District":"27","Candidates":"HANNA M GALLO  (D), EILEEN G GROSSMAN  (R)","Count":"2","Communities":" Cranston"},{"District":"28","Candidates":"DONALD R GENDRON  (R), DELORIS R ISSLER  (D), DELORIS R ISSLER  (I), JOSHUA  MILLER  (D), DONALD A NORMANDIN  (R), ALEXANDER G RUSSOLINO  (I), DONALD R GENDRON  (R), DELORIS R ISSLER  (D), DELORIS R ISSLER  (I), JOSHUA  MILLER  (D), DONALD A NORMANDIN  (R), ALEXANDER G RUSSOLINO  (I)","Count":"6","Communities":" Cranston,  Warwick"},{"District":"29","Candidates":"MICHAEL J MCCAFFREY  (D)","Count":"1","Communities":" Warwick"},{"District":"30","Candidates":"ARMAND T LUSI  (R), WILLIAM A WALASKA  (D)","Count":"2","Communities":" Warwick"},{"District":"31","Candidates":"ERIN P LYNCH  (D)","Count":"1","Communities":" Warwick"},{"District":"32","Candidates":"DAVID E BATES  (R), JIM  HASENFUS  (D), GIRARD R VISCONTI  (I), DAVID E BATES  (R), JIM  HASENFUS  (D), GIRARD R VISCONTI  (I)","Count":"3","Communities":" Barrington,  Bristol"},{"District":"33","Candidates":"FRANK  HYDE  (D), GLENFORD J SHIBLEY  (R), FRANK  HYDE  (D), GLENFORD J SHIBLEY  (R), FRANK  HYDE  (D), GLENFORD J SHIBLEY  (R), FRANK  HYDE  (D), GLENFORD J SHIBLEY  (R)","Count":"2","Communities":" Coventry,  East Greenwich,  Warwick,  West Warwick"},{"District":"34","Candidates":"FRANCIS T MAHER JR (R), JON J SAWYER  (D), FRANCIS T MAHER JR (R), JON J SAWYER  (D), FRANCIS T MAHER JR (R), JON J SAWYER  (D), FRANCIS T MAHER JR (R), JON J SAWYER  (D), FRANCIS T MAHER JR (R), JON J SAWYER  (D)","Count":"2","Communities":" Charlestown,  Exeter,  Hopkinton,  Richmond,  West Greenwich"},{"District":"35","Candidates":"JEAN ANN W GULIANO  (M), DAWSON TUCKER HODGSON  (R), PAUL H MARTIN  (R), MARK  SCHWAGER  (D), JEAN ANN W GULIANO  (M), DAWSON TUCKER HODGSON  (R), PAUL H MARTIN  (R), MARK  SCHWAGER  (D), JEAN ANN W GULIANO  (M), DAWSON TUCKER HODGSON  (R), PAUL H MARTIN  (R), MARK  SCHWAGER  (D)","Count":"4","Communities":" East Greenwich,  North Kingstown,  Warwick"},{"District":"36","Candidates":"WILLIAM J CONNELLY  (R), MICHAEL G RILEY  (R), JAMES C SHEEHAN  (D), WILLIAM J CONNELLY  (R), MICHAEL G RILEY  (R), JAMES C SHEEHAN  (D)","Count":"3","Communities":" Narragansett,  North Kingstown"},{"District":"37","Candidates":"KEVIN R ONEILL  (I), V SUSAN SOSNOWSKI  (D), KEVIN R ONEILL  (I), V SUSAN SOSNOWSKI  (D)","Count":"2","Communities":" New Shoreham,  South Kingstown"},{"District":"38","Candidates":"DENNIS L ALGIERE  (R), DENNIS L ALGIERE  (R)","Count":"1","Communities":" Charlestown,  Westerly"}];
+
+parsej(jdata);
+
+</script>
+</head>
+<body>
+	<div id="result">
+
+</div>
+
+
+
+
+
+<script>
+
+
+
+document.getElementById("result").innerHTML = getData(25);
+
+</script>
+
+<table>
+
+
+
+
+</body>
+</html>

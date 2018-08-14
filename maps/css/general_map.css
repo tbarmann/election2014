@@ -1,0 +1,126 @@
+
+body {
+	font-family: 'Droid Serif', serif;
+}
+
+.instructions {
+font-size:12px;
+margin-left:50px;
+}
+
+.map_container {
+position:relative;
+
+
+}
+
+
+.map_legend {
+	border-collapse:collapse;
+	font-family:arial;
+	font-size:10px;
+	left:450px;
+	top:40px;
+	padding: 3px;
+	position: absolute;
+	z-index: 1;
+	border:1px solid #999999;
+}
+
+.map_legend td {
+	border:0px solid #000000;
+	padding:4px;
+	font-family: arial;
+	font-size: 10px;
+}
+
+
+.map_legend_heading {
+	margin-top:20px;
+	font-size:10px;
+	font-family: arial;
+}
+
+.color_box {
+	width:20px;
+	height:20px;
+	border:1px solid #000000;
+}
+
+.map_label {
+	color: #ffffff;
+  	letter-spacing: 1px;
+  	position: absolute;
+  	text-shadow: 1px 1px 1px #000000;
+  	text-transform: uppercase;
+  	z-index: 100;
+}
+
+
+
+#label_div {
+	font-family:arial;
+	font-size:10px;
+	position:absolute;
+	top:0;
+	left:-30px;
+	white-space:wrap;
+	display:none; 
+	}
+
+/*
+.tip_table { border-collapse:collapse;border:0;background-color:#FFFFFF; border-color:#999999; padding:5px;}
+.tip_table td {border:1px solid #999999;padding:3px;font-size:9px;}
+.tip_table tr.even { background-color:#BDEEFC;}
+
+.tip_box_town_name {
+text-align:center;
+margin-bottom:3px;
+}
+*/
+.credit {
+font-family:arial;
+font-size:10px;
+text-transform:uppercase;
+text-align:right;
+float:right;
+}
+.source {
+font-family:arial;
+font-size:10px;
+float:left;
+}
+
+.map, .map_image {
+position:absolute;
+top:0;
+left:0;
+
+}
+
+.tt_container {
+width:300px;
+}
+
+#town-header h3 {
+margin-top:0;
+margin-bottom:0;
+}
+
+.races_updated {
+	font-size:10px;
+	float:right;
+	margin-right:20px;
+	margin-bottom:5px;
+}
+
+.candidate-even, .candidate-odd {
+	font-size:12px;
+
+}
+
+.candidates-header-large h4 {
+	margin-top:0;
+	margin-bottom:5px;
+}
+

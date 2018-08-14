@@ -1,0 +1,77 @@
+var prov_ward_demographics = [
+  {
+    "ward":1,
+    "neighborhoods":"Fox Point, Downtown",
+    "demographics":" 69% white, 15% Asian, 9% Hispanic"
+  },
+  {
+    "ward":2,
+    "neighborhoods":"Blackstone, Wayland, College Hill",
+    "demographics":" 76% white, 14% Asian, 5% Hispanic"
+  },
+  {
+    "ward":3,
+    "neighborhoods":"Hope, Mount Hope",
+    "demographics":" 70% white, 11% black, 7% Hispanic"
+  },
+  {
+    "ward":4,
+    "neighborhoods":"Charles, Wanskuck",
+    "demographics":" 44% white, 30% Hispanic, 17% black"
+  },
+  {
+    "ward":5,
+    "neighborhoods":"Mt. Pleasant, Elmhurst",
+    "demographics":" 66% white, 18% Hispanic, 10% black"
+  },
+  {
+    "ward":6,
+    "neighborhoods":"Mt. Pleasant, Olneyville",
+    "demographics":" 50% Hispanic, 25% white, 17% black"
+  },
+  {
+    "ward":7,
+    "neighborhoods":"Hartford, Silver Lake",
+    "demographics":" 58% Hispanic, 27% white, 9% black"
+  },
+  {
+    "ward":8,
+    "neighborhoods":"Reservoir, West End",
+    "demographics":" 52% Hispanic, 17% white, 14% black, 13% Asian"
+  },
+  {
+    "ward":9,
+    "neighborhoods":"Elmwood, South Elmwood",
+    "demographics":" 59% Hispanic, 18% black, 14% white"
+  },
+  {
+    "ward":10,
+    "neighborhoods":"Washington Park, Lower South Providence",
+    "demographics":" 45% Hispanic, 26% white, 20% black"
+  },
+  {
+    "ward":11,
+    "neighborhoods":"West End, Upper South Providence",
+    "demographics":" 51% Hispanic, 24% black, 14% white"
+  },
+  {
+    "ward":12,
+    "neighborhoods":"Smith Hill, Valley",
+    "demographics":" 44% white, 29% Hispanic, 14% black"
+  },
+  {
+    "ward":13,
+    "neighborhoods":"Federal Hill, West End",
+    "demographics":" 49% white, 30% Hispanic, 10% black"
+  },
+  {
+    "ward":14,
+    "neighborhoods":"Elmhurst, Wanskuck",
+    "demographics":" 65% white, 16% Hispanic, 13% black"
+  },
+  {
+    "ward":15,
+    "neighborhoods":"Olneyville, Silver Lake",
+    "demographics":" 63% Hispanic, 21% white, 10% black"
+  }
+];

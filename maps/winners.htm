@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
+<script type="text/javascript" src="../election-results/election_results_widget2.js"></script>
+<script type="text/javascript" src="http://res.providencejournal.com/politics/general/2012/assets/election-results/ga_senator.json"></script>
+<script type="text/javascript" src="http://res.providencejournal.com/politics/general/2012/assets/election-results/ga_representative.json"></script>
+<script type="text/javascript" src="../election-results/statewide.json"></script>
+<script type="text/javascript" src="http://res.providencejournal.com/politics/general/2012/assets/election-results/lincoln.json"></script>
+<script type="text/javascript" src="http://res.providencejournal.com/politics/general/2012/assets/election-results/newport.json"></script>
+<script type="text/javascript" src="http://res.providencejournal.com/politics/general/2012/assets/election-results/central_falls.json"></script>
+
+
+
+</head>
+
+<body>
+
+<script type="text/javascript">
+
+function listGAWinners () {
+
+	all_races = get_race_numbers(ga_senator);
+
+	for (var x=0; x<all_races.length;x++) {
+		results = get_results_by_race(all_races[x]);
+		document.write(results.name + '|' + results.candidates[0].name.toTitleCase() + '|' + results.candidates[0].party_code + '<br />');
+	}
+
+	all_races = get_race_numbers(ga_representative);
+
+	for (var x=0; x<all_races.length;x++) {
+		results = get_results_by_race(all_races[x]);
+		document.write(results.name + '|' + results.candidates[0].name.toTitleCase() + '|' + results.candidates[0].party_code + '<br />');
+	}
+
+}
+
+
+listGAWinners();
+
+
+</script>
+
+</body>
+</html>

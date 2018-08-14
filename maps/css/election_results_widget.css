@@ -1,0 +1,161 @@
+.pj_election_widget tr.even {
+background-color:#EEEEEE;
+}
+
+
+.pj_election_widget {
+border-spacing:0;
+border-collapse: collapse;
+font-size:11px;
+font-family:arial;
+width:270px;
+float:left;
+margin-right:10px;
+margin-bottom:10px;
+}
+
+
+
+.pj_election_widget td {
+
+border-right:1px solid #999999;
+border-bottom:1px solid #999999;
+border-left:1px solid #999999;
+}
+
+
+.pj_election_widget .title_text {
+
+text-align:center;
+z-index:100;
+font-color:#000000;
+
+
+}
+
+.pj_election_widget .title {
+text-align:center;
+opacity:1.00;
+font-color:#000000;
+}
+
+.pj_election_widget tr.race_heading {
+width:100%;
+font-size:12px;
+height:25px;
+color:white;
+background-image:url('flag_bar6.png');
+filter:alpha(opacity=20);
+opacity:5.00;
+text-align:center;
+
+}
+
+.pj_election_widget .center {
+text-align:center;
+
+}
+
+
+.pj_election_widget.election_row {
+border-bottom:1px solid #999999;
+
+}
+
+.pj_election_widget .update_row {
+border-bottom:0;
+border-left:0;
+border-right:0;
+font-size:9px;
+}
+
+.pj_election_widget .update_row td{
+border-bottom:0;
+border-left:0;
+border-right:0;
+text-align:right;
+}
+
+
+
+/* ------------------------- */
+
+.pj_election_widget_tip tr.even {
+background-color:#EEEEEE;
+}
+
+
+
+
+.pj_election_widget_tip {
+border-spacing:0;
+border-collapse: collapse;
+font-size:11px;
+font-family:arial;
+width:220px;
+float:left;
+margin-right:0px;
+margin-bottom:0px;
+}
+
+
+
+.pj_election_widget_tip td {
+
+border-right:1px solid #999999;
+border-bottom:1px solid #999999;
+border-left:1px solid #999999;
+}
+
+
+.pj_election_widget_tip .title_text {
+
+text-align:center;
+z-index:100;
+font-color:#000000;
+
+
+}
+
+.pj_election_widget_tip .title {
+text-align:center;
+opacity:1.00;
+font-color:#000000;
+}
+
+.pj_election_widget_tip tr.race_heading {
+width:100%;
+font-size:12px;
+height:25px;
+color:white;
+background-image:url('flag_bar6.png');
+filter:alpha(opacity=20);
+opacity:5.00;
+text-align:center;
+
+}
+
+.pj_election_widget_tip .center {
+text-align:center;
+
+}
+
+
+.pj_election_widget_tip.election_row {
+border-bottom:1px solid #999999;
+
+}
+
+.pj_election_widget_tip .update_row {
+border-bottom:0;
+border-left:0;
+border-right:0;
+font-size:9px;
+}
+
+.pj_election_widget_tip .update_row td{
+border-bottom:0;
+border-left:0;
+border-right:0;
+text-align:right;
+}

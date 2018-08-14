@@ -1,0 +1,162 @@
+<html>
+<head>
+
+<script type="text/javascript" src="http://res.providencejournal.com/global-assets/scripts/jquery-1.8.3.js"></script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<style type="text/css" media="screen">
+table, td, th {
+border:1px solid #999999;
+border-spacing:0;
+border-collapse:collapse;
+
+}
+
+td, tr {
+padding:0 5px 0 5px;
+
+}
+
+</style>
+
+
+
+<script type="text/javascript" src="election_results_widget.js"></script>
+<script type="text/javascript" src="http://res.providencejournal.com/politics/election2014/results/primary/ga_senator.json"></script>
+<script type="text/javascript" src="http://res.providencejournal.com/politics/election2014/results/primary/ga_representative.json"></script>
+<script type="text/javascript" src="http://res.providencejournal.com/politics/election2014/results/primary/statewide.json"></script>
+<script type="text/javascript" src="http://res.providencejournal.com/politics/election2014/results/primary/gov_dem_by_town.json"></script>
+
+<body>
+
+<div id="output"></div>
+
+
+<script type="text/javascript">
+
+var races = [{data:ga_senator,title:'General Assembly - Senate primary races'},
+			{data:ga_representative,title:'General Assembly - Representative primary races'},
+			{data:statewide,title:'Statewide primary races'}];
+
+
+function list_races () {
+	var html = "";
+
+	$.each(races,function(){
+		var all_races = new Array();
+		all_races = get_race_numbers(this.data);
+		html += '<h2>' + this.title + '</h2>';
+		html+='<table>';
+		html+='<tr><th>Race #</th><th>Race</th><th>Party</th><th>Candidates</th></tr>';
+		for (var x=0; x<all_races.length;x++) {
+			results = get_results_by_race(this.data,all_races[x]);
+			if (results.candidates.length > 1) {
+				html+='<tr>';
+				html+='<td>' + results.contest_number + '</td>';
+				html+='<td>' + results.name + '</td>';
+				html+='<td>' + results.contest_party_designation + '</td>';
+				html+='<td>' + results.candidates.length + '</td>';
+				html+='</tr>';
+			}
+		}
+		html +='</table>';
+	});
+	$('#output').append(html);
+}
+
+
+function listGAWinners () {
+
+	all_races = get_race_numbers(ga_senator);
+
+	for (var x=0; x<all_races.length;x++) {
+	results = get_results_by_race(ga_senator,all_races[x]);
+	$('#output').append(results.name + ' ' + results.candidates[0].name + ': ' + results.candidates[0].party_code + '<br />');
+	}
+
+	all_races = get_race_numbers(ga_representative);
+
+	for (var x=0; x<all_races.length;x++) {
+	results = get_results_by_race(ga_representative,all_races[x]);
+	$('#output').append(results.name + ' ' + results.candidates[0].name + ': ' + results.candidates[0].party_code + '<br />');
+	}
+
+
+
+
+
+}
+
+
+function showAllWidgets() {
+	var html;
+
+	$.each(races,function(){
+		var race_numbers = get_race_numbers(this.data);
+		var outerthis = this;
+		$.each(race_numbers,function(){
+			var results = get_results_by_race(outerthis.data,this);
+			html += showResultsTable(results);
+		});
+	});
+	$('#output').append(html);
+
+}
+
+
+//var race = getSenateRaceNumber(8);
+//var results = get_results_by_race(ga_senator,race);
+//document.write(showResultsTable(results));
+
+//
+//var this_town;
+//	for (var this_town in all_towns_103) {
+//		results = get_results_by_race(all_towns_103[this_town],103);
+//		document.write('<div style="float:left;"><div>' + this_town + '</div>');
+//		document.write(showResultsTable(results) );
+//		document.write('</div>');
+//	}
+
+
+//	all_races = get_race_numbers(all_towns_results.bristol);
+//	for (var x=0; x<all_races.length;x++) {
+//		results = get_results_by_race(all_towns_results.bristol,all_races[x]);
+//		document.write(showResultsTable(results) );
+//	}
+
+
+list_races();
+
+
+	//	results = get_results_by_race(statewide,102);
+	//	document.write(showResultsTable(results));
+
+/*
+all_races = get_race_numbers(statewide);
+
+	for (var x=0; x<all_races.length;x++) {
+		var results = get_results_by_race(statewide,all_races[x]);
+		document.write(showResultsTable(results) );
+	}
+*/
+
+//listGAWinners();
+
+
+showAllWidgets();
+
+</script>
+
+
+
+
+
+
+
+</body>
+
+
+
+
+</html>

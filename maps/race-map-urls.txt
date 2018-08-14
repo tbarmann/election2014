@@ -1,0 +1,10 @@
+http://res.providencejournal.com/politics/election2014/results/primary/maps/gen_treas_results_dem_map.htm
+http://res.providencejournal.com/politics/election2014/results/primary/maps/gov_results_dem_map.htm
+http://res.providencejournal.com/politics/election2014/results/primary/maps/gov_results_dem_map460.htm
+http://res.providencejournal.com/politics/election2014/results/primary/maps/gov_results_rep_map.htm
+http://res.providencejournal.com/politics/election2014/results/primary/maps/gov_results_rep_map_460.htm
+http://res.providencejournal.com/politics/election2014/results/primary/maps/lt_gov_results_dem_map.htm
+http://res.providencejournal.com/politics/election2014/results/primary/maps/lt_gov_results_rep_map.htm
+http://res.providencejournal.com/politics/election2014/results/primary/maps/rep_congress1_results_dem_map.htm
+http://res.providencejournal.com/politics/election2014/results/primary/maps/rep_congress1_results_rep_map.htm
+http://res.providencejournal.com/politics/election2014/results/primary/maps/sec_state_results_dem_map.htm

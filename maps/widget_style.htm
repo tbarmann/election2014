@@ -1,0 +1,184 @@
+<html>
+<head>
+<style type="text/css">
+</style>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+<link href="http://res.providencejournal.com/politics/primary/assets/styles/primary.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+
+<script type="text/javascript">
+
+function isEven(x) { return (x%2)?false:true; }
+function isOdd(x)  { return (x%2)?true:false; }
+
+String.prototype.toTitleCase = function() {
+    var i, str, lowers, uppers;
+    str = this.replace(/\w\S*/g, function(txt) {
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+    });
+
+    // Certain minor words should be left lowercase unless
+    // they are the first or last words in the string
+    lowers = ['A', 'An', 'The', 'And', 'But', 'Or', 'For', 'Nor', 'As', 'At',
+    'By', 'For', 'From', 'In', 'Into', 'Near', 'Of', 'On', 'Onto', 'To', 'With'];
+    for (i = 0; i < lowers.length; i++)
+        str = str.replace(new RegExp('\\s' + lowers[i] + '\\s', 'g'),
+            function(txt) {
+                return txt.toLowerCase();
+            });
+
+    // Certain words such as initialisms or acronyms should be left uppercase
+    uppers = ['Id','I','II','III','IV'];
+    for (i = 0; i < uppers.length; i++)
+        str = str.replace(new RegExp('\\b' + uppers[i] + '\\b', 'ig'),
+            uppers[i].toUpperCase());
+
+    str.replace( /\b((m)(a?c))?([a-zA-Z])/gi,
+          function($1, $2, $3, $4, $5) { if($2){return $3.toUpperCase()+$4+$5.toUpperCase();} return $1.toUpperCase(); });
+
+    return str;
+}
+
+function showResultsTableTipNew(results) {
+
+var race_class = (results.contest_party_designation == 'DEM') ? 'democrat' : 'republican';
+var pct_precincts = (results.precincts_reporting > 0) ? (results.precincts_count/results.precincts_reporting) * 100 : 0;
+
+var html = '<div id="town-header-container">\
+		<div id="town-header">\
+			<h3>' +  results.town + '</h3></div></div>\
+	<div class="key-races"> \
+   <div id="race-header" class="' + race_class + '"> \
+      <h3>' + results.name.toTitleCase() + '</h3> \
+   </div> \
+   <div id="prec-container"> \
+      <div id="prec-header"><strong>Precincts</strong></div> \
+      <div id="prec-header"><strong>Reported</strong></div> \
+      <div id="prec-header"><strong>Percent</strong></div> \
+      <div style="clear: both;"></div> \
+      <div id="prec-content">' + results.precinct_count + '</div> \
+      <div id="prec-content">' + results.precincts_reporting + '</div>\
+      <div id="prec-content">' + pct_precincts + '%</div>\
+      <div style="clear: both;"></div>\
+   </div>\
+   <div class="candidates-header-container" style="padding-top: 10px;">\
+      <div class="candidates-header-large">\
+         <h4>CANDIDATES</h4>\
+      </div>\
+      <div class="candidates-header">Total</div>\
+      <div class="candidates-header">Pct</div>\
+      <div style="clear: both;"></div>\
+   </div>';
+
+
+	for (var row=0;row<results.candidates.length;row++) {
+		var candidate_class = 'candidate-' + ((row%2==0) ? 'odd ' : 'even ');
+		var pct_votes = (results.total_votes > 0) ? (results.candidate[row].votes / results.total_votes) * 100 : 0;
+		html+='<div class="' + candidate_class + '">';
+		html+='<div class="' + candidate_class;
+		html += 'candidate-col-one">' + results.candidates[row].name.toTitleCase();
+		html += ' <span style="font-size: 12px;">(' + results.candidates[row].party_code.toTitleCase() + ')</span></div>';
+     	html += '<div class="' + candidate_class + ' candidate-col-TT">' + results.candidates[row].votes + '</div>';
+        html += '<div class="' + candidate_class + ' candidate-col-TT">' + pct_votes + '%</div>';
+	    html += '<div style="clear: both;"></div>';
+   		html += '</div>';
+
+   	}
+   	html += '</div>';
+   	html+='<div style="font-size:12px;float:right;">Updated: ';
+	html+=results.last_updated;
+	html+='</div>';
+
+   	return html;
+}
+
+var results =         {
+            "name":"GOVERNOR",
+            "contest_number":"103",
+            "contest_party_designation":"DEM",
+            "total_votes":"0",
+            "votes_allowed":"1",
+            "candidates":[
+               {
+                  "name":"Gina M. RAIMONDO",
+                  "party_code":"DEM",
+                  "votes":"30"
+               },
+               {
+                  "name":"Todd GIROUX",
+                  "party_code":"DEM",
+                  "votes":"20"
+               },
+               {
+                  "name":"Angel TAVERAS",
+                  "party_code":"DEM",
+                  "votes":"12"
+               },
+               {
+                  "name":"H. Claiborne PELL",
+                  "party_code":"DEM",
+                  "votes":"10"
+               }
+            ]
+         };
+
+document.write(showResultsTableTip(results));
+
+</script>
+
+
+<div class="key-races">
+   <div id="race-header" class="democrat">
+      <h3>Governor</h3>
+   </div>
+   <div id="prec-container">
+      <div id="prec-header"><strong>Precincts</strong></div>
+      <div id="prec-header"><strong>Reported</strong></div>
+      <div id="prec-header"><strong>Percent</strong></div>
+      <div style="clear: both;"></div>
+      <div id="prec-content">411</div>
+      <div id="prec-content">0</div>
+      <div id="prec-content">0%</div>
+      <div style="clear: both;"></div>
+   </div>
+   <div class="candidates-header-container" style="padding-top: 10px;">
+      <div class="candidates-header-large">
+         <h4>CANDIDATES</h4>
+      </div>
+      <div class="candidates-header">Total</div>
+      <div class="candidates-header">Pct</div>
+      <div style="clear: both;"></div>
+   </div>
+   <div class="candidate-odd">
+      <div class="candidate-odd candidate-col-one">Gina M. Raimondo <span style="font-size: 12px;">(Dem)</span></div>
+      <div class="candidate-odd candidate-col-TT">0</div>
+      <div class="candidate-odd candidate-col-TT">0%</div>
+      <div style="clear: both;"></div>
+   </div>
+   <div class="candidate-even">
+      <div class="candidate-even candidate-col-one">Todd Giroux <span style="font-size: 12px;">(Dem)</span></div>
+      <div class="candidate-even candidate-col-TT">0</div>
+      <div class="candidate-even candidate-col-TT">0%</div>
+      <div style="clear: both;"></div>
+   </div>
+   <div class="candidate-odd">
+      <div class="candidate-odd candidate-col-one">Angel Taveras <span style="font-size: 12px;">(Dem)</span></div>
+      <div class="candidate-odd candidate-col-TT">0</div>
+      <div class="candidate-odd candidate-col-TT">0%</div>
+      <div style="clear: both;"></div>
+   </div>
+   <div class="candidate-even">
+      <div class="candidate-even candidate-col-one">H. Claiborne Pell <span style="font-size: 12px;">(Dem)</span></div>
+      <div class="candidate-even candidate-col-TT">0</div>
+      <div class="candidate-even candidate-col-TT">0%</div>
+      <div style="clear: both;"></div>
+   </div>
+</div>
+
+
+
+
+</body>
+</html>

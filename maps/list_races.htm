@@ -1,0 +1,31 @@
+<html>
+<head>
+
+<style type="text/css" media="screen">
+table, td {
+border:1px 1px;
+}
+</style>
+
+<script type="text/javascript" src="http://res.providencejournal.com/politics/election2014/results/general/statewide.json"></script>
+<script type="text/javascript" src="http://res.providencejournal.com/global-assets/scripts/jquery-1.8.3.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var races = statewide.contests;
+		var html = '<table>';
+		$.each(races,function(){
+			html += '<tr><td>' + this.name + '</td><td>' + this.contest_number + '</td></tr>';
+		});
+		html += '</table>';
+		$('#output').html(html);
+	});
+
+</script>
+
+</head>
+<body>
+
+<div id="output"></div>
+
+</body>
+</html>

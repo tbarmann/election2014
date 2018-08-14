@@ -1,0 +1,796 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,700);
+
+#results-content-container {
+	/* border: 1px solid #e6e7e8; */
+}
+.general-election #results-content-container {
+	margin-right: 0;
+	margin-left: 0;
+	width: 620px;
+}
+#results-parent {
+	width: 450px;
+	float: left;
+	position: relative;
+	/* margin-left: 235px; */
+}
+.races-right {
+	float: right;
+}
+.races-left {
+	float: left;
+}
+#race-header {
+	color: #fff;
+	font-size: 18px;
+	height: 60px;
+}
+.general-election #race-header {
+	height: auto;
+}
+ .general-election #town-header h3, #race-header h3 {
+	font-size: 18px;
+	font-weight: bold;
+	font-family: 'Droid serif';
+	line-height: 20px;
+	padding-left: 68px;
+	color: #0076b4;
+	background-color: transparent;
+}
+#race-header.democrat {
+	background: url("http://res.providencejournal.com/politics/assets/images/donkey-new.png") no-repeat left;
+	background-color: #fff;
+}
+#race-header.republican {
+	background: url("http://res.providencejournal.com/politics/assets/images/elephant-new.png") no-repeat left;
+	background-color: #fff;
+}
+#town-header h3 {
+	font-size: 22px;
+	font-weight: bold;
+	font-family: "Times New Roman";
+	line-height: 24px;
+	letter-spacing: 0.1em;
+}
+.candidates-header {
+	padding-bottom: 5px;
+	text-decoration: underline;
+	font-weight: bold;
+	font-family: "Times New Roman";
+}
+.races-disclaimer {
+	padding: 15px 15px 15px 10px;
+	font-size: 12px;
+}
+#election-results {
+	/* width: inherit; */
+}
+#prec {
+	padding-top: 5px;
+}
+.candidate-odd {
+	background-color: #eee;
+}
+.candidate-even {
+	background-color: transparent;
+	margin: 1px 0;
+}
+.candidate-odd, .candidate-even {
+	font-size: 14px;
+	line-height: 22px;
+	padding: 0 5px 0 2px;
+}
+.candidate-col-one {
+	float: left;
+	width: 55%;
+	text-align: left;
+}
+#race-child-list .candidate-col-one {
+	width: 56%;
+}
+.candidate-col-TT {
+	float: left;
+	text-align: right;
+	width: 18%;
+}
+#race-child-list .candidate-col-TT {
+	width: 20%;
+}
+#race-main-list, #race-main-list .short-light-grey-bg-fade {
+	width: 620px;
+}
+#race-main-map, #race-main-map .short-light-grey-bg-fade {
+	position: relative;
+	width: 620px;
+}
+.general-election #race-main-map {
+	width: 620px;
+	min-height: 600px;
+}
+#race-child-list {
+	width: 425px;
+	margin-left: 25px;
+	margin-top: 15px;
+}
+#race-child-list-rail {
+	position: relative;
+	float: right;
+	width: 33%;
+}
+.general-election #race-child-list-rail {
+	width: 265px;
+	float: left;
+	margin-left:20px;
+}
+#pjc-right-rail {
+	position: relative;
+	float: right;
+	width: 300px;
+}
+#map-side {
+	float: left;
+	width: 66%;
+	padding-top: 10px;
+}
+.general-election #map-side {
+	width: 450px;
+	margin-left: 25px;
+}
+#map-container {
+}
+.key-races, #prec-container-town, #town-header-container {
+	margin: auto;
+	margin-top: 10px;
+	background-color: #fff;
+	width: 91%;
+	border: 1px solid #e6e7e8;
+}
+.general-election #race-main-map #town-header-container {
+	border: 0; 
+	width: 100%;
+}
+.candidates-header-container {
+	padding: 10px 15px 0 2px;
+}
+.candidates-header-large {
+	float:left;
+	width: 60%;
+}
+.candidates-header {
+	float:left;
+	width: 20%;
+	text-align: right;
+}
+#prec-container-town {
+	margin-bottom: 30px;
+}
+#prec-town-header, #prec-town {
+	float: left;
+	width: 33%;
+}
+#prec-town-header {
+	font-weight: bold;
+}
+#prec-content-container {
+	width: 95%;
+	margin: auto;
+	text-align: center;
+}
+#prec-header {
+	float: left;
+	width: 30%;
+}
+#prec-content {
+	float: left;
+	width: 29%;
+	padding-left: 10px;
+}
+.candidates-header, .candidates-header-large h4 {
+	font-size: 13px;
+	line-height: 16px;
+	text-decoration: underline;
+}
+#map-navigation-container {
+	width: 100%;
+	margin-bottom: 20px;
+	background-color: #1b2a47;
+	height: 60px;
+}
+#map-scroll-container {
+	width: 230px;
+	padding: 0 !important;
+}
+#map-nav-president, #map-nav-congress, #map-nav-casino, #map-nav-senate, #map-nav-towns,
+#map-nav-governor, #map-nav-treasurer, #map-nav-secretary, #map-nav-ballot, #map-nav-lgovernor,
+#map-nav-mayor {
+	float: left;
+	display: inline-block;
+	padding: 0 28px;
+	font-size: 15px;
+}
+#map-nav-president a, #map-nav-congress a, #map-nav-casino a, #map-nav-senate a, #map-nav-towns a,
+#map-nav-governor a, #map-nav-treasurer a, #map-nav-secretary a, #map-nav-ballot a, #map-nav-lgovernor a,
+#map-nav-mayor a {
+	color: #fff;
+	display: block;
+	font-family: 'Droid Serif', serif;
+	font-size: 16px;
+	font-weight: normal;
+	padding: 0.6em 0;
+	text-align: center;
+}
+#map-navigation-container div {
+	color: #fff;
+	display: block;
+	font-family: 'Droid Serif', serif;
+	font-size: 15px;
+	font-weight: normal;
+	padding: 20px 27px 0;
+	text-align: center;
+	float: left;
+	border-right: 1px solid #bcbec0;
+	height: 40px;
+}
+.general-election #map-navigation-container div {
+	text-align: left;
+	float: none;
+	border-right: 0;
+}
+#map-navigation-container .last-button {
+	border: 0;
+	width: 122px;
+}
+#map-navigation-container div:hover, .active-button {
+	background-color: #0076b4;
+	height: 40px;
+	position: relative;
+	padding-top: 20px;
+	cursor: pointer;
+}
+#map-navigation-container div:nth-child(-n+2):hover, #map-navigation-container div:nth-child(-n+2) {
+	background-color: #1b2a47;
+	cursor: default;
+	font-size: 21px;
+	letter-spacing: 1px;
+}
+#map-nav-stars {
+	padding: 0 15px 0 !important;
+}
+#map-navigation-container div:active {
+	background-color: #0076b4;
+	height: 40px;
+	position: relative;
+	padding-top: 20px;
+	cursor: pointer;
+}
+#map-navigation-container.general-election div { padding: 10px 15px; }
+#map-nav-president:hover a, #map-nav-congress:hover a, #map-nav-casino:hover a, #map-nav-senate:hover a, #map-nav-towns:hover a, #map-nav-president:active, #map-nav-congress:active a, #map-nav-casino:active a, #map-nav-senate:active a, #map-nav-towns:active a {
+	background-color: #004e77;
+	display: block;
+}
+
+.general-election #map-navigation-container {
+	width: 230px;
+	margin-bottom: 0px;
+	background-color: #1b2a47;
+	float: left;
+	height: 100%;
+	min-height: 700px;
+	position: absolute;
+}
+
+#map-race-title, #casino-status {
+	font-family: 'Droid Serif';
+	font-size: 30px;
+	font-weight: bold;
+	color: #1b2a47;
+	padding: 5px 10px 10px;
+}
+.general-election #map-race-title, #casino-status {
+	width: 620px;
+}
+#casino-status {	
+	font-size: 20px;
+	font-weight: normal;
+}
+a:focus {
+	text-decoration:none;
+	font-weight: bold;
+	color: #1b2a47
+}
+#list-map-view-container a {
+	font-family: 'Droid serif';
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-decoration:none;
+	padding: 5px;
+	color: #0076b4;
+}
+a.default-link {
+	background-color: #0076b4;
+	color: #fff !important;
+}
+#left-content-container {
+	float: left;
+	width: 620px;
+}
+#right-rail-container {
+	display: none;
+	float: right;
+	margin-bottom: 50px;
+	margin-right: 10px;
+	padding-left: 8px;
+	position: relative;
+	top: 150px;
+	width: 300px;
+	min-height: 2150px;
+}
+#list-map-view-container {
+	margin: 10px 10px 0 10px;
+}
+#results-grid, #scribblelive {
+	margin-left: 5px !important;
+}
+.general-election#results-grid {
+	margin-left: 20px !important;
+	width: 500px !important;
+	position: relative;
+	float: left;
+}
+#results-grid .block {
+	padding-bottom: 0 !important;
+}
+.general-election#results-grid .block.grid_12 {
+	margin-left: 0;
+	width: 620px;
+}
+#all-towns-instructions {
+	display: block;
+	z-index: 100;
+	width: 95%;
+	padding: 5px;
+	margin: 0px 0px 10px 10px;
+	line-height: 16px;
+	position: relative;
+	font-size: 10px;
+	top: -24px;
+}
+#casino-headline {
+	width: 95%;
+	padding: 5px;
+	margin: 0 0 10px 10px;
+	font-size: 24px;
+	line-height: 26px;
+	text-align: center;
+	font-family: 'Times New Roman';
+}
+div#race-child-list.full {
+	width: 620px;
+	margin-left: 0;
+}
+#race-child-list.full .candidate-col-one {
+	width: 61%;
+}
+.full .key-races {
+	width: 250px;
+	float: left;
+	margin-right: 3px;
+}
+#race-child-list.full .candidate-col-TT {
+	width: 15%;
+}
+#town-select-label {
+	font-family: 'Droid serif';
+	font-size: 14px;
+	font-weight: bold;
+	color: #0076b4;
+	padding-left: 12px;
+}
+.list-view-header h2, #town-header h3 {
+	color: #fff;
+	font-family: 'Droid serif';
+	font-size: 20px;
+	font-weight: normal;
+	background-color: #1b2a47;
+	padding: 2px 0 2px 10px;
+	line-height: 24px;
+}
+#campaign-banner {
+	border: 1px solid #e6e7e8;
+}
+#election-live-banner-container {
+	margin-top: 10px;
+	float: left;
+}
+#election-homepage #election-results, .general-election #election-results {
+	float: left;
+	position: relative;
+}
+/* Mobile */
+#election-results.mobile-view, .mobile-view #race-main-list {
+	width: 100%;
+}
+.mobile-view #list-map-view-container {
+	display: none;
+}
+.mobile-view #race-child-list {
+	margin: auto;
+	width: 100%;
+}
+.mobile-view #race-child-list .candidate-odd.candidate-col-TT, .mobile-view #race-child-list .candidate-even.candidate-col-TT {
+	width: 18%;
+}
+#mobile-2014-primary-container #results-filter {
+	padding: 15px 15px 0;
+}
+.mobile-view #town-form {
+	box-shadow: 0 1px 3px rgba(0,0,0,.2);
+	background-clip: padding-box;
+	display: block;
+	position: relative;
+	opacity: 1;
+	background-clip: padding-box;
+	border-radius: 1em;
+	font-family: Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	font-weight: bold;
+	background-image: none;
+	background: #fff;
+	text-indent: 15px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	height: 40px;
+	margin: 0 15px 15px;
+}
+.mobile-view select {
+	cursor: pointer;
+	-webkit-appearance: none;
+	left: 0;
+	top: -56px;
+	position: relative;
+	width: 100%;
+	min-height: 1.5em;
+	min-height: 100%;
+	height: 3em;
+	max-height: 100%;
+	filter: Alpha(Opacity=0);
+	opacity: 0;
+	z-index: 2;
+}
+.mobile-view #town-select-label {
+	color: #a3a5a8;
+	text-align: left;
+	font-size: 16px;
+	display: block;
+	padding: 10px 0;
+	font-family: Helvetica, Arial, sans-serif;
+}
+.ui-icon, .ui-icon-searchfield:after {
+	background-color: #666;
+	background-color: rgba(0,0,0,.4);
+	background-image: url("http://res.providencejournal.com/global-assets/images/mobile/icons-18-white.png");
+	background-repeat: no-repeat;
+	-webkit-border-radius: 9px;
+	border-radius: 9px;
+	width: 18px;
+	height: 18px;
+	z-index: 100;
+	position: absolute;
+	top: 50%;
+	margin-top: -9px;
+	right: 15px;
+	background-position: -215px 50%;
+}
+
+
+/* Widget Share Bar Section */
+.share-buttons { 
+}
+.st_facebook_custom { background: url("http://res.providencejournal.com/global-assets/images/icons/social/facebook-blue.png") no-repeat scroll left top transparent;
+	padding: 8px 10px; }
+.st_twitter_custom { background: url("http://res.providencejournal.com/global-assets/images/icons/twitter.png") no-repeat scroll left top transparent !important;
+	padding: 8px 10px !important;
+}
+.st_googleplus_custom { background: url("http://res.providencejournal.com/global-assets/images/icons/social/google-plus-blue.png") no-repeat scroll left top transparent;
+	padding: 6px 20px; margin-left: 0; top: 0; position: relative;
+}
+.st_email_custom { background: url("http://res.providencejournal.com/global-assets/images/icons/email.png") no-repeat scroll left top transparent !important;
+	padding: 8px 15px !important; }
+
+#mobile-general-election .mobile-view #results-parent #race-child-list .st_email_custom, #mobile-general-election .mobile-view #results-parent #race-child-list .st_twitter_custom {
+	top: 0;
+	position: none;
+	padding: 0 15px !important;
+	margin: 0;
+}
+
+/* Race Detail Overlay */
+/* Base and example */
+
+a#detail-view-launch {
+    font-size: 1.6em;
+    text-decoration: none;
+    text-align: center;
+}
+
+#detail-view .wrapper {
+    text-align: center;
+}
+
+
+/* More important stuff */
+
+.overlay, #overlay-shade { display: none; }
+#overlay-shade { position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 9999; background-color: #000; }
+.overlay { position: absolute; top: -300px; left: 0; width: 620px; min-height: 200px; z-index: 10000; background-color: #fff; border: 0;
+    color: #000; box-shadow: 0 0 16px #000; } 
+.ie7 .overlay { height: 200px; }
+.overlay .wrapper { padding: 15px 30px 30px; }
+.overlay .toolbar { padding: 8px; line-height: 1; text-align: right; overflow: hidden; }
+.overlay .toolbar a.close {
+    display: inline-block;
+        *display: inline;
+         zoom: 1;
+    padding: 0 8px;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 18px;
+    border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -o-border-radius: 5px;
+    color: #999999;
+    background-color: #fff;
+} .overlay .toolbar a.close span {
+    color: #818181;
+} .overlay .toolbar a.close:hover,
+  .overlay .toolbar a.close:hover span {
+    background-color: #fff;
+    color: #000;
+}
+
+
+
+/* Overriding main.css styles to allow for overlay to display over grey out */
+#container_main_content { 
+	float: left;
+	width: 620px;
+}
+#container_main_navigation ul li.nav-four .secondary {
+	margin-left: -184px !important;
+	padding-left: 150px !important;
+	width: 620px !important;
+}
+.mast-head-tabs .tab_content, #masthead-container {
+	z-index: 0 !important;
+}
+body #container_960 {
+	position: inherit !important;
+}
+
+/* General Election Style Overrides */
+.general-election #race-header h3, .general-election #town-header h3 {
+	padding-left: 0;
+	border-bottom: 1px solid #96a3af;
+	padding-bottom: 10px;
+}
+.key-races.general-election {
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	background-color: #fff;
+	width: 100%;
+	border: 0;
+}
+
+#prec-container {
+	border-bottom: 3px solid #96a3af;
+	padding-bottom: 10px;
+	text-align: center;
+	margin-top: 5px;
+}
+.mobile-view #prec-header, .general-election #prec-header {
+	width: 97px;
+	font-family: 'Open sans';
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #1c2b46;
+	font-weight: 800;
+	text-align: inherit;
+}
+#prec-header.left { text-align: left; width: 70px;}
+.mobile-view #prec-header.left { margin-left: 25px; }
+#prec-header.right { text-align: right; }
+
+.mobile-view #prec-content, .general-election #prec-content {
+	width: 97px;
+	padding-left: 0;
+	text-align: right;
+	font-family: 'Open Sans';
+	font-weight: 700;
+	color: #0076b4;
+}
+.general-election #prec-content.thirty {
+	width: 70px;
+	text-align: right;
+}
+.general-election .candidates-header-large h4, .general-election .candidates-header { 
+	font-family: 'Open Sans';
+	text-decoration: none;
+	color: #1c2b46;
+	text-transform: uppercase;
+}
+.general-election .candidates-header-large h4 {
+	font-weight: 800;
+}
+.general-election .candidates-header {
+	font-weight: 800;
+	width: 57px;
+}
+.general-election .candidates-header-large {
+	float: left;
+	width: 180px;
+	margin-right: 10px;
+}
+.general-election .candidates-header-container {
+	padding: 5px 0px;
+}
+
+.icon-col { 
+	float: left;
+	width: 20px;
+	margin-right: 7px;
+	padding-top: 9px;
+}
+.general-election .candidate-col {
+	width: 200px;
+	padding: 0;
+	margin: 5px 10px 5px 0;
+	float: left;
+	text-align: left;
+	font-family: 'Open Sans';
+	font-weight: 700;
+	font-size: 12px;
+	color: #1c2b46;
+}
+.question-col {
+	width: 200px !important;
+}
+.general-election .question-col {
+	width: 150px !important;
+}
+.general-election .candidate-col-votes, .general-election .candidate-col-percent {
+	font-family: 'Open Sans';
+	font-weight: 800;
+	font-size: 11px;
+	color: #0076b4;
+}
+.general-election .candidate-col-votes {
+	width: 50px;
+	text-align: right;
+	float: left;
+	margin: 5px 0;
+}
+.general-election .candidate-col-percent {
+	float: right;
+	margin-top: 5px;
+}
+.general-election #candidate-row {
+	border-top: 1px dotted #96a3af;
+}
+.key-races.general-election {
+	border-bottom: 3px solid #96a3af;
+	float: left;
+}
+.solid-border {
+	border-top: 1px solid #96a3af !important;
+}
+.party-name {
+	font-family: 'Open Sans';
+	font-weight: 800;
+	font-size: 10px;
+	text-transform: uppercase;
+	color: #1c2b46;
+}
+
+#disclaimer-container {
+	position: relative;
+	float: right;
+	margin-right: 10px;
+	margin-top: 40px;
+}
+#disclaimer { 
+	font-family: 'Open Sans';
+	font-weight: 700;
+	font-size: 11px;
+	color: #1c2b46;
+}
+
+#election-content {
+	float: left; 
+}
+#race-child-list .general-election .pct {
+	float: right;
+}
+
+.general-election #town-select {
+	font-family: 'Open sans';
+	font-weight: 700;
+	margin: auto;
+	width: 400px;
+	position: relative;
+	text-align: center;
+	font-size: 20px;
+}
+.general-election #town-form select {
+	width: 300px;
+	margin: 10px 0 0 75px;
+	font-size: 20px;
+	font-family: 'Open sans';
+	height: 30px;
+}
+#results-video {
+	margin: 15px;
+	float: left;
+}
+/* This is a hack to address this being 
+   the only nav element with 2 lines of text */
+#map-nav-const { padding: 0 15px 20px !important; }
+/* Mobile General Election Styles */
+#mobile-general-election .mobile-view #results-parent {
+	width: 100%;
+	float: none;
+	position: inherit;
+	margin-left: 0;
+}
+#mobile-general-election .mobile-view #results-parent #race-child-list .key-races.general-election {
+	width: 300px;
+	float: none;
+}
+#mobile-general-election #results-filter {
+	margin-top: 15px;
+}
+
+/* Homepage Widget Overrides */
+.full .key-races.general-election {
+	width: 240px;
+	margin: 0 15px 0 0;
+}
+.full .general-election #prec-header,
+.full .general-election #prec-content {
+	width: 76px;
+	text-align: right;
+}
+.full .general-election .candidates-header-large {
+	width: 140px;
+}
+.full .general-election .candidates-header, 
+.general-election .candidate-col-votes {
+	width: 40px;
+	text-align: center;
+}
+.mobile-elect-widget {
+	width: 96% !important;
+	margin: auto;
+}
+.mobile #disclaimer-container {
+	margin-top: 0;
+}
+.mobile #prec-content, .mobile #prec-header {
+	width: 110px;
+	text-align: right;
+}
+.mobile #candidate-col-votes { width: 85px; }
+.mobile #candidate-col { width: 150px; }
+.mobile #candidates-header-container .cPct { width: 75px; }
+.mobile #candidates-header-container .cTotal { width: 120px; }
+.mobile #race-header h3 { padding-top: 10px; }
+#race-child-list-rail #disclaimer-container {
+	margin: 10px auto;
+	width: 90%;
+}
+

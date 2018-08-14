@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="http://res.providencejournal.com/politics/general/2012/assets/scripts/election_results_widget2.js"></script>
+<script type="text/javascript" src="http://res.providencejournal.com/politics/general/2012/assets/election-results/newport.json"></script>
+<script type="text/javascript" src="http://res.providencejournal.com/politics/general/2012/assets/election-results/lincoln.json"></script>
+<script type="text/javascript" src="http://res.providencejournal.com/politics/general/2012/assets/election-results/statewide.json"></script>
+<script type="text/javascript" src="http://localhost/election2012/november/election-results/westerly.json"></script>
+
+
+
+</head>
+
+<body>
+
+
+
+<script type="text/javascript">
+   document.write("<p>Lincoln</p>");
+
+   document.write(showResultsTable(get_results_by_race(501)));
+   document.write(showResultsTable(get_results_by_race(744)));
+
+
+   document.write('<br clear="all">');
+   document.write("<p>Newport</p>");
+   document.write(showResultsTable(get_results_by_race(502)));
+   document.write(showResultsTable(get_results_by_race(760)));
+
+
+
+</script>
+</body>
+</html>
+
+
