@@ -168,7 +168,7 @@
 		];
 
 	String.prototype.capitalize = function() {
-    	return this.charAt(0).toUpperCase() + this.slice(1).toLowerCase();
+    return this.charAt(0).toUpperCase() + this.slice(1).toLowerCase();
 	};
 	function createTestVotes() {
 		// global: map_init.data_source
@@ -279,11 +279,14 @@ function buildLegend2() {
 function mapOnMouseOver(location){
 	var new_location = location.replace(" ","_");
 	new_location = new_location.toLowerCase();
+	results = get_results_by_race(map_init.data_source[new_location], map_init.race_number);
+	var html = showResultsTableTip(results, location);
+	Tip(html, BGCOLOR, '#FFFFFF', BORDERCOLOR, '#96A3AF', PADDING, '5', 'SHADOW', true);
 }
 
-function showResultsTableTipMobile(results,str) {
+function showResultsTableTip(results, str) {
 	var threshhold = 5;  // any candidate with less than this percent of the vote put into the "Other" category
-	var html = "";
+	var html = '';
 	var new_str = str.replace(" ","_");
 	new_str = new_str.toLowerCase();
 	results = get_results_by_race(map_init.data_source[new_str],map_init.race_number);
@@ -348,7 +351,7 @@ function showResultsTableTipMobile(results,str) {
 	$('.map img').attr('width',maxXY.x);
 	$('.map img').attr('height',maxXY.y);
 
- 	var label_div_content = "";
+ 	var label_div_content = '';
 
 	$("area").each (function (i) {
 
