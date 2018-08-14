@@ -261,23 +261,6 @@
 		return palette[paletteIndex];
 	}
 
-
-	function buildLegend () {
-		var html ='<table class="map_legend">';
-		race_name = getRaceName(map_init.race_number);
-		html += '<tr>';
-		html += '<td colspan="2"><div class="race_name">' + race_name + '</div></td>';
-		html += '</tr>';
-		for (var index=0; index<legend.length; index++) {
-			html += '<tr>';
-			html += '<td><div class="color_box" style="background:#' + legend[index].color + ';"></div></td>';
-			html += '<td><div class="candidate_name">' + legend[index].name + '</div></td>';
-			html += '</tr>';
-		}
-		html +='</table>';
-		return html;
-	}
-
 function buildLegend2() {
 	var html = '<div class="map_legend2">';
 	race_name = getRaceName(map_init.race_number);
@@ -295,59 +278,8 @@ function buildLegend2() {
 }
 
 function mapOnMouseOver(location){
-
 	var new_location = location.replace(" ","_");
 	new_location = new_location.toLowerCase();
-	results = get_results_by_race(map_init.data_source[new_location],map_init.race_number);
-	var html = showResultsTableTipMobile(results,location);
-	Tip(html,BGCOLOR,'#FFFFFF',BORDERCOLOR,'#96A3AF',PADDING,'5','SHADOW',true);
-//	Tip(html);
-}
-
-function showResultsTableTip2(results,str) {
-	var html = "";
-	var new_str = str.replace(" ","_");
-	new_str = new_str.toLowerCase();
-	results = get_results_by_race(map_init.data_source[new_str],map_init.race_number);
-	html += '<input type="hidden" id="buttonEID" value="' + results.name.toLowerCase() + '"><input type="hidden" id="pView" value="map"><input type="hidden" id="pFilter" value="' + results.contest_number + '"><input type="hidden" id="fNameHolder" value="statewide">\
-	   <div class="key-races general-election">\
-	      <div id="race-header">\
-	         <h3>' + str + '</h3>\
-	      </div>\
-	      <div id="prec-container">\
-	         <div id="prec-header" class="left">Precincts</div>\
-	         <div id="prec-header" class="right">Reported</div>\
-	         <div id="prec-header" class="right">Percent</div>\
-	         <div style="clear: both;"></div>\
-	         <div id="prec-content" class="thirty">' + results.precinct_count + '</div>\
-	         <div id="prec-content">' + results.precincts_reporting + '</div>\
-	         <div id="prec-content">' + (parseInt(results.precincts_reporting)/parseInt(results.precinct_count)) * 100 + '%</div>\
-	         <div style="clear: both;"></div>\
-	      </div>\
-	      <div class="candidates-header-container">\
-	         <div class="candidates-header-large">\
-	            <h4>CANDIDATES</h4>\
-	         </div>\
-	         <div class="candidates-header">Votes</div>\
-	         <div class="candidates-header pct">Pct</div>\
-	         <div style="clear: both;"></div>\
-	      </div>';
-	      for (var x=0;x<results.candidates.length;x++) {
-	      html += '<div id="candidate-row"' + ((x==0) ? ' class="solid-border">' : '>');
-	         html+='<div class="icon-col">';
-			 var icon = (results.candidates[x].name.toLowerCase() == 'write-in') ? 'clear.gif' : results.candidates[x].party_code.capitalize() + '_icon.png';
-	         html+='<img src="http://res.providencejournal.com/politics/assets/images/' + icon + '"></div>\
-	         <div class="candidate-col">' + results.candidates[x].name + '<br><span class="party-name"><span class="candidate-party">' + getParty(results.candidates[x].party_code) + '</span></span></div>\
-	         <div class="candidate-col-votes">' + results.candidates[x].votes + '</div>\
-	         <div class="candidate-col-percent">' + results.candidates[x].pct_votes.format("0.0%") + '</div>\
-	         <div style="clear: both;"></div>\
-	      </div>';
-	      }
-	      html += '</div>\
-		  	   <div id="disclaimer-container">\
-		  	      <div id="disclaimer"></div>\
-		  	   </div>';
-	return html;
 }
 
 function showResultsTableTipMobile(results,str) {
@@ -405,9 +337,7 @@ function showResultsTableTipMobile(results,str) {
 
 	return html;
 }
-</script>
 
-<script type="text/javascript" >
  $(document).ready(function() {
  	createTestVotes();
  	mapResizeWidth(map_init.map_width);
