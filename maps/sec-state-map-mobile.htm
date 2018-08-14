@@ -452,13 +452,8 @@ function showResultsTableTipMobile(results,str) {
 	var xavg = parseInt((xmax-xmin)/2) + xmin;
 	var yavg = parseInt((ymax-ymin)/2) + ymin;
 
-	var xsum=0;
-	for (var j=0;j<xArry.length;j++)
-		xsum += xArry[j];
-
-	var ysum=0;
-	for (var j=0;j<yArry.length;j++)
-		ysum += yArry[j];
+	var xsum= _.sum(xArry);
+	var ysum= _.sum(yArry);
 
 	// create a style based on the average x,y coordinates
 	this_style = 'left:' + xavg + 'px; top:' + yavg + 'px; ';
