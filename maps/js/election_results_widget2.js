@@ -516,10 +516,10 @@ function showResultsTableTipNew(results) {
   return html;
 }
 
-var headID = document.getElementsByTagName("head")[0];
-var cssNode = document.createElement("link");
-cssNode.type = "text/css";
-cssNode.rel = "stylesheet";
-cssNode.href = "election_results_widget.css";
-cssNode.media = "screen";
-headID.appendChild(cssNode);
+// var headID = document.getElementsByTagName("head")[0];
+// var cssNode = document.createElement("link");
+// cssNode.type = "text/css";
+// cssNode.rel = "stylesheet";
+// cssNode.href = "election_results_widget.css";
+// cssNode.media = "screen";
+// headID.appendChild(cssNode);
