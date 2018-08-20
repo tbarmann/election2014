@@ -149,7 +149,6 @@ function mixPalette(start_hex,end_hex,steps) {
 	var end_rgb = hexToRGB(end_hex);
 	var palette = [];
 
-
 	var denominator = (steps<2) ? 1 : steps-1;
 
 	step.r = (end_rgb.r - start_rgb.r) / denominator;
@@ -248,11 +247,7 @@ function mapResizeWidth(width) {
 	var maxXY = getMaxXY("area");
 	var pct = width/maxXY.x;
 	mapResizePct(pct);
-
-
-
 }
-
 
 //////////////////////////////////////////////////////////////////////////////////////
 function moveArea(id,x_offset,y_offset) {
@@ -299,6 +294,32 @@ function locDataLookup(location,field_index) {
 function Point(x,y) {
   this.x=x;
   this.y=y;
+}
+ //////////////////////////////////////////////////////////////////////////////////////
+function mapResizePct(pct) {
+
+	$("area").each (function (i) {
+
+	// get the coordinate pairs for this polygon area and put them in an array
+	var coordStr = $(this).attr('coords');
+	var coordArry = coordStr.split(',');
+
+	for (var x=0;x<coordArry.length;x++) {
+		coordArry[x] = Math.round(coordArry[x] * pct);
+	}
+
+	coordStr = coordArry.join();
+	$(this).attr('coords',coordStr);
+	});
+}
+
+
+//////////////////////////////////////////////////////////////////////////////////////
+function mapResizeWidth(width) {
+	var maxXY = getMaxXY("area");
+	var pct = width/maxXY.x;
+	mapResizePct(pct);
+}
 }
 
 //////////////////////////////////////////////////////////////////////////////////////
