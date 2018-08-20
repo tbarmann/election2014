@@ -78,8 +78,8 @@ String.prototype.capitalize = function() {
 	}
 
 	function getLegendColor(leader) {
-		// global: legend
-		var steps = 7;
+		// global: legend, map_init
+		var steps = map_init.steps;
 		var candidate_count = candidates.length;
 		var min_winner_pct = parseInt(100/candidate_count) + 1;
 		var color = lookupCandidateBaseColor(leader.name);
@@ -321,6 +321,8 @@ function mapResizeWidth(width) {
 }
 
 function createGeoLabels() {
+
+	start = new Date();
  	var label_div_content = '';
 
 	$("area").each (function (i) {
@@ -367,6 +369,9 @@ function createGeoLabels() {
 
 	$('#label_div').html(label_div_content);
 	$('#label_div').css({display: map_init.default_hide_labels ? 'none': null })
+
+	var end = new Date();
+	console.log(end-start);
 }
 
 function assignColorsToPolygons() {
