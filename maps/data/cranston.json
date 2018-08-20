@@ -1,1 +1,174 @@
-var cranston=;
+var cranston={ "election_name" : "General Election", "election_date" : "November 4, 2014", "last_updated" : "November 14, 2014 02:35 PM", "precinct_count" : "30", "precincts_reporting" : "30", "contests" : [
+  { "name" : "SENATOR IN CONGRESS", "contest_number" : "101", "total_votes" : "26296", "votes_allowed" : "1", "candidates" : [
+    { "name" : "John F. REED", "party_code" : "DEM", "votes" : "17895" }, 
+    { "name" : "Mark S. ZACCARIA", "party_code" : "REP", "votes" : "8360" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "41" } ] },
+  { "name" : "REPRESENTATIVE IN CONGRESS DISTRICT 2", "contest_number" : "103", "total_votes" : "26221", "votes_allowed" : "1", "candidates" : [
+    { "name" : "James R. LANGEVIN", "party_code" : "DEM", "votes" : "16476" }, 
+    { "name" : "Rhue R. REIS", "party_code" : "REP", "votes" : "9698" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "47" } ] },
+  { "name" : "GOVERNOR", "contest_number" : "104", "total_votes" : "27006", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Allan W. FUNG", "party_code" : "REP", "votes" : "14853" }, 
+    { "name" : "Gina M. RAIMONDO", "party_code" : "DEM", "votes" : "8159" }, 
+    { "name" : "Robert J. HEALEY, JR.", "party_code" : "MOD", "votes" : "3716" }, 
+    { "name" : "Kate L. FLETCHER", "party_code" : "IND", "votes" : "141" }, 
+    { "name" : "Leon M. KAYARIAN", "party_code" : "IND", "votes" : "88" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "49" } ] },
+  { "name" : "LIEUTENANT GOVERNOR", "contest_number" : "105", "total_votes" : "25883", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Daniel J. McKEE", "party_code" : "DEM", "votes" : "13205" }, 
+    { "name" : "Catherine Terry TAYLOR", "party_code" : "REP", "votes" : "9927" }, 
+    { "name" : "William H. GILBERT", "party_code" : "MOD", "votes" : "1923" }, 
+    { "name" : "Tony JONES", "party_code" : "Lib", "votes" : "734" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "94" } ] },
+  { "name" : "SECRETARY OF STATE", "contest_number" : "106", "total_votes" : "25836", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Nellie M. GORBEA", "party_code" : "DEM", "votes" : "14398" }, 
+    { "name" : "John M. CARLEVALE, SR.", "party_code" : "REP", "votes" : "11388" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "50" } ] },
+  { "name" : "ATTORNEY GENERAL", "contest_number" : "107", "total_votes" : "26030", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Peter F. KILMARTIN", "party_code" : "DEM", "votes" : "14180" }, 
+    { "name" : "Dawson Tucker HODGSON", "party_code" : "REP", "votes" : "11807" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "43" } ] },
+  { "name" : "GENERAL TREASURER", "contest_number" : "108", "total_votes" : "25561", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Seth MAGAZINER", "party_code" : "DEM", "votes" : "13088" }, 
+    { "name" : "Ernest A. ALMONTE", "party_code" : "IND", "votes" : "12417" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "56" } ] },
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 26", "contest_number" : "134", "total_votes" : "6774", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Frank S. LOMBARDI", "party_code" : "DEM", "votes" : "6615" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "159" } ] },
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 27", "contest_number" : "135", "total_votes" : "9614", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Hanna M. GALLO", "party_code" : "DEM", "votes" : "5839" }, 
+    { "name" : "Sara E. SWEENEY", "party_code" : "REP", "votes" : "3752" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "23" } ] },
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 28", "contest_number" : "136", "total_votes" : "6084", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Joshua MILLER", "party_code" : "DEM", "votes" : "5861" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "223" } ] },
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 14", "contest_number" : "160", "total_votes" : "2165", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Charlene LIMA", "party_code" : "DEM", "votes" : "2108" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "57" } ] },
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 15", "contest_number" : "161", "total_votes" : "4385", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Nicholas A. MATTIELLO", "party_code" : "DEM", "votes" : "4187" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "198" } ] },
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 16", "contest_number" : "162", "total_votes" : "5293", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Robert B. LANCIA", "party_code" : "REP", "votes" : "2774" }, 
+    { "name" : "Peter G. PALUMBO", "party_code" : "DEM", "votes" : "2507" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "12" } ] },
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 17", "contest_number" : "163", "total_votes" : "3683", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Robert B. JACQUARD", "party_code" : "DEM", "votes" : "3559" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "124" } ] },
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 18", "contest_number" : "164", "total_votes" : "4143", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Arthur HANDY", "party_code" : "DEM", "votes" : "2713" }, 
+    { "name" : "Donald R. GENDRON", "party_code" : "REP", "votes" : "1417" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "13" } ] },
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 19", "contest_number" : "165", "total_votes" : "469", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Joseph McNAMARA", "party_code" : "DEM", "votes" : "455" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "14" } ] },
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 20", "contest_number" : "166", "total_votes" : "17", "votes_allowed" : "1", "candidates" : [
+    { "name" : "David A. BENNETT", "party_code" : "DEM", "votes" : "17" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "0" } ] },
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 41", "contest_number" : "187", "total_votes" : "1716", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Lillian Jean DELMONICO", "party_code" : "REP", "votes" : "740" }, 
+    { "name" : "Michael J. MARCELLO", "party_code" : "DEM", "votes" : "732" }, 
+    { "name" : "Robert J. QUATTROCCHI", "party_code" : "IND", "votes" : "244" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "0" } ] },
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 42", "contest_number" : "188", "total_votes" : "992", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Stephen R. UCCI", "party_code" : "DEM", "votes" : "976" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "16" } ] },
+  { "name" : "COUNCIL - CITY WIDE CITY OF CRANSTON", "contest_number" : "240", "total_votes" : "62304", "votes_allowed" : "3", "candidates" : [
+    { "name" : "Michael J. FARINA", "party_code" : "DEM", "votes" : "12233" }, 
+    { "name" : "John E. LANNI, JR.", "party_code" : "DEM", "votes" : "11255" }, 
+    { "name" : "Richard D. SANTAMARIA, JR.", "party_code" : "DEM", "votes" : "10121" }, 
+    { "name" : "James E. DONAHUE", "party_code" : "REP", "votes" : "9731" }, 
+    { "name" : "Dolores E. DiMeo CARROLL", "party_code" : "REP", "votes" : "9595" }, 
+    { "name" : "Nicholas J. LIMA", "party_code" : "REP", "votes" : "9218" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "151" } ] },
+  { "name" : "COUNCIL CRANSTON WARD 1", "contest_number" : "241", "total_votes" : "4210", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Steven A. STYCOS", "party_code" : "DEM", "votes" : "3033" }, 
+    { "name" : "Michael K. GLUCKSMAN", "party_code" : "REP", "votes" : "1168" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "9" } ] },
+  { "name" : "COUNCIL CRANSTON WARD 2", "contest_number" : "242", "total_votes" : "3878", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Donald BOTTS, JR.", "party_code" : "REP", "votes" : "2058" }, 
+    { "name" : "Thaddeus JENDZEJEC", "party_code" : "DEM", "votes" : "1816" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "4" } ] },
+  { "name" : "COUNCIL CRANSTON WARD 3", "contest_number" : "243", "total_votes" : "2333", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Paul H. ARCHETTO", "party_code" : "DEM", "votes" : "2284" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "49" } ] },
+  { "name" : "COUNCIL CRANSTON WARD 4", "contest_number" : "244", "total_votes" : "5571", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Mario ACETO", "party_code" : "DEM", "votes" : "2981" }, 
+    { "name" : "Mark J. COLLINS", "party_code" : "REP", "votes" : "2579" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "11" } ] },
+  { "name" : "COUNCIL CRANSTON WARD 5", "contest_number" : "245", "total_votes" : "4803", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Christopher G. PAPLAUSKAS", "party_code" : "REP", "votes" : "2579" }, 
+    { "name" : "Ralph M. CIUNCI", "party_code" : "DEM", "votes" : "2214" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "10" } ] },
+  { "name" : "COUNCIL CRANSTON WARD 6", "contest_number" : "246", "total_votes" : "4289", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Michael W. FAVICCHIO", "party_code" : "REP", "votes" : "2382" }, 
+    { "name" : "Bernadetta PETRONE", "party_code" : "DEM", "votes" : "1897" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "10" } ] },
+  { "name" : "NON-PARTISAN SCHOOL COMMITTEE CITY-WIDE CITY OF CRANSTON", "contest_number" : "247", "total_votes" : "23589", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Michael A. TRAFICANTE", "party_code" : "NON", "votes" : "12778" }, 
+    { "name" : "Kerri KELLEHER", "party_code" : "NON", "votes" : "10723" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "88" } ] },
+  { "name" : "NON-PARTISAN SCHOOL COMMITTEE CRANSTON WARD 1", "contest_number" : "248", "total_votes" : "3112", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Jeffrey K. GALE", "party_code" : "NON", "votes" : "3058" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "54" } ] },
+  { "name" : "NON-PARTISAN SCHOOL COMMITTEE CRANSTON WARD 2", "contest_number" : "249", "total_votes" : "3401", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Stephanie GIANGRANDE CULHANE", "party_code" : "NON", "votes" : "2059" }, 
+    { "name" : "Edward R. ANGILLY", "party_code" : "NON", "votes" : "1327" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "15" } ] },
+  { "name" : "NON-PARTISAN SCHOOL COMMITTEE CRANSTON WARD 3", "contest_number" : "250", "total_votes" : "2384", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Domenic F. FUSCO, JR.", "party_code" : "NON", "votes" : "1356" }, 
+    { "name" : "Richard R. TOMLINS", "party_code" : "NON", "votes" : "1008" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "20" } ] },
+  { "name" : "NON-PARTISAN SCHOOL COMMITTEE CRANSTON WARD 4", "contest_number" : "251", "total_votes" : "3898", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Trent M. COLFORD, SR.", "party_code" : "NON", "votes" : "3829" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "69" } ] },
+  { "name" : "NON-PARTISAN SCHOOL COMMITTEE CRANSTON WARD 5", "contest_number" : "252", "total_votes" : "4216", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Janice RUGGIERI", "party_code" : "NON", "votes" : "3090" }, 
+    { "name" : "Jonathan J. KEITH", "party_code" : "NON", "votes" : "1105" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "21" } ] },
+  { "name" : "NON-PARTISAN SCHOOL COMMITTEE CRANSTON WARD 6", "contest_number" : "253", "total_votes" : "3997", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Daniel R. WALL", "party_code" : "NON", "votes" : "2299" }, 
+    { "name" : "Jay A. ROSENFIELD", "party_code" : "NON", "votes" : "1689" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "9" } ] },
+  { "name" : "QUESTION 1 - CASINO GAMING AT NEWPORT GRAND", "contest_number" : "484", "total_votes" : "25513", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 1  APPROVE", "party_code" : "NON", "votes" : "15173" }, 
+    { "name" : "Question 1  REJECT", "party_code" : "NON", "votes" : "10340" } ] },
+  { "name" : "QUESTION 2 - RESTRICTION ON GAMBLING", "contest_number" : "485", "total_votes" : "24739", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 2  APPROVE", "party_code" : "NON", "votes" : "16288" }, 
+    { "name" : "Question 2  REJECT", "party_code" : "NON", "votes" : "8451" } ] },
+  { "name" : "QUESTION 3 - CONSTITUTIONAL CONVENTION", "contest_number" : "486", "total_votes" : "24973", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 3  REJECT", "party_code" : "NON", "votes" : "13715" }, 
+    { "name" : "Question 3  APPROVE", "party_code" : "NON", "votes" : "11258" } ] },
+  { "name" : "QUESTION 4 - HIGHER EDUCATION FACILITIES BONDS", "contest_number" : "487", "total_votes" : "24193", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 4  APPROVE", "party_code" : "NON", "votes" : "15704" }, 
+    { "name" : "Question 4  REJECT", "party_code" : "NON", "votes" : "8489" } ] },
+  { "name" : "QUESTION 5 - CREATIVE AND CULTURAL ECONOMY BONDS", "contest_number" : "488", "total_votes" : "25244", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 5  APPROVE", "party_code" : "NON", "votes" : "15079" }, 
+    { "name" : "Question 5  REJECT", "party_code" : "NON", "votes" : "10165" } ] },
+  { "name" : "QUESTION 6 - MASS TRANSIT HUB INFRASTRUCTURE BONDS", "contest_number" : "489", "total_votes" : "23959", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 6  APPROVE", "party_code" : "NON", "votes" : "13859" }, 
+    { "name" : "Question 6  REJECT", "party_code" : "NON", "votes" : "10100" } ] },
+  { "name" : "QUESTION 7 - CLEAN WATER, OPEN SPACE, HEALTHY COMM BONDS", "contest_number" : "490", "total_votes" : "24804", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 7  APPROVE", "party_code" : "NON", "votes" : "17897" }, 
+    { "name" : "Question 7  REJECT", "party_code" : "NON", "votes" : "6907" } ] },
+  { "name" : "QUESTION 8 - CITY OF CRANSTON", "contest_number" : "798", "total_votes" : "26189", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 8  APPROVE", "party_code" : "NON", "votes" : "18213" }, 
+    { "name" : "Question 8  REJECT", "party_code" : "NON", "votes" : "7976" } ] },
+  { "name" : "QUESTION 9 - CITY OF CRANSTON", "contest_number" : "799", "total_votes" : "26329", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 9  APPROVE", "party_code" : "NON", "votes" : "20506" }, 
+    { "name" : "Question 9  REJECT", "party_code" : "NON", "votes" : "5823" } ] },
+  { "name" : "QUESTION 10 - CITY OF CRANSTON", "contest_number" : "800", "total_votes" : "26073", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 10  APPROVE", "party_code" : "NON", "votes" : "17717" }, 
+    { "name" : "Question 10  REJECT", "party_code" : "NON", "votes" : "8356" } ] },
+  { "name" : "QUESTION 11 - CITY OF CRANSTON", "contest_number" : "801", "total_votes" : "24858", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 11  APPROVE", "party_code" : "NON", "votes" : "15182" }, 
+    { "name" : "Question 11  REJECT", "party_code" : "NON", "votes" : "9676" } ] },
+  { "name" : "QUESTION 12 - CITY OF CRANSTON", "contest_number" : "802", "total_votes" : "25652", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 12  APPROVE", "party_code" : "NON", "votes" : "21314" }, 
+    { "name" : "Question 12  REJECT", "party_code" : "NON", "votes" : "4338" } ] },
+  { "name" : "QUESTION 13 - CITY OF CRANSTON", "contest_number" : "803", "total_votes" : "25129", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 13  APPROVE", "party_code" : "NON", "votes" : "13511" }, 
+    { "name" : "Question 13  REJECT", "party_code" : "NON", "votes" : "11618" }
+  ]}
+]}
+;

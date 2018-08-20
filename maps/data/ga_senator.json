@@ -1,1 +1,211 @@
-var ga_senator=;
+var ga_senator={ "election_name" : "General Election", "election_date" : "November 4, 2014", "last_updated" : "November 14, 2014 02:35 PM", "contests" : [
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 1", "contest_number" : "109", "precinct_count" : "16", "precincts_reporting" : "16", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Maryellen GOODWIN", "party_code" : "DEM", "votes" : "4488" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "107" }
+  ]}
+, 
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 2", "contest_number" : "110", "precinct_count" : "11", "precincts_reporting" : "11", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Juan M. PICHARDO", "party_code" : "DEM", "votes" : "4373" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "164" }
+  ]}
+, 
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 3", "contest_number" : "111", "precinct_count" : "10", "precincts_reporting" : "10", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Gayle L. GOLDIN", "party_code" : "DEM", "votes" : "7233" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "282" }
+  ]}
+, 
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 4", "contest_number" : "112", "precinct_count" : "15", "precincts_reporting" : "15", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Dominick J. RUGGERIO", "party_code" : "DEM", "votes" : "6443" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "235" }
+  ]}
+, 
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 5", "contest_number" : "113", "precinct_count" : "13", "precincts_reporting" : "13", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Paul V. JABOUR", "party_code" : "DEM", "votes" : "4826" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "121" }
+  ]}
+, 
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 6", "contest_number" : "114", "precinct_count" : "14", "precincts_reporting" : "13", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Harold M. METTS", "party_code" : "DEM", "votes" : "4283" }, 
+    { "name" : "Russell C. HRYZAN", "party_code" : "IND", "votes" : "630" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "18" }
+  ]}
+, 
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 7", "contest_number" : "115", "precinct_count" : "11", "precincts_reporting" : "11", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Frank A. CICCONE, III", "party_code" : "DEM", "votes" : "4545" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "136" }
+  ]}
+, 
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 8", "contest_number" : "116", "precinct_count" : "10", "precincts_reporting" : "10", "votes_allowed" : "1", "candidates" : [
+    { "name" : "James E. DOYLE, II", "party_code" : "DEM", "votes" : "4388" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "136" }
+  ]}
+, 
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 9", "contest_number" : "117", "precinct_count" : "9", "precincts_reporting" : "9", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Adam J. SATCHELL", "party_code" : "DEM", "votes" : "4090" }, 
+    { "name" : "Michael J. PINGA", "party_code" : "IND", "votes" : "3241" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "22" }
+  ]}
+, 
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 10", "contest_number" : "118", "precinct_count" : "9", "precincts_reporting" : "9", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Walter S. FELAG, JR.", "party_code" : "DEM", "votes" : "7191" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "139" }
+  ]}
+, 
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 11", "contest_number" : "119", "precinct_count" : "12", "precincts_reporting" : "12", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Christopher Scott OTTIANO", "party_code" : "REP", "votes" : "6138" }, 
+    { "name" : "Taylor A. DAME", "party_code" : "IND", "votes" : "2294" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "21" }
+  ]}
+, 
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 12", "contest_number" : "120", "precinct_count" : "10", "precincts_reporting" : "10", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Louis P. DiPALMA", "party_code" : "DEM", "votes" : "7204" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "117" }
+  ]}
+, 
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 13", "contest_number" : "121", "precinct_count" : "9", "precincts_reporting" : "9", "votes_allowed" : "1", "candidates" : [
+    { "name" : "M. Teresa PAIVA-WEED", "party_code" : "DEM", "votes" : "5117" }, 
+    { "name" : "Michael W. SMITH", "party_code" : "REP", "votes" : "4187" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "21" }
+  ]}
+, 
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 14", "contest_number" : "122", "precinct_count" : "7", "precincts_reporting" : "7", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Daniel DaPONTE", "party_code" : "DEM", "votes" : "5370" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "128" }
+  ]}
+, 
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 15", "contest_number" : "123", "precinct_count" : "11", "precincts_reporting" : "11", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Donna M. NESSELBUSH", "party_code" : "DEM", "votes" : "3840" }, 
+    { "name" : "Stephen R. LEMOIS", "party_code" : "REP", "votes" : "1093" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "13" }
+  ]}
+, 
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 16", "contest_number" : "124", "precinct_count" : "12", "precincts_reporting" : "12", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Elizabeth A. CROWLEY", "party_code" : "DEM", "votes" : "2455" }, 
+    { "name" : "Daniel J. BIDONDI", "party_code" : "IND", "votes" : "392" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "13" }
+  ]}
+, 
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 17", "contest_number" : "125", "precinct_count" : "12", "precincts_reporting" : "12", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Edward J. O&#39;NEILL", "party_code" : "IND", "votes" : "6344" }, 
+    { "name" : "Keven A. McKENNA", "party_code" : "DEM", "votes" : "3862" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "18" }
+  ]}
+, 
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 18", "contest_number" : "126", "precinct_count" : "15", "precincts_reporting" : "15", "votes_allowed" : "1", "candidates" : [
+    { "name" : "William J. CONLEY, JR.", "party_code" : "DEM", "votes" : "6345" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "170" }
+  ]}
+, 
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 19", "contest_number" : "127", "precinct_count" : "10", "precincts_reporting" : "10", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Ryan William PEARSON", "party_code" : "DEM", "votes" : "6835" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "163" }
+  ]}
+, 
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 20", "contest_number" : "128", "precinct_count" : "10", "precincts_reporting" : "10", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Roger A. PICARD", "party_code" : "DEM", "votes" : "5117" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "101" }
+  ]}
+, 
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 21", "contest_number" : "129", "precinct_count" : "11", "precincts_reporting" : "11", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Nicholas D. KETTLE", "party_code" : "REP", "votes" : "5979" }, 
+    { "name" : "Margaux S. MORISSEAU", "party_code" : "DEM", "votes" : "3880" }, 
+    { "name" : "Zachary FARNUM", "party_code" : "IND", "votes" : "1015" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "18" }
+  ]}
+, 
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 22", "contest_number" : "130", "precinct_count" : "10", "precincts_reporting" : "10", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Stephen R. ARCHAMBAULT", "party_code" : "DEM", "votes" : "6091" }, 
+    { "name" : "Hasan ALSAWAF", "party_code" : "REP", "votes" : "3447" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "17" }
+  ]}
+, 
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 23", "contest_number" : "131", "precinct_count" : "11", "precincts_reporting" : "11", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Paul W. FOGARTY", "party_code" : "DEM", "votes" : "5215" }, 
+    { "name" : "Lauri A. ARCHAMBAULT", "party_code" : "IND", "votes" : "3503" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "12" }
+  ]}
+, 
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 24", "contest_number" : "132", "precinct_count" : "9", "precincts_reporting" : "9", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Marc A. COTE", "party_code" : "DEM", "votes" : "3795" }, 
+    { "name" : "Michael E. MONIZ", "party_code" : "IND", "votes" : "1390" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "13" }
+  ]}
+, 
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 25", "contest_number" : "133", "precinct_count" : "12", "precincts_reporting" : "12", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Frank LOMBARDO, III", "party_code" : "DEM", "votes" : "7306" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "169" }
+  ]}
+, 
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 26", "contest_number" : "134", "precinct_count" : "8", "precincts_reporting" : "8", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Frank S. LOMBARDI", "party_code" : "DEM", "votes" : "6615" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "159" }
+  ]}
+, 
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 27", "contest_number" : "135", "precinct_count" : "12", "precincts_reporting" : "12", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Hanna M. GALLO", "party_code" : "DEM", "votes" : "6162" }, 
+    { "name" : "Sara E. SWEENEY", "party_code" : "REP", "votes" : "3942" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "24" }
+  ]}
+, 
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 28", "contest_number" : "136", "precinct_count" : "12", "precincts_reporting" : "12", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Joshua MILLER", "party_code" : "DEM", "votes" : "5996" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "226" }
+  ]}
+, 
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 29", "contest_number" : "137", "precinct_count" : "10", "precincts_reporting" : "10", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Michael J. McCAFFREY", "party_code" : "DEM", "votes" : "7706" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "256" }
+  ]}
+, 
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 30", "contest_number" : "138", "precinct_count" : "11", "precincts_reporting" : "11", "votes_allowed" : "1", "candidates" : [
+    { "name" : "William A. WALASKA", "party_code" : "DEM", "votes" : "5554" }, 
+    { "name" : "Steven ARCHER", "party_code" : "IND", "votes" : "3748" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "21" }
+  ]}
+, 
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 31", "contest_number" : "139", "precinct_count" : "12", "precincts_reporting" : "12", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Erin P. LYNCH", "party_code" : "DEM", "votes" : "6149" }, 
+    { "name" : "James M. ROCHE", "party_code" : "IND", "votes" : "3473" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "17" }
+  ]}
+, 
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 32", "contest_number" : "140", "precinct_count" : "10", "precincts_reporting" : "10", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Cynthia Armour COYNE", "party_code" : "DEM", "votes" : "5968" }, 
+    { "name" : "Giovanni D. CICIONE", "party_code" : "REP", "votes" : "5120" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "25" }
+  ]}
+, 
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 33", "contest_number" : "141", "precinct_count" : "16", "precincts_reporting" : "16", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Leonidas P. RAPTAKIS", "party_code" : "DEM", "votes" : "5431" }, 
+    { "name" : "Michael E. MADONNA", "party_code" : "REP", "votes" : "4365" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "21" }
+  ]}
+, 
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 34", "contest_number" : "142", "precinct_count" : "11", "precincts_reporting" : "11", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Elaine J. MORGAN", "party_code" : "REP", "votes" : "5280" }, 
+    { "name" : "Catherine COOL RUMSEY", "party_code" : "DEM", "votes" : "4788" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "19" }
+  ]}
+, 
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 35", "contest_number" : "143", "precinct_count" : "11", "precincts_reporting" : "11", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Mark W. GEE", "party_code" : "REP", "votes" : "5941" }, 
+    { "name" : "James M. CALLAGHAN", "party_code" : "DEM", "votes" : "5046" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "15" }
+  ]}
+, 
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 36", "contest_number" : "144", "precinct_count" : "8", "precincts_reporting" : "8", "votes_allowed" : "1", "candidates" : [
+    { "name" : "James C. SHEEHAN", "party_code" : "DEM", "votes" : "8274" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "303" }
+  ]}
+, 
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 37", "contest_number" : "145", "precinct_count" : "9", "precincts_reporting" : "9", "votes_allowed" : "1", "candidates" : [
+    { "name" : "V. Susan SOSNOWSKI", "party_code" : "DEM", "votes" : "7631" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "204" }
+  ]}
+, 
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 38", "contest_number" : "146", "precinct_count" : "10", "precincts_reporting" : "10", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Dennis L. ALGIERE", "party_code" : "REP", "votes" : "7805" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "147" }
+  ]}
+]}
+;

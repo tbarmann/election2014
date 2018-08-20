@@ -1,1 +1,114 @@
-var glocester=;
+var glocester={ "election_name" : "General Election", "election_date" : "November 4, 2014", "last_updated" : "November 14, 2014 02:35 PM", "precinct_count" : "4", "precincts_reporting" : "4", "contests" : [
+  { "name" : "SENATOR IN CONGRESS", "contest_number" : "101", "total_votes" : "3478", "votes_allowed" : "1", "candidates" : [
+    { "name" : "John F. REED", "party_code" : "DEM", "votes" : "2087" }, 
+    { "name" : "Mark S. ZACCARIA", "party_code" : "REP", "votes" : "1386" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "5" } ] },
+  { "name" : "REPRESENTATIVE IN CONGRESS DISTRICT 2", "contest_number" : "103", "total_votes" : "3477", "votes_allowed" : "1", "candidates" : [
+    { "name" : "James R. LANGEVIN", "party_code" : "DEM", "votes" : "1859" }, 
+    { "name" : "Rhue R. REIS", "party_code" : "REP", "votes" : "1613" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "5" } ] },
+  { "name" : "GOVERNOR", "contest_number" : "104", "total_votes" : "3540", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Allan W. FUNG", "party_code" : "REP", "votes" : "1503" }, 
+    { "name" : "Robert J. HEALEY, JR.", "party_code" : "MOD", "votes" : "1019" }, 
+    { "name" : "Gina M. RAIMONDO", "party_code" : "DEM", "votes" : "963" }, 
+    { "name" : "Kate L. FLETCHER", "party_code" : "IND", "votes" : "37" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "11" }, 
+    { "name" : "Leon M. KAYARIAN", "party_code" : "IND", "votes" : "7" } ] },
+  { "name" : "LIEUTENANT GOVERNOR", "contest_number" : "105", "total_votes" : "3428", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Daniel J. McKEE", "party_code" : "DEM", "votes" : "1561" }, 
+    { "name" : "Catherine Terry TAYLOR", "party_code" : "REP", "votes" : "1332" }, 
+    { "name" : "William H. GILBERT", "party_code" : "MOD", "votes" : "381" }, 
+    { "name" : "Tony JONES", "party_code" : "Lib", "votes" : "144" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "10" } ] },
+  { "name" : "SECRETARY OF STATE", "contest_number" : "106", "total_votes" : "3402", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Nellie M. GORBEA", "party_code" : "DEM", "votes" : "1707" }, 
+    { "name" : "John M. CARLEVALE, SR.", "party_code" : "REP", "votes" : "1686" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "9" } ] },
+  { "name" : "ATTORNEY GENERAL", "contest_number" : "107", "total_votes" : "3441", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Dawson Tucker HODGSON", "party_code" : "REP", "votes" : "1830" }, 
+    { "name" : "Peter F. KILMARTIN", "party_code" : "DEM", "votes" : "1608" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "3" } ] },
+  { "name" : "GENERAL TREASURER", "contest_number" : "108", "total_votes" : "3381", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Ernest A. ALMONTE", "party_code" : "IND", "votes" : "1901" }, 
+    { "name" : "Seth MAGAZINER", "party_code" : "DEM", "votes" : "1477" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "3" } ] },
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 23", "contest_number" : "131", "total_votes" : "3386", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Paul W. FOGARTY", "party_code" : "DEM", "votes" : "2036" }, 
+    { "name" : "Lauri A. ARCHAMBAULT", "party_code" : "IND", "votes" : "1345" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "5" } ] },
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 40", "contest_number" : "186", "total_votes" : "2322", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Michael W. CHIPPENDALE", "party_code" : "REP", "votes" : "1613" }, 
+    { "name" : "Joseph D. CARDILLO", "party_code" : "DEM", "votes" : "706" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "3" } ] },
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 47", "contest_number" : "193", "total_votes" : "204", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Cale P. KEABLE", "party_code" : "DEM", "votes" : "200" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "4" } ] },
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 53", "contest_number" : "199", "total_votes" : "669", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Thomas J. WINFIELD", "party_code" : "DEM", "votes" : "646" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "23" } ] },
+  { "name" : "TOWN MODERATOR TOWN OF GLOCESTER", "contest_number" : "300", "total_votes" : "2881", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Kevin P. WALSH", "party_code" : "REP", "votes" : "2827" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "54" } ] },
+  { "name" : "TOWN CLERK TOWN OF GLOCESTER", "contest_number" : "301", "total_votes" : "2972", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Jean M. FECTEAU", "party_code" : "REP", "votes" : "2925" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "47" } ] },
+  { "name" : "TOWN COUNCIL TOWN OF GLOCESTER", "contest_number" : "302", "total_votes" : "14109", "votes_allowed" : "5", "candidates" : [
+    { "name" : "George O. STEERE, JR.", "party_code" : "REP", "votes" : "2205" }, 
+    { "name" : "Walter M.O. STEERE, III", "party_code" : "REP", "votes" : "2160" }, 
+    { "name" : "Edward C. BURLINGAME", "party_code" : "REP", "votes" : "2037" }, 
+    { "name" : "Steven A. SETTE", "party_code" : "IND", "votes" : "2022" }, 
+    { "name" : "William E. REICHERT", "party_code" : "IND", "votes" : "1946" }, 
+    { "name" : "Stephanie L. WESTGATE", "party_code" : "REP", "votes" : "1878" }, 
+    { "name" : "Michael L. DEGRANGE", "party_code" : "REP", "votes" : "1804" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "57" } ] },
+  { "name" : "NON-PARTISAN SCHOOL COMMITTEE TOWN OF GLOCESTER", "contest_number" : "303", "total_votes" : "6855", "votes_allowed" : "3", "candidates" : [
+    { "name" : "Walter M. O. STEERE, JR.", "party_code" : "NON", "votes" : "2451" }, 
+    { "name" : "Cynthia A. JOYCE", "party_code" : "NON", "votes" : "2209" }, 
+    { "name" : "Mary Ann F. CARROLL", "party_code" : "NON", "votes" : "2119" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "76" } ] },
+  { "name" : "DIRECTOR OF HUMAN SERVICES TOWN OF GLOCESTER", "contest_number" : "304", "total_votes" : "3331", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Judith A. BRANCH", "party_code" : "REP", "votes" : "1948" }, 
+    { "name" : "Ann M. GLEW", "party_code" : "DEM", "votes" : "1377" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "6" } ] },
+  { "name" : "QUESTION 1 - CASINO GAMING AT NEWPORT GRAND", "contest_number" : "484", "total_votes" : "3467", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 1  APPROVE", "party_code" : "NON", "votes" : "1904" }, 
+    { "name" : "Question 1  REJECT", "party_code" : "NON", "votes" : "1563" } ] },
+  { "name" : "QUESTION 2 - RESTRICTION ON GAMBLING", "contest_number" : "485", "total_votes" : "3411", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 2  APPROVE", "party_code" : "NON", "votes" : "2246" }, 
+    { "name" : "Question 2  REJECT", "party_code" : "NON", "votes" : "1165" } ] },
+  { "name" : "QUESTION 3 - CONSTITUTIONAL CONVENTION", "contest_number" : "486", "total_votes" : "3407", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 3  REJECT", "party_code" : "NON", "votes" : "1951" }, 
+    { "name" : "Question 3  APPROVE", "party_code" : "NON", "votes" : "1456" } ] },
+  { "name" : "QUESTION 4 - HIGHER EDUCATION FACILITIES BONDS", "contest_number" : "487", "total_votes" : "3316", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 4  APPROVE", "party_code" : "NON", "votes" : "1683" }, 
+    { "name" : "Question 4  REJECT", "party_code" : "NON", "votes" : "1633" } ] },
+  { "name" : "QUESTION 5 - CREATIVE AND CULTURAL ECONOMY BONDS", "contest_number" : "488", "total_votes" : "3449", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 5  APPROVE", "party_code" : "NON", "votes" : "1737" }, 
+    { "name" : "Question 5  REJECT", "party_code" : "NON", "votes" : "1712" } ] },
+  { "name" : "QUESTION 6 - MASS TRANSIT HUB INFRASTRUCTURE BONDS", "contest_number" : "489", "total_votes" : "3284", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 6  REJECT", "party_code" : "NON", "votes" : "1656" }, 
+    { "name" : "Question 6  APPROVE", "party_code" : "NON", "votes" : "1628" } ] },
+  { "name" : "QUESTION 7 - CLEAN WATER, OPEN SPACE, HEALTHY COMM BONDS", "contest_number" : "490", "total_votes" : "3401", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 7  APPROVE", "party_code" : "NON", "votes" : "2076" }, 
+    { "name" : "Question 7  REJECT", "party_code" : "NON", "votes" : "1325" } ] },
+  { "name" : "QUESTION 8 - TOWN OF GLOCESTER", "contest_number" : "808", "total_votes" : "3382", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 8  APPROVE", "party_code" : "NON", "votes" : "1752" }, 
+    { "name" : "Question 8  REJECT", "party_code" : "NON", "votes" : "1630" } ] },
+  { "name" : "QUESTION 9 - TOWN OF GLOCESTER", "contest_number" : "809", "total_votes" : "3427", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 9  REJECT", "party_code" : "NON", "votes" : "2349" }, 
+    { "name" : "Question 9  APPROVE", "party_code" : "NON", "votes" : "1078" } ] },
+  { "name" : "QUESTION 10 - TOWN OF GLOCESTER", "contest_number" : "810", "total_votes" : "3308", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 10  REJECT", "party_code" : "NON", "votes" : "2029" }, 
+    { "name" : "Question 10  APPROVE", "party_code" : "NON", "votes" : "1279" } ] },
+  { "name" : "QUESTION 11 - TOWN OF GLOCESTER", "contest_number" : "811", "total_votes" : "3450", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 11  APPROVE", "party_code" : "NON", "votes" : "2204" }, 
+    { "name" : "Question 11  REJECT", "party_code" : "NON", "votes" : "1246" } ] },
+  { "name" : "QUESTION 12 - TOWN OF GLOCESTER", "contest_number" : "812", "total_votes" : "3405", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 12  APPROVE", "party_code" : "NON", "votes" : "2119" }, 
+    { "name" : "Question 12  REJECT", "party_code" : "NON", "votes" : "1286" } ] },
+  { "name" : "QUESTION 13 - TOWN OF GLOCESTER", "contest_number" : "813", "total_votes" : "3359", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 13  APPROVE", "party_code" : "NON", "votes" : "1767" }, 
+    { "name" : "Question 13  REJECT", "party_code" : "NON", "votes" : "1592" }
+  ]}
+]}
+;

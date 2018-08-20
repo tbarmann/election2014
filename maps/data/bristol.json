@@ -1,1 +1,99 @@
-var bristol=;
+var bristol={ "election_name" : "General Election", "election_date" : "November 4, 2014", "last_updated" : "November 14, 2014 02:35 PM", "precinct_count" : "9", "precincts_reporting" : "9", "contests" : [
+  { "name" : "SENATOR IN CONGRESS", "contest_number" : "101", "total_votes" : "7145", "votes_allowed" : "1", "candidates" : [
+    { "name" : "John F. REED", "party_code" : "DEM", "votes" : "5183" }, 
+    { "name" : "Mark S. ZACCARIA", "party_code" : "REP", "votes" : "1947" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "15" } ] },
+  { "name" : "REPRESENTATIVE IN CONGRESS DISTRICT 1", "contest_number" : "102", "total_votes" : "7169", "votes_allowed" : "1", "candidates" : [
+    { "name" : "David N. CICILLINE", "party_code" : "DEM", "votes" : "4104" }, 
+    { "name" : "Cormick Brendan LYNCH", "party_code" : "REP", "votes" : "3042" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "23" } ] },
+  { "name" : "GOVERNOR", "contest_number" : "104", "total_votes" : "7371", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Robert J. HEALEY, JR.", "party_code" : "MOD", "votes" : "2709" }, 
+    { "name" : "Gina M. RAIMONDO", "party_code" : "DEM", "votes" : "2628" }, 
+    { "name" : "Allan W. FUNG", "party_code" : "REP", "votes" : "1959" }, 
+    { "name" : "Kate L. FLETCHER", "party_code" : "IND", "votes" : "55" }, 
+    { "name" : "Leon M. KAYARIAN", "party_code" : "IND", "votes" : "13" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "7" } ] },
+  { "name" : "LIEUTENANT GOVERNOR", "contest_number" : "105", "total_votes" : "6946", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Daniel J. McKEE", "party_code" : "DEM", "votes" : "3608" }, 
+    { "name" : "Catherine Terry TAYLOR", "party_code" : "REP", "votes" : "2294" }, 
+    { "name" : "William H. GILBERT", "party_code" : "MOD", "votes" : "777" }, 
+    { "name" : "Tony JONES", "party_code" : "Lib", "votes" : "223" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "44" } ] },
+  { "name" : "SECRETARY OF STATE", "contest_number" : "106", "total_votes" : "6934", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Nellie M. GORBEA", "party_code" : "DEM", "votes" : "4343" }, 
+    { "name" : "John M. CARLEVALE, SR.", "party_code" : "REP", "votes" : "2576" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "15" } ] },
+  { "name" : "ATTORNEY GENERAL", "contest_number" : "107", "total_votes" : "7017", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Peter F. KILMARTIN", "party_code" : "DEM", "votes" : "3967" }, 
+    { "name" : "Dawson Tucker HODGSON", "party_code" : "REP", "votes" : "3039" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "11" } ] },
+  { "name" : "GENERAL TREASURER", "contest_number" : "108", "total_votes" : "7022", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Seth MAGAZINER", "party_code" : "DEM", "votes" : "4655" }, 
+    { "name" : "Ernest A. ALMONTE", "party_code" : "IND", "votes" : "2356" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "11" } ] },
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 10", "contest_number" : "118", "total_votes" : "2309", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Walter S. FELAG, JR.", "party_code" : "DEM", "votes" : "2271" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "38" } ] },
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 11", "contest_number" : "119", "total_votes" : "1499", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Christopher Scott OTTIANO", "party_code" : "REP", "votes" : "946" }, 
+    { "name" : "Taylor A. DAME", "party_code" : "IND", "votes" : "549" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "4" } ] },
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 32", "contest_number" : "140", "total_votes" : "2630", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Cynthia Armour COYNE", "party_code" : "DEM", "votes" : "1424" }, 
+    { "name" : "Giovanni D. CICIONE", "party_code" : "REP", "votes" : "1199" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "7" } ] },
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 68", "contest_number" : "214", "total_votes" : "3039", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Kenneth A. MARSHALL", "party_code" : "DEM", "votes" : "2974" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "65" } ] },
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 69", "contest_number" : "215", "total_votes" : "2940", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Raymond E. GALLISON, JR.", "party_code" : "DEM", "votes" : "2891" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "49" } ] },
+  { "name" : "TOWN ADMINISTRATOR TOWN OF BRISTOL", "contest_number" : "225", "total_votes" : "6073", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Antonio A. TEIXEIRA", "party_code" : "IND", "votes" : "5922" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "151" } ] },
+  { "name" : "TOWN CLERK TOWN OF BRISTOL", "contest_number" : "226", "total_votes" : "6062", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Louis P. CIRILLO", "party_code" : "REP", "votes" : "6024" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "38" } ] },
+  { "name" : "TOWN COUNCIL TOWN OF BRISTOL", "contest_number" : "227", "total_votes" : "30635", "votes_allowed" : "5", "candidates" : [
+    { "name" : "Timothy Edward SWEENEY", "party_code" : "DEM", "votes" : "4800" }, 
+    { "name" : "Mary A. PARELLA", "party_code" : "REP", "votes" : "4274" }, 
+    { "name" : "Nathan T. CALOURO", "party_code" : "DEM", "votes" : "4219" }, 
+    { "name" : "Edward P. STUART, JR.", "party_code" : "DEM", "votes" : "3994" }, 
+    { "name" : "Halsey C. HERRESHOFF", "party_code" : "REP", "votes" : "3923" }, 
+    { "name" : "Susan R. DONOVAN", "party_code" : "DEM", "votes" : "3890" }, 
+    { "name" : "Ethan M. TUCKER", "party_code" : "DEM", "votes" : "3374" }, 
+    { "name" : "William L. Sousa GRAPENTINE", "party_code" : "REP", "votes" : "2097" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "64" } ] },
+  { "name" : "NON-PARTISAN REGIONAL SCHOOL COMMITTEE TOWN OF BRISTOL", "contest_number" : "228", "total_votes" : "13730", "votes_allowed" : "3", "candidates" : [
+    { "name" : "Paul SILVA", "party_code" : "NON", "votes" : "4768" }, 
+    { "name" : "Diane B. CAMPBELL", "party_code" : "NON", "votes" : "4657" }, 
+    { "name" : "William M. O&#39;DELL", "party_code" : "NON", "votes" : "4209" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "96" } ] },
+  { "name" : "QUESTION 1 - CASINO GAMING AT NEWPORT GRAND", "contest_number" : "484", "total_votes" : "7085", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 1  APPROVE", "party_code" : "NON", "votes" : "4451" }, 
+    { "name" : "Question 1  REJECT", "party_code" : "NON", "votes" : "2634" } ] },
+  { "name" : "QUESTION 2 - RESTRICTION ON GAMBLING", "contest_number" : "485", "total_votes" : "6882", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 2  APPROVE", "party_code" : "NON", "votes" : "4955" }, 
+    { "name" : "Question 2  REJECT", "party_code" : "NON", "votes" : "1927" } ] },
+  { "name" : "QUESTION 3 - CONSTITUTIONAL CONVENTION", "contest_number" : "486", "total_votes" : "6781", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 3  REJECT", "party_code" : "NON", "votes" : "3603" }, 
+    { "name" : "Question 3  APPROVE", "party_code" : "NON", "votes" : "3178" } ] },
+  { "name" : "QUESTION 4 - HIGHER EDUCATION FACILITIES BONDS", "contest_number" : "487", "total_votes" : "6620", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 4  APPROVE", "party_code" : "NON", "votes" : "4111" }, 
+    { "name" : "Question 4  REJECT", "party_code" : "NON", "votes" : "2509" } ] },
+  { "name" : "QUESTION 5 - CREATIVE AND CULTURAL ECONOMY BONDS", "contest_number" : "488", "total_votes" : "6933", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 5  APPROVE", "party_code" : "NON", "votes" : "4146" }, 
+    { "name" : "Question 5  REJECT", "party_code" : "NON", "votes" : "2787" } ] },
+  { "name" : "QUESTION 6 - MASS TRANSIT HUB INFRASTRUCTURE BONDS", "contest_number" : "489", "total_votes" : "6516", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 6  APPROVE", "party_code" : "NON", "votes" : "4072" }, 
+    { "name" : "Question 6  REJECT", "party_code" : "NON", "votes" : "2444" } ] },
+  { "name" : "QUESTION 7 - CLEAN WATER, OPEN SPACE, HEALTHY COMM BONDS", "contest_number" : "490", "total_votes" : "6766", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 7  APPROVE", "party_code" : "NON", "votes" : "4880" }, 
+    { "name" : "Question 7  REJECT", "party_code" : "NON", "votes" : "1886" } ] },
+  { "name" : "QUESTION 8 - TOWN OF BRISTOL", "contest_number" : "718", "total_votes" : "6623", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 8  APPROVE", "party_code" : "NON", "votes" : "3868" }, 
+    { "name" : "Question 8  REJECT", "party_code" : "NON", "votes" : "2755" }
+  ]}
+]}
+;

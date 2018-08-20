@@ -1,1 +1,102 @@
-var westerly=;
+var westerly={ "election_name" : "General Election", "election_date" : "November 4, 2014", "last_updated" : "November 14, 2014 02:35 PM", "precinct_count" : "7", "precincts_reporting" : "7", "contests" : [
+  { "name" : "SENATOR IN CONGRESS", "contest_number" : "101", "total_votes" : "7334", "votes_allowed" : "1", "candidates" : [
+    { "name" : "John F. REED", "party_code" : "DEM", "votes" : "5038" }, 
+    { "name" : "Mark S. ZACCARIA", "party_code" : "REP", "votes" : "2290" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "6" } ] },
+  { "name" : "REPRESENTATIVE IN CONGRESS DISTRICT 2", "contest_number" : "103", "total_votes" : "7260", "votes_allowed" : "1", "candidates" : [
+    { "name" : "James R. LANGEVIN", "party_code" : "DEM", "votes" : "4634" }, 
+    { "name" : "Rhue R. REIS", "party_code" : "REP", "votes" : "2617" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "9" } ] },
+  { "name" : "GOVERNOR", "contest_number" : "104", "total_votes" : "7490", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Gina M. RAIMONDO", "party_code" : "DEM", "votes" : "3094" }, 
+    { "name" : "Allan W. FUNG", "party_code" : "REP", "votes" : "3004" }, 
+    { "name" : "Robert J. HEALEY, JR.", "party_code" : "MOD", "votes" : "1195" }, 
+    { "name" : "Kate L. FLETCHER", "party_code" : "IND", "votes" : "136" }, 
+    { "name" : "Leon M. KAYARIAN", "party_code" : "IND", "votes" : "46" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "15" } ] },
+  { "name" : "LIEUTENANT GOVERNOR", "contest_number" : "105", "total_votes" : "7080", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Daniel J. McKEE", "party_code" : "DEM", "votes" : "3466" }, 
+    { "name" : "Catherine Terry TAYLOR", "party_code" : "REP", "votes" : "2744" }, 
+    { "name" : "William H. GILBERT", "party_code" : "MOD", "votes" : "621" }, 
+    { "name" : "Tony JONES", "party_code" : "Lib", "votes" : "239" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "10" } ] },
+  { "name" : "SECRETARY OF STATE", "contest_number" : "106", "total_votes" : "7040", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Nellie M. GORBEA", "party_code" : "DEM", "votes" : "4014" }, 
+    { "name" : "John M. CARLEVALE, SR.", "party_code" : "REP", "votes" : "3007" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "19" } ] },
+  { "name" : "ATTORNEY GENERAL", "contest_number" : "107", "total_votes" : "7181", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Peter F. KILMARTIN", "party_code" : "DEM", "votes" : "4039" }, 
+    { "name" : "Dawson Tucker HODGSON", "party_code" : "REP", "votes" : "3130" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "12" } ] },
+  { "name" : "GENERAL TREASURER", "contest_number" : "108", "total_votes" : "6929", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Seth MAGAZINER", "party_code" : "DEM", "votes" : "3858" }, 
+    { "name" : "Ernest A. ALMONTE", "party_code" : "IND", "votes" : "3057" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "14" } ] },
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 38", "contest_number" : "146", "total_votes" : "6325", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Dennis L. ALGIERE", "party_code" : "REP", "votes" : "6218" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "107" } ] },
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 36", "contest_number" : "182", "total_votes" : "505", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Blake Anthony FILIPPI", "party_code" : "IND", "votes" : "298" }, 
+    { "name" : "Donna M. WALSH", "party_code" : "DEM", "votes" : "207" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "0" } ] },
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 37", "contest_number" : "183", "total_votes" : "5065", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Samuel A. AZZINARO", "party_code" : "DEM", "votes" : "2749" }, 
+    { "name" : "Caswell COOKE, JR.", "party_code" : "REP", "votes" : "2311" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "5" } ] },
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 38", "contest_number" : "184", "total_votes" : "1492", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Brian Patrick KENNEDY", "party_code" : "DEM", "votes" : "1453" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "39" } ] },
+  { "name" : "TOWN COUNCIL TOWN OF WESTERLY", "contest_number" : "442", "total_votes" : "42112", "votes_allowed" : "7", "candidates" : [
+    { "name" : "James V. SILVESTRI", "party_code" : "DEM", "votes" : "4367" }, 
+    { "name" : "Christopher A. DUHAMEL", "party_code" : "REP", "votes" : "4326" }, 
+    { "name" : "Diana L. SERRA", "party_code" : "DEM", "votes" : "4013" }, 
+    { "name" : "Jean L. GAGNIER", "party_code" : "REP", "votes" : "3702" }, 
+    { "name" : "John P. CARSON, SR.", "party_code" : "DEM", "votes" : "3642" }, 
+    { "name" : "Philip M. OVERTON", "party_code" : "REP", "votes" : "3633" }, 
+    { "name" : "Mario P. CELICO", "party_code" : "IND", "votes" : "3341" }, 
+    { "name" : "Kenneth PARRILLA", "party_code" : "DEM", "votes" : "3332" }, 
+    { "name" : "Michael W. OBER", "party_code" : "DEM", "votes" : "2864" }, 
+    { "name" : "William C. MOSCARITOLO", "party_code" : "REP", "votes" : "2733" }, 
+    { "name" : "Michael S. MILLER", "party_code" : "REP", "votes" : "2507" }, 
+    { "name" : "David A. GIORNO", "party_code" : "DEM", "votes" : "1845" }, 
+    { "name" : "Edwin L. RUSSELL", "party_code" : "REP", "votes" : "1745" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "62" } ] },
+  { "name" : "SCHOOL COMMITTEE TOWN OF WESTERLY", "contest_number" : "443", "total_votes" : "18844", "votes_allowed" : "3", "candidates" : [
+    { "name" : "Marianne A. NARDONE", "party_code" : "REP", "votes" : "3955" }, 
+    { "name" : "Patricia A. PANCIERA", "party_code" : "DEM", "votes" : "3302" }, 
+    { "name" : "Gina T. FULLER", "party_code" : "IND", "votes" : "2738" }, 
+    { "name" : "William J. AIELLO", "party_code" : "IND", "votes" : "2656" }, 
+    { "name" : "Christine C. DAVIDSON", "party_code" : "DEM", "votes" : "2307" }, 
+    { "name" : "Diana M. BLANDA", "party_code" : "DEM", "votes" : "2136" }, 
+    { "name" : "Peter J. BONK", "party_code" : "IND", "votes" : "1736" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "14" } ] },
+  { "name" : "QUESTION 1 - CASINO GAMING AT NEWPORT GRAND", "contest_number" : "484", "total_votes" : "7183", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 1  REJECT", "party_code" : "NON", "votes" : "3927" }, 
+    { "name" : "Question 1  APPROVE", "party_code" : "NON", "votes" : "3256" } ] },
+  { "name" : "QUESTION 2 - RESTRICTION ON GAMBLING", "contest_number" : "485", "total_votes" : "6971", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 2  APPROVE", "party_code" : "NON", "votes" : "4765" }, 
+    { "name" : "Question 2  REJECT", "party_code" : "NON", "votes" : "2206" } ] },
+  { "name" : "QUESTION 3 - CONSTITUTIONAL CONVENTION", "contest_number" : "486", "total_votes" : "6851", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 3  REJECT", "party_code" : "NON", "votes" : "3996" }, 
+    { "name" : "Question 3  APPROVE", "party_code" : "NON", "votes" : "2855" } ] },
+  { "name" : "QUESTION 4 - HIGHER EDUCATION FACILITIES BONDS", "contest_number" : "487", "total_votes" : "6844", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 4  APPROVE", "party_code" : "NON", "votes" : "4434" }, 
+    { "name" : "Question 4  REJECT", "party_code" : "NON", "votes" : "2410" } ] },
+  { "name" : "QUESTION 5 - CREATIVE AND CULTURAL ECONOMY BONDS", "contest_number" : "488", "total_votes" : "7092", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 5  APPROVE", "party_code" : "NON", "votes" : "4528" }, 
+    { "name" : "Question 5  REJECT", "party_code" : "NON", "votes" : "2564" } ] },
+  { "name" : "QUESTION 6 - MASS TRANSIT HUB INFRASTRUCTURE BONDS", "contest_number" : "489", "total_votes" : "6553", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 6  APPROVE", "party_code" : "NON", "votes" : "3835" }, 
+    { "name" : "Question 6  REJECT", "party_code" : "NON", "votes" : "2718" } ] },
+  { "name" : "QUESTION 7 - CLEAN WATER, OPEN SPACE, HEALTHY COMM BONDS", "contest_number" : "490", "total_votes" : "6754", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 7  APPROVE", "party_code" : "NON", "votes" : "4600" }, 
+    { "name" : "Question 7  REJECT", "party_code" : "NON", "votes" : "2154" } ] },
+  { "name" : "QUESTION 8 - TOWN OF WESTERLY", "contest_number" : "740", "total_votes" : "7198", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 8  APPROVE", "party_code" : "NON", "votes" : "5793" }, 
+    { "name" : "Question 8  REJECT", "party_code" : "NON", "votes" : "1405" } ] },
+  { "name" : "QUESTION 9 - TOWN OF WESTERLY", "contest_number" : "741", "total_votes" : "7223", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 9  REJECT", "party_code" : "NON", "votes" : "4622" }, 
+    { "name" : "Question 9  APPROVE", "party_code" : "NON", "votes" : "2601" }
+  ]}
+]}
+;
