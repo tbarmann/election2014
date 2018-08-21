@@ -138,18 +138,19 @@
 	<script type="text/javascript">
 
 		var viewportWidth = window.innerWidth * 0.95;
-		var mapWidth = viewportWidth < 480 ? 480 :viewportWidth;
+		var mapWidth = viewportWidth < 290 ? 290 :viewportWidth;
 		mapWidth = viewportWidth >  640 ? 640 : mapWidth;
 
 		var map_init = {
-			"map_width": mapWidth,
-			"stroke_width":1,
-			"default_hide_labels":false,
-			"legend_width_offset": 20,
-			"legend_left_offset" : 0,
-			"legend_top_offset": 0,
-			"data_source": governor_by_town,
-			"race_number": 104
+			map_width: mapWidth,
+			stroke_width: 1,
+			default_show_labels: true,
+			legend_width_offset: 20,
+			legend_left_offset : 0,
+			legend_top_offset: 0,
+			steps: 5,
+			data_source: governor_by_town,
+			race_number: 104
 			};
 
 		var candidates = [
@@ -173,7 +174,7 @@
 $(document).ready(function() {
  	// createTestVotes();
  	mapResizeWidth(map_init.map_width);
- 	createGeoLabels();
+ 	map_init.default_show_labels && viewportWidth > 480 && createGeoLabels();
  	assignColorsToPolygons();
 	$('.map').maphilight();
 	buildLegend('.legend_div');
