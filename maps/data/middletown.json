@@ -1,1 +1,95 @@
-var middletown=;
+var middletown={ "election_name" : "General Election", "election_date" : "November 4, 2014", "last_updated" : "November 14, 2014 02:35 PM", "precinct_count" : "5", "precincts_reporting" : "5", "contests" : [
+  { "name" : "SENATOR IN CONGRESS", "contest_number" : "101", "total_votes" : "5288", "votes_allowed" : "1", "candidates" : [
+    { "name" : "John F. REED", "party_code" : "DEM", "votes" : "3806" }, 
+    { "name" : "Mark S. ZACCARIA", "party_code" : "REP", "votes" : "1474" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "8" } ] },
+  { "name" : "REPRESENTATIVE IN CONGRESS DISTRICT 1", "contest_number" : "102", "total_votes" : "5280", "votes_allowed" : "1", "candidates" : [
+    { "name" : "David N. CICILLINE", "party_code" : "DEM", "votes" : "2982" }, 
+    { "name" : "Cormick Brendan LYNCH", "party_code" : "REP", "votes" : "2289" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "9" } ] },
+  { "name" : "GOVERNOR", "contest_number" : "104", "total_votes" : "5352", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Gina M. RAIMONDO", "party_code" : "DEM", "votes" : "2241" }, 
+    { "name" : "Allan W. FUNG", "party_code" : "REP", "votes" : "1902" }, 
+    { "name" : "Robert J. HEALEY, JR.", "party_code" : "MOD", "votes" : "1090" }, 
+    { "name" : "Kate L. FLETCHER", "party_code" : "IND", "votes" : "89" }, 
+    { "name" : "Leon M. KAYARIAN", "party_code" : "IND", "votes" : "19" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "11" } ] },
+  { "name" : "LIEUTENANT GOVERNOR", "contest_number" : "105", "total_votes" : "5088", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Daniel J. McKEE", "party_code" : "DEM", "votes" : "2457" }, 
+    { "name" : "Catherine Terry TAYLOR", "party_code" : "REP", "votes" : "1911" }, 
+    { "name" : "William H. GILBERT", "party_code" : "MOD", "votes" : "544" }, 
+    { "name" : "Tony JONES", "party_code" : "Lib", "votes" : "163" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "13" } ] },
+  { "name" : "SECRETARY OF STATE", "contest_number" : "106", "total_votes" : "5118", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Nellie M. GORBEA", "party_code" : "DEM", "votes" : "2903" }, 
+    { "name" : "John M. CARLEVALE, SR.", "party_code" : "REP", "votes" : "2206" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "9" } ] },
+  { "name" : "ATTORNEY GENERAL", "contest_number" : "107", "total_votes" : "5197", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Peter F. KILMARTIN", "party_code" : "DEM", "votes" : "2917" }, 
+    { "name" : "Dawson Tucker HODGSON", "party_code" : "REP", "votes" : "2274" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "6" } ] },
+  { "name" : "GENERAL TREASURER", "contest_number" : "108", "total_votes" : "5051", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Seth MAGAZINER", "party_code" : "DEM", "votes" : "3081" }, 
+    { "name" : "Ernest A. ALMONTE", "party_code" : "IND", "votes" : "1965" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "5" } ] },
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 12", "contest_number" : "120", "total_votes" : "4390", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Louis P. DiPALMA", "party_code" : "DEM", "votes" : "4321" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "69" } ] },
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 72", "contest_number" : "218", "total_votes" : "2118", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Linda Dill FINN", "party_code" : "DEM", "votes" : "1075" }, 
+    { "name" : "Daniel Patrick REILLY", "party_code" : "REP", "votes" : "1042" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "1" } ] },
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 73", "contest_number" : "219", "total_votes" : "756", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Marvin L. ABNEY", "party_code" : "DEM", "votes" : "740" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "16" } ] },
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 74", "contest_number" : "220", "total_votes" : "1740", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Deborah L. RUGGIERO", "party_code" : "DEM", "votes" : "1689" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "51" } ] },
+  { "name" : "TOWN COUNCIL TOWN OF MIDDLETOWN", "contest_number" : "341", "total_votes" : "30083", "votes_allowed" : "7", "candidates" : [
+    { "name" : "Robert KEMPENAAR, II", "party_code" : "DEM", "votes" : "3347" }, 
+    { "name" : "M. Theresa SANTOS", "party_code" : "REP", "votes" : "3306" }, 
+    { "name" : "Robert J. SYLVIA", "party_code" : "DEM", "votes" : "3130" }, 
+    { "name" : "Barbara A. VONVILLAS", "party_code" : "IND", "votes" : "2833" }, 
+    { "name" : "Henry F. LOMBARDI, JR.", "party_code" : "DEM", "votes" : "2825" }, 
+    { "name" : "Paul M. RODRIGUES", "party_code" : "DEM", "votes" : "2768" }, 
+    { "name" : "Antone C. VIVEIROS", "party_code" : "REP", "votes" : "2766" }, 
+    { "name" : "Richard P. ADAMS", "party_code" : "IND", "votes" : "2670" }, 
+    { "name" : "Olin D. GAMBRELL, SR.", "party_code" : "DEM", "votes" : "2398" }, 
+    { "name" : "Melody R. MULCAHEY", "party_code" : "DEM", "votes" : "2047" }, 
+    { "name" : "Richard B. RODRIGUES, JR.", "party_code" : "DEM", "votes" : "1867" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "126" } ] },
+  { "name" : "NON-PARTISAN SCHOOL COMMITTEE TOWN OF MIDDLETOWN", "contest_number" : "342", "total_votes" : "9991", "votes_allowed" : "3", "candidates" : [
+    { "name" : "Theresa Marie Silveira SPENGLER", "party_code" : "NON", "votes" : "3487" }, 
+    { "name" : "Douglas W. ARNOLD", "party_code" : "NON", "votes" : "3257" }, 
+    { "name" : "Liana FERREIRA-FENTON", "party_code" : "NON", "votes" : "3189" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "58" } ] },
+  { "name" : "QUESTION 1 - CASINO GAMING AT NEWPORT GRAND", "contest_number" : "484", "total_votes" : "5338", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 1  APPROVE", "party_code" : "NON", "votes" : "2707" }, 
+    { "name" : "Question 1  REJECT", "party_code" : "NON", "votes" : "2631" } ] },
+  { "name" : "QUESTION 2 - RESTRICTION ON GAMBLING", "contest_number" : "485", "total_votes" : "5268", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 2  APPROVE", "party_code" : "NON", "votes" : "3458" }, 
+    { "name" : "Question 2  REJECT", "party_code" : "NON", "votes" : "1810" } ] },
+  { "name" : "QUESTION 3 - CONSTITUTIONAL CONVENTION", "contest_number" : "486", "total_votes" : "5051", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 3  REJECT", "party_code" : "NON", "votes" : "2934" }, 
+    { "name" : "Question 3  APPROVE", "party_code" : "NON", "votes" : "2117" } ] },
+  { "name" : "QUESTION 4 - HIGHER EDUCATION FACILITIES BONDS", "contest_number" : "487", "total_votes" : "5078", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 4  APPROVE", "party_code" : "NON", "votes" : "3293" }, 
+    { "name" : "Question 4  REJECT", "party_code" : "NON", "votes" : "1785" } ] },
+  { "name" : "QUESTION 5 - CREATIVE AND CULTURAL ECONOMY BONDS", "contest_number" : "488", "total_votes" : "5201", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 5  APPROVE", "party_code" : "NON", "votes" : "3117" }, 
+    { "name" : "Question 5  REJECT", "party_code" : "NON", "votes" : "2084" } ] },
+  { "name" : "QUESTION 6 - MASS TRANSIT HUB INFRASTRUCTURE BONDS", "contest_number" : "489", "total_votes" : "4903", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 6  APPROVE", "party_code" : "NON", "votes" : "2915" }, 
+    { "name" : "Question 6  REJECT", "party_code" : "NON", "votes" : "1988" } ] },
+  { "name" : "QUESTION 7 - CLEAN WATER, OPEN SPACE, HEALTHY COMM BONDS", "contest_number" : "490", "total_votes" : "5057", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 7  APPROVE", "party_code" : "NON", "votes" : "3531" }, 
+    { "name" : "Question 7  REJECT", "party_code" : "NON", "votes" : "1526" } ] },
+  { "name" : "QUESTION 8 - TOWN OF MIDDLETOWN", "contest_number" : "725", "total_votes" : "5197", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 8  REJECT", "party_code" : "NON", "votes" : "2829" }, 
+    { "name" : "Question 8  APPROVE", "party_code" : "NON", "votes" : "2368" } ] },
+  { "name" : "QUESTION 9 - TOWN OF MIDDLETOWN", "contest_number" : "726", "total_votes" : "5121", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 9  APPROVE", "party_code" : "NON", "votes" : "3412" }, 
+    { "name" : "Question 9  REJECT", "party_code" : "NON", "votes" : "1709" }
+  ]}
+]}
+;

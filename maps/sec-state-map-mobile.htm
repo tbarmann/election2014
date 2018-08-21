@@ -11,7 +11,7 @@
 		left:0;
 	}
 
-	.legend_div2 {
+	.legend_div {
 		width:260px;
 		position:static;
 		border: 1px solid #f3f3f4;
@@ -21,12 +21,13 @@
 	}
 
 	.map_legend {
-	border:0;
+	border:0;	<link rel="stylesheet" href="./css/elections.css" type="text/css" media="screen" />
+
 	width:100%;
 	position:static;
 	}
 
-	.legend_div2 .candidate_name {
+	.legend_div .candidate_name {
 	font-family: 'Open Sans', sans-serif;
 	text-transform: uppercase;
 	font-weight:bold;
@@ -36,7 +37,7 @@
 	margin-right:18px;
 	}
 
-	.legend_div2 .color_box {
+	.legend_div .color_box {
 	border:0;
 	width:13px;
 	height:13px;
@@ -44,7 +45,7 @@
 	margin-right:5px;
 	}
 
-	.legend_div2 .race_name {
+	.legend_div .race_name {
 	font-size:14px;
 	text-align:left;
 	font-family: 'Droid Serif', serif;
@@ -130,23 +131,26 @@
 	<script type="text/javascript" src="./data/governor_by_town.json"></script>
 	<script type="text/javascript" src="./js/jquery.metadata.js"></script>
 	<script type="text/javascript" src="./js/jquery.maphilight.js"></script>
-	<script type="text/javascript" src="./js/map_functions4-3.js"></script>
+	<script type="text/javascript" src="./js/map_functions_election.js"></script>
 	<script type="text/javascript" src="./js/lodash-min.js"></script>
 	<script type="text/javascript" src="./js/number.format.js"></script>
 
 	<script type="text/javascript">
 
 		var viewportWidth = window.innerWidth * 0.95;
+		var mapWidth = viewportWidth < 290 ? 290 :viewportWidth;
+		mapWidth = viewportWidth >  640 ? 640 : mapWidth;
 
 		var map_init = {
-			"map_width": viewportWidth,
-			"stroke_width":1,
-			"default_hide_labels":false,
-			"legend_width_offset": 20,
-			"legend_left_offset" : 0,
-			"legend_top_offset": 0,
-			"data_source": governor_by_town,
-			"race_number": 104
+			map_width: mapWidth,
+			stroke_width: 1,
+			default_show_labels: true,
+			legend_width_offset: 20,
+			legend_left_offset : 0,
+			legend_top_offset: 0,
+			steps: 5,
+			data_source: governor_by_town,
+			race_number: 104
 			};
 
 		var candidates = [
@@ -167,287 +171,16 @@
 			}
 		];
 
-	String.prototype.capitalize = function() {
-    return this.charAt(0).toUpperCase() + this.slice(1).toLowerCase();
-	};
-	function createTestVotes() {
-		// global: map_init.data_source
-		var distribution = [300000,5000,300000,10,10];
-		for (var prop in map_init.data_source) {
-			var thisProp = map_init.data_source[prop];
-				var precinct_count = map_init.data_source[prop].precinct_count;
-				map_init.data_source[prop].precincts_reporting = precinct_count;
-				$.each(thisProp.contests,function(j){
-					$.each(this.candidates, function(k) {
-					//	console.log(map_init.data_source[prop].contests[j].candidates[k].name);
-							map_init.data_source[prop].contests[j].candidates[k].votes=_.random(0,distribution[k]);
-					});
-				});
-		}
-	}
-
-	function getParty(abbr) {
-		var parties = {
-			'dem':'Dem',
-			'rep':'Rep',
-			'ind':'Ind',
-			'mod':'Mod'
-		};
-
-		var key = abbr.toLowerCase();
-		return parties[key] || '';
-	}
-
-	function getCandidateLastName(full_name) {
-		// global legend
-		return _.find(candidates, function(candidate) { 
-			return candidate.full_name === full_name;
-		}).name;
-	}
-
-	function getRaceName(contest_number){
-		// global: map_init.data_source
-		var contest_name = null;
-		var first_prop = {};
-		for (var prop in map_init.data_source) {
-			first_prop = map_init.data_source[prop];
-			break;
-		}
-		$.each(first_prop.contests,function(){
-			if (this.contest_number == contest_number) {
-				contest_name = this.name;
-				return;
-			}
-		});
-		return contest_name;
-	}
-
-	function lookupCandidateBaseColor(fullName) {
-		// global: legend
-		return _.find(candidates, function(candidate) {
-			return fullName.indexOf(candidate.name) !== -1;
-		}).color;
-	}
-
-	// maps an input domain to an output range
-	// domain is array with two values: min and max
-	function createScale(domain, range) {
-		return function(value) {
-			if (value <= domain[0]) {
-				return range[0];
-			}
-			if (value >= domain[1]) {
-				return range[1];
-			}
-			var domainSpread = domain[1] - domain[0];
-			var rangeSpread = (range[1] - range[0])
-			return Math.floor(((value - domain[0]) * rangeSpread) / domainSpread);
-		}
-	}
-
-	function getLegendColor(leader) {
-		// global: legend
-		var steps = 3;
-		var candidate_count = candidates.length;
-		var min_winner_pct = parseInt(100/candidate_count) + 1;
-		var color = lookupCandidateBaseColor(leader.name);
-
-		// get 1 more than needed - the first color will be white, which we get rid of
-		var palette = mixPalette("FFFFFF", color, steps + 1);
-		palette.shift(); // get rid of first element since it is pure white
-		var scale = createScale([min_winner_pct, 100], [0, steps]);
-		var paletteIndex = scale(leader.pct_votes);
-		return palette[paletteIndex];
-	}
-
-function buildLegend() {
-	var html = '<div class="map_legend2">';
-	race_name = getRaceName(map_init.race_number);
-	html += '<div class="race_name">' + race_name + "</div>";
-	for (var index = 0; index < candidates.length; index++) {
-		html +=
-			'<div class="color_box" style="background:#' +
-			candidates[index].color +
-			';"></div>';
-		html += '<div class="candidate_name">' + candidates[index].name + "</div>";
-	}
-	html += "</div>";
-	html += '<div style="clear:both;"></div>';
-	return html;
-}
-
-function mapOnMouseOver(location){
-	var new_location = location.replace(" ","_");
-	new_location = new_location.toLowerCase();
-	results = get_results_by_race(map_init.data_source[new_location], map_init.race_number);
-	var html = showResultsTableTip(results, location);
-	Tip(html, BGCOLOR, '#FFFFFF', BORDERCOLOR, '#96A3AF', PADDING, '5', 'SHADOW', true);
-}
-
-function showResultsTableTip(results, str) {
-	var threshhold = 5;  // any candidate with less than this percent of the vote put into the "Other" category
-	var html = '';
-	var new_str = str.replace(" ","_");
-	new_str = new_str.toLowerCase();
-	results = get_results_by_race(map_init.data_source[new_str],map_init.race_number);
-	html += '<input type="hidden" id="buttonEID" value="' + results.name.toLowerCase() + '"><input type="hidden" id="pView" value="map"><input type="hidden" id="pFilter" value="' + results.contest_number + '"><input type="hidden" id="fNameHolder" value="statewide">\
-	   <div class="key-races general-election">\
-	      <div id="race-header">\
-	         <h3>' + str + '</h3>\
-	      </div>\
-	      <div class="candidates-header-container">\
-	         <div class="candidates-header-large">\
-	            <h4>NAME</h4>\
-	         </div>\
-	         <div class="candidates-header">Votes</div>\
-	         <div class="candidates-header pct">Pct</div>\
-	         <div style="clear: both;"></div>\
-	      </div>';
-	      var other_votes=0;
-	      var other_pct_votes=0;
-	      for (var x=0;x<results.candidates.length;x++) {
-	      	 if (results.candidates[x].pct_votes < threshhold) {
-	      	 	other_votes += parseInt(results.candidates[x].votes);
-	      	 	other_pct_votes += results.candidates[x].pct_votes;
-	      	 }
-	      	 else {
-				 var last_name = getCandidateLastName(results.candidates[x].name);
-				 html += '<div id="candidate-row"' + ((x==0) ? ' class="solid-border">' : '>');
-				 html += '<div class="candidate-col">' + last_name.capitalize() + '<br><span class="party-name"><span class="candidate-party">' + getParty(results.candidates[x].party_code) + '</span></span></div>\
-				 <div class="candidate-col-votes">' + results.candidates[x].votes.format("0,000") + '</div>\
-				 <div class="candidate-col-percent">' + results.candidates[x].pct_votes.format("0.0%") + '</div>\
-				 <div style="clear: both;"></div>\
-				 </div>';
-			}
-	      }
-	      if (other_votes>0) {
-				 html += '<div id="candidate-row">';
-				 html += '<div class="candidate-col">Other</div>\
-				 <div class="candidate-col-votes">' + other_votes.format("0,000") + '</div>\
-				 <div class="candidate-col-percent">' + other_pct_votes.format("0.0%") + '</div>\
-				 <div style="clear: both;"></div>\
-				 </div>';
-			}
-
-      	  var reporting_pct = (parseInt(results.precincts_reporting)/parseInt(results.precinct_count)) * 100;
-	      html += '<div id="prec-container">\
-				 <div id="prec-header" class="left">Precincts in</div>\
-				 <div id="prec-content">' + reporting_pct.format("0.0%") + '</div>\
-				 <div style="clear: both;"></div>\
-			  	</div>\
-			  </div>';
-
-	return html;
-}
-
- $(document).ready(function() {
- 	createTestVotes();
+$(document).ready(function() {
+ 	// createTestVotes();
  	mapResizeWidth(map_init.map_width);
-
- 	 // set image to the correct dimensions
-	var maxXY = getMaxXY("area");
-	$('.map').css('width',maxXY.x + 'px');
-	$('.map').css('height',maxXY.y + 'px');
-	$('.map img').attr('width',maxXY.x);
-	$('.map img').attr('height',maxXY.y);
-
- 	var label_div_content = '';
-
-	$("area").each (function (i) {
-
-		//get the onMouseOver attribute
-		var thisOnMouseOver = $(this).attr('onMouseOver');
-
-		// Extract the parameter - this is the town name
-		var thisOnMouseOverArray = thisOnMouseOver.split("'");
-		var this_town = thisOnMouseOverArray[1];
-
-		var this_town_lower = this_town.replace(" ","_").toLowerCase();
-
-	// get the coordinate pairs for this polygon area and put them in an array
-	var coordStr = $(this).attr('coords');
-	var coordArry = coordStr.split(',');
-	var xArry = [];
-	var yArry = [];
-
-	// split off the x's in one array, the y's in another
-	for (x=0;x<coordArry.length;x+=2) {
-		xArry.push(parseInt(coordArry[x]));
-		yArry.push(parseInt(coordArry[x+1]));
-	}
-	// get max,min, average for the x's and y's
-	// the average x,y will be the center of the square that bounds the polygon
-	var xmax = Math.max.apply(Math, xArry);
-	var xmin = Math.min.apply(Math, xArry);
-	var ymax = Math.max.apply(Math, yArry);
-	var ymin = Math.min.apply(Math, yArry);
-	var xavg = parseInt((xmax-xmin)/2) + xmin;
-	var yavg = parseInt((ymax-ymin)/2) + ymin;
-
-	var xsum= _.sum(xArry);
-	var ysum= _.sum(yArry);
-
-	// create a style based on the average x,y coordinates
-	this_style = 'left:' + xavg + 'px; top:' + yavg + 'px; ';
-
-	// create a div and put in the style with the coordinates
-	label_div_content += '<div onMouseOver="mapOnMouseOver(\'' + this_town + '\');" class="map_label ' + this_town_lower + '_label"';
-	label_div_content += ' style="' + this_style + '" ';
-	label_div_content += '>' + this_town  + '</div>';
-
-});  // end of each
-$('#label_div').html(label_div_content);
-
-	$(function color_map() {
-	// color the map
-	for (var this_town in map_init.data_source) {
-		var results = get_results_by_race(map_init.data_source[this_town],map_init.race_number);
-		if (results.precincts_reporting == 0)
-			var color = 'DDDDDD';
-		else {
-			// sort candidates by number of votes, decending
-			// that will leave the leader in the first array position [0]
-
-			results.candidates.sort (function(a, b) {return parseInt(b.votes) - parseInt(a.votes)});
-			var leader = results.candidates[0];
-			var color = getLegendColor(leader);
-		}
-
-		$("area").each (function (i) {
-
-			var thisOnMouseOver = $(this).attr('onMouseOver');
-			// Extract the parameter - this is the town name
-			var thisOnMouseOverArray = thisOnMouseOver.split("'");
-			var town = thisOnMouseOverArray[1];
-			var strokeWidth = (map_init.hasOwnProperty('stroke_width')) ? map_init.stroke_width : 1;
-			town = town.toLowerCase();
-			town = town.replace(" ","_");
-
-			if (town==this_town) {
-						var new_class = this_town + " {strokeColor:'FFFFFF',strokeWidth:" + strokeWidth + ",fillColor:'" + color + "',fillOpacity:1,alwaysOn:true}";
-				$(this).addClass(new_class);
-			}
-		});
-		//		$('.' + this_town).addClass(new_class);
-	}
+ 	map_init.default_show_labels && viewportWidth > 480 && createGeoLabels();
+ 	assignColorsToPolygons();
 	$('.map').maphilight();
-	$('.legend_div2').html(buildLegend());
-
-	// place legend div
-	var legend_width = parseInt($('.map_legend').css('width'));
-	var container_width = parseInt($('.map_container').css('width'))+map_init.legend_width_offset;
-	$('.map_legend').css('left',(map_init.legend_left_offset)+'px');
-	$('.map_legend').css('top',map_init.legend_top_offset + 'px');
-	});
-
-	$("area").mouseleave(function() {
-  		UnTip();
-	});
- 	$(".map_label").mouseleave(function() {
-   		UnTip();
-	});
-
+	buildLegend('.legend_div');
+	attachMouseEvents();
 });
+	
 </script>
 
 </head>
@@ -455,16 +188,15 @@ $('#label_div').html(label_div_content);
 <body>
 <script type="text/javascript" src="./js/wz_tooltip.js"></script>
 
+<div class="legend_div"></div>
 <div class="map_container">
-	<!-- <div class="legend_div"></div> -->
-	<div class="legend_div2"></div>
-	<img id="map_img" class="map" src="blank.png" width="450" height="600" border="0" ismap="1" usemap="#map" />
+	<img id="map_img" class="map" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="450" height="600" border="0" ismap="1" usemap="#map" />
 	<div id="label_div"></div>
 	<div class="credit">The Providence Journal/Timothy C. Barmann</div>
 	<div class="source"></div>
 </div>
 
-<map name="map" id="us_president">
+<map name="map" id="">
 <area shape="polygon" onMouseOver="mapOnMouseOver('Cumberland')"  coords="398,143,397,139,394,136,387,138,382,134,385,124,377,124,374,119,368,116,365,112,361,111,358,107,357,98,348,84,341,81,337,75,332,72,329,59,322,56,318,51,311,49,327,26,334,18,335,6,398,5,398,42,398,143">
 <area shape="polygon" onMouseOver="mapOnMouseOver('Woonsocket')"  coords="335,6,334,18,327,26,311,49,288,45,274,37,268,15,276,15,277,10,301,7,335,6">
 <area shape="polygon" onMouseOver="mapOnMouseOver('North Smithfield')"  coords="277,10,276,15,268,15,274,37,288,45,311,49,309,54,311,56,311,63,310,68,312,73,310,75,311,85,313,89,308,89,298,90,255,96,226,98,218,47,213,11,277,10">

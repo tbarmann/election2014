@@ -1,1 +1,117 @@
-var exeter=;
+var exeter={ "election_name" : "General Election", "election_date" : "November 4, 2014", "last_updated" : "November 14, 2014 02:35 PM", "precinct_count" : "3", "precincts_reporting" : "3", "contests" : [
+  { "name" : "SENATOR IN CONGRESS", "contest_number" : "101", "total_votes" : "2662", "votes_allowed" : "1", "candidates" : [
+    { "name" : "John F. REED", "party_code" : "DEM", "votes" : "1535" }, 
+    { "name" : "Mark S. ZACCARIA", "party_code" : "REP", "votes" : "1124" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "3" } ] },
+  { "name" : "REPRESENTATIVE IN CONGRESS DISTRICT 2", "contest_number" : "103", "total_votes" : "2655", "votes_allowed" : "1", "candidates" : [
+    { "name" : "James R. LANGEVIN", "party_code" : "DEM", "votes" : "1353" }, 
+    { "name" : "Rhue R. REIS", "party_code" : "REP", "votes" : "1294" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "8" } ] },
+  { "name" : "GOVERNOR", "contest_number" : "104", "total_votes" : "2713", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Allan W. FUNG", "party_code" : "REP", "votes" : "1147" }, 
+    { "name" : "Gina M. RAIMONDO", "party_code" : "DEM", "votes" : "771" }, 
+    { "name" : "Robert J. HEALEY, JR.", "party_code" : "MOD", "votes" : "742" }, 
+    { "name" : "Kate L. FLETCHER", "party_code" : "IND", "votes" : "32" }, 
+    { "name" : "Leon M. KAYARIAN", "party_code" : "IND", "votes" : "13" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "8" } ] },
+  { "name" : "LIEUTENANT GOVERNOR", "contest_number" : "105", "total_votes" : "2609", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Catherine Terry TAYLOR", "party_code" : "REP", "votes" : "1150" }, 
+    { "name" : "Daniel J. McKEE", "party_code" : "DEM", "votes" : "1041" }, 
+    { "name" : "William H. GILBERT", "party_code" : "MOD", "votes" : "276" }, 
+    { "name" : "Tony JONES", "party_code" : "Lib", "votes" : "131" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "11" } ] },
+  { "name" : "SECRETARY OF STATE", "contest_number" : "106", "total_votes" : "2579", "votes_allowed" : "1", "candidates" : [
+    { "name" : "John M. CARLEVALE, SR.", "party_code" : "REP", "votes" : "1302" }, 
+    { "name" : "Nellie M. GORBEA", "party_code" : "DEM", "votes" : "1267" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "10" } ] },
+  { "name" : "ATTORNEY GENERAL", "contest_number" : "107", "total_votes" : "2632", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Dawson Tucker HODGSON", "party_code" : "REP", "votes" : "1559" }, 
+    { "name" : "Peter F. KILMARTIN", "party_code" : "DEM", "votes" : "1070" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "3" } ] },
+  { "name" : "GENERAL TREASURER", "contest_number" : "108", "total_votes" : "2535", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Ernest A. ALMONTE", "party_code" : "IND", "votes" : "1311" }, 
+    { "name" : "Seth MAGAZINER", "party_code" : "DEM", "votes" : "1221" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "3" } ] },
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 34", "contest_number" : "142", "total_votes" : "2608", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Elaine J. MORGAN", "party_code" : "REP", "votes" : "1432" }, 
+    { "name" : "Catherine COOL RUMSEY", "party_code" : "DEM", "votes" : "1170" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "6" } ] },
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 31", "contest_number" : "177", "total_votes" : "739", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Doreen Marie COSTA", "party_code" : "REP", "votes" : "395" }, 
+    { "name" : "Julie A. CASIMIRO", "party_code" : "DEM", "votes" : "343" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "1" } ] },
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 39", "contest_number" : "185", "total_votes" : "1871", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Justin PRICE", "party_code" : "REP", "votes" : "1120" }, 
+    { "name" : "Larry VALENCIA", "party_code" : "DEM", "votes" : "749" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "2" } ] },
+  { "name" : "TOWN MODERATOR TOWN OF EXETER", "contest_number" : "286", "total_votes" : "2004", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Peter V. LACOUTURE", "party_code" : "DEM", "votes" : "1963" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "41" } ] },
+  { "name" : "TOWN CLERK TOWN OF EXETER", "contest_number" : "287", "total_votes" : "2064", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Lynn M. HAWKINS", "party_code" : "DEM", "votes" : "2029" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "35" } ] },
+  { "name" : "TOWN COUNCIL TOWN OF EXETER", "contest_number" : "288", "total_votes" : "11791", "votes_allowed" : "5", "candidates" : [
+    { "name" : "Raymond A. MORRISSEY, JR.", "party_code" : "IND", "votes" : "1319" }, 
+    { "name" : "Arlene B. HICKS", "party_code" : "DEM", "votes" : "1279" }, 
+    { "name" : "Kevin Phillip McGOVERN", "party_code" : "REP", "votes" : "1266" }, 
+    { "name" : "Calvin A. ELLIS", "party_code" : "DEM", "votes" : "1223" }, 
+    { "name" : "Daniel W. PATTERSON", "party_code" : "REP", "votes" : "1221" }, 
+    { "name" : "William P. MONAHAN", "party_code" : "DEM", "votes" : "1138" }, 
+    { "name" : "Joseph ST. LAWRENCE, III", "party_code" : "REP", "votes" : "1126" }, 
+    { "name" : "Robert E. JOHNSON", "party_code" : "DEM", "votes" : "1100" }, 
+    { "name" : "Milan E. ADAMS, IV", "party_code" : "REP", "votes" : "1065" }, 
+    { "name" : "Joyce BASTIEN", "party_code" : "DEM", "votes" : "1029" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "25" } ] },
+  { "name" : "SCHOOL COMMITTEE TOWN OF EXETER", "contest_number" : "289", "total_votes" : "3866", "votes_allowed" : "2", "candidates" : [
+    { "name" : "Theresa C. DONOVAN", "party_code" : "IND", "votes" : "1420" }, 
+    { "name" : "Diane Bampton ALLEN", "party_code" : "REP", "votes" : "1299" }, 
+    { "name" : "Barbara A. MUHITCH", "party_code" : "DEM", "votes" : "1140" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "7" } ] },
+  { "name" : "TOWN SERGEANT TOWN OF EXETER", "contest_number" : "290", "total_votes" : "2259", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Richard S. BROWN", "party_code" : "REP", "votes" : "2228" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "31" } ] },
+  { "name" : "TOWN TREASURER TOWN OF EXETER", "contest_number" : "291", "total_votes" : "2005", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Maria LAWLER", "party_code" : "DEM", "votes" : "1968" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "37" } ] },
+  { "name" : "DIRECTOR OF PUBLIC WELFARE TOWN OF EXETER", "contest_number" : "292", "total_votes" : "1965", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Christine HEART-SKAGGS", "party_code" : "IND", "votes" : "1956" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "9" } ] },
+  { "name" : "ZONING INSPECTOR TOWN OF EXETER", "contest_number" : "293", "total_votes" : "2105", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Hal MORGAN", "party_code" : "REP", "votes" : "2075" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "30" } ] },
+  { "name" : "QUESTION 1 - CASINO GAMING AT NEWPORT GRAND", "contest_number" : "484", "total_votes" : "2643", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 1  APPROVE", "party_code" : "NON", "votes" : "1383" }, 
+    { "name" : "Question 1  REJECT", "party_code" : "NON", "votes" : "1260" } ] },
+  { "name" : "QUESTION 2 - RESTRICTION ON GAMBLING", "contest_number" : "485", "total_votes" : "2584", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 2  APPROVE", "party_code" : "NON", "votes" : "1764" }, 
+    { "name" : "Question 2  REJECT", "party_code" : "NON", "votes" : "820" } ] },
+  { "name" : "QUESTION 3 - CONSTITUTIONAL CONVENTION", "contest_number" : "486", "total_votes" : "2571", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 3  REJECT", "party_code" : "NON", "votes" : "1470" }, 
+    { "name" : "Question 3  APPROVE", "party_code" : "NON", "votes" : "1101" } ] },
+  { "name" : "QUESTION 4 - HIGHER EDUCATION FACILITIES BONDS", "contest_number" : "487", "total_votes" : "2571", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 4  APPROVE", "party_code" : "NON", "votes" : "1430" }, 
+    { "name" : "Question 4  REJECT", "party_code" : "NON", "votes" : "1141" } ] },
+  { "name" : "QUESTION 5 - CREATIVE AND CULTURAL ECONOMY BONDS", "contest_number" : "488", "total_votes" : "2623", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 5  REJECT", "party_code" : "NON", "votes" : "1401" }, 
+    { "name" : "Question 5  APPROVE", "party_code" : "NON", "votes" : "1222" } ] },
+  { "name" : "QUESTION 6 - MASS TRANSIT HUB INFRASTRUCTURE BONDS", "contest_number" : "489", "total_votes" : "2498", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 6  REJECT", "party_code" : "NON", "votes" : "1255" }, 
+    { "name" : "Question 6  APPROVE", "party_code" : "NON", "votes" : "1243" } ] },
+  { "name" : "QUESTION 7 - CLEAN WATER, OPEN SPACE, HEALTHY COMM BONDS", "contest_number" : "490", "total_votes" : "2624", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 7  APPROVE", "party_code" : "NON", "votes" : "1664" }, 
+    { "name" : "Question 7  REJECT", "party_code" : "NON", "votes" : "960" } ] },
+  { "name" : "QUESTION 8 - TOWN OF EXETER", "contest_number" : "804", "total_votes" : "2621", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 8  APPROVE", "party_code" : "NON", "votes" : "1680" }, 
+    { "name" : "Question 8  REJECT", "party_code" : "NON", "votes" : "941" } ] },
+  { "name" : "QUESTION 9 - TOWN OF EXETER", "contest_number" : "805", "total_votes" : "2593", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 9  APPROVE", "party_code" : "NON", "votes" : "1650" }, 
+    { "name" : "Question 9  REJECT", "party_code" : "NON", "votes" : "943" } ] },
+  { "name" : "QUESTION 10 - TOWN OF EXETER", "contest_number" : "806", "total_votes" : "2560", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 10  APPROVE", "party_code" : "NON", "votes" : "1618" }, 
+    { "name" : "Question 10  REJECT", "party_code" : "NON", "votes" : "942" } ] },
+  { "name" : "QUESTION 11 - TOWN OF EXETER", "contest_number" : "807", "total_votes" : "2575", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 11  APPROVE", "party_code" : "NON", "votes" : "1734" }, 
+    { "name" : "Question 11  REJECT", "party_code" : "NON", "votes" : "841" }
+  ]}
+]}
+;

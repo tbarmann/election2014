@@ -1,1 +1,98 @@
-var foster=;
+var foster={ "election_name" : "General Election", "election_date" : "November 4, 2014", "last_updated" : "November 14, 2014 02:35 PM", "precinct_count" : "2", "precincts_reporting" : "2", "contests" : [
+  { "name" : "SENATOR IN CONGRESS", "contest_number" : "101", "total_votes" : "1882", "votes_allowed" : "1", "candidates" : [
+    { "name" : "John F. REED", "party_code" : "DEM", "votes" : "1099" }, 
+    { "name" : "Mark S. ZACCARIA", "party_code" : "REP", "votes" : "780" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "3" } ] },
+  { "name" : "REPRESENTATIVE IN CONGRESS DISTRICT 2", "contest_number" : "103", "total_votes" : "1872", "votes_allowed" : "1", "candidates" : [
+    { "name" : "James R. LANGEVIN", "party_code" : "DEM", "votes" : "985" }, 
+    { "name" : "Rhue R. REIS", "party_code" : "REP", "votes" : "885" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "2" } ] },
+  { "name" : "GOVERNOR", "contest_number" : "104", "total_votes" : "1910", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Allan W. FUNG", "party_code" : "REP", "votes" : "732" }, 
+    { "name" : "Robert J. HEALEY, JR.", "party_code" : "MOD", "votes" : "604" }, 
+    { "name" : "Gina M. RAIMONDO", "party_code" : "DEM", "votes" : "534" }, 
+    { "name" : "Kate L. FLETCHER", "party_code" : "IND", "votes" : "30" }, 
+    { "name" : "Leon M. KAYARIAN", "party_code" : "IND", "votes" : "8" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "2" } ] },
+  { "name" : "LIEUTENANT GOVERNOR", "contest_number" : "105", "total_votes" : "1823", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Daniel J. McKEE", "party_code" : "DEM", "votes" : "788" }, 
+    { "name" : "Catherine Terry TAYLOR", "party_code" : "REP", "votes" : "705" }, 
+    { "name" : "William H. GILBERT", "party_code" : "MOD", "votes" : "216" }, 
+    { "name" : "Tony JONES", "party_code" : "Lib", "votes" : "109" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "5" } ] },
+  { "name" : "SECRETARY OF STATE", "contest_number" : "106", "total_votes" : "1831", "votes_allowed" : "1", "candidates" : [
+    { "name" : "John M. CARLEVALE, SR.", "party_code" : "REP", "votes" : "920" }, 
+    { "name" : "Nellie M. GORBEA", "party_code" : "DEM", "votes" : "907" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "4" } ] },
+  { "name" : "ATTORNEY GENERAL", "contest_number" : "107", "total_votes" : "1850", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Dawson Tucker HODGSON", "party_code" : "REP", "votes" : "1013" }, 
+    { "name" : "Peter F. KILMARTIN", "party_code" : "DEM", "votes" : "834" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "3" } ] },
+  { "name" : "GENERAL TREASURER", "contest_number" : "108", "total_votes" : "1822", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Ernest A. ALMONTE", "party_code" : "IND", "votes" : "999" }, 
+    { "name" : "Seth MAGAZINER", "party_code" : "DEM", "votes" : "821" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "2" } ] },
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 21", "contest_number" : "129", "total_votes" : "1875", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Nicholas D. KETTLE", "party_code" : "REP", "votes" : "1004" }, 
+    { "name" : "Margaux S. MORISSEAU", "party_code" : "DEM", "votes" : "653" }, 
+    { "name" : "Zachary FARNUM", "party_code" : "IND", "votes" : "216" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "2" } ] },
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 40", "contest_number" : "186", "total_votes" : "1869", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Michael W. CHIPPENDALE", "party_code" : "REP", "votes" : "1270" }, 
+    { "name" : "Joseph D. CARDILLO", "party_code" : "DEM", "votes" : "595" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "4" } ] },
+  { "name" : "TOWN MODERATOR TOWN OF FOSTER", "contest_number" : "294", "total_votes" : "1474", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Robert A. BOYDEN", "party_code" : "NON", "votes" : "1452" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "22" } ] },
+  { "name" : "TOWN CLERK TOWN OF FOSTER", "contest_number" : "295", "total_votes" : "1444", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Jane CHRISTOPHER", "party_code" : "NON", "votes" : "1425" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "19" } ] },
+  { "name" : "TOWN COUNCIL TOWN OF FOSTER", "contest_number" : "296", "total_votes" : "8454", "votes_allowed" : "5", "candidates" : [
+    { "name" : "Denise L. DiFRANCO", "party_code" : "REP", "votes" : "937" }, 
+    { "name" : "John L. LEWIS, JR.", "party_code" : "DEM", "votes" : "818" }, 
+    { "name" : "Roger Leroy HAWES", "party_code" : "DEM", "votes" : "816" }, 
+    { "name" : "Gordon E. ROGERS", "party_code" : "IND", "votes" : "800" }, 
+    { "name" : "Jon RESTIVO", "party_code" : "DEM", "votes" : "775" }, 
+    { "name" : "Lynne Stender RIDER", "party_code" : "DEM", "votes" : "768" }, 
+    { "name" : "Christie H. STONE", "party_code" : "REP", "votes" : "763" }, 
+    { "name" : "Bradford SMITH", "party_code" : "REP", "votes" : "734" }, 
+    { "name" : "Michael E. DILLON", "party_code" : "IND", "votes" : "703" }, 
+    { "name" : "James J. SHELDON", "party_code" : "IND", "votes" : "687" }, 
+    { "name" : "Anthony J. RENZI", "party_code" : "IND", "votes" : "637" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "16" } ] },
+  { "name" : "NON-PARTISAN SCHOOL COMMITTEE TOWN OF FOSTER", "contest_number" : "297", "total_votes" : "3611", "votes_allowed" : "3", "candidates" : [
+    { "name" : "Shelley D. PEZZA", "party_code" : "NON", "votes" : "1273" }, 
+    { "name" : "Kathleen Tegan SWANSON", "party_code" : "NON", "votes" : "1231" }, 
+    { "name" : "Ronald F. CERVASIO", "party_code" : "NON", "votes" : "1051" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "56" } ] },
+  { "name" : "TOWN SERGEANT TOWN OF FOSTER", "contest_number" : "298", "total_votes" : "1779", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Michael COGGESHALL", "party_code" : "DEM", "votes" : "1204" }, 
+    { "name" : "Erasmo TORRES", "party_code" : "REP", "votes" : "574" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "1" } ] },
+  { "name" : "TAX BOARD OF REVIEW TOWN OF FOSTER", "contest_number" : "299", "total_votes" : "1385", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Mary Agnes FENNESSEY", "party_code" : "DEM", "votes" : "1357" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "28" } ] },
+  { "name" : "QUESTION 1 - CASINO GAMING AT NEWPORT GRAND", "contest_number" : "484", "total_votes" : "1858", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 1  REJECT", "party_code" : "NON", "votes" : "942" }, 
+    { "name" : "Question 1  APPROVE", "party_code" : "NON", "votes" : "916" } ] },
+  { "name" : "QUESTION 2 - RESTRICTION ON GAMBLING", "contest_number" : "485", "total_votes" : "1820", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 2  APPROVE", "party_code" : "NON", "votes" : "1182" }, 
+    { "name" : "Question 2  REJECT", "party_code" : "NON", "votes" : "638" } ] },
+  { "name" : "QUESTION 3 - CONSTITUTIONAL CONVENTION", "contest_number" : "486", "total_votes" : "1806", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 3  REJECT", "party_code" : "NON", "votes" : "1052" }, 
+    { "name" : "Question 3  APPROVE", "party_code" : "NON", "votes" : "754" } ] },
+  { "name" : "QUESTION 4 - HIGHER EDUCATION FACILITIES BONDS", "contest_number" : "487", "total_votes" : "1817", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 4  REJECT", "party_code" : "NON", "votes" : "909" }, 
+    { "name" : "Question 4  APPROVE", "party_code" : "NON", "votes" : "908" } ] },
+  { "name" : "QUESTION 5 - CREATIVE AND CULTURAL ECONOMY BONDS", "contest_number" : "488", "total_votes" : "1851", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 5  REJECT", "party_code" : "NON", "votes" : "953" }, 
+    { "name" : "Question 5  APPROVE", "party_code" : "NON", "votes" : "898" } ] },
+  { "name" : "QUESTION 6 - MASS TRANSIT HUB INFRASTRUCTURE BONDS", "contest_number" : "489", "total_votes" : "1791", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 6  REJECT", "party_code" : "NON", "votes" : "919" }, 
+    { "name" : "Question 6  APPROVE", "party_code" : "NON", "votes" : "872" } ] },
+  { "name" : "QUESTION 7 - CLEAN WATER, OPEN SPACE, HEALTHY COMM BONDS", "contest_number" : "490", "total_votes" : "1852", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 7  APPROVE", "party_code" : "NON", "votes" : "1146" }, 
+    { "name" : "Question 7  REJECT", "party_code" : "NON", "votes" : "706" }
+  ]}
+]}
+;

@@ -1,1 +1,114 @@
-var tiverton=;
+var tiverton={ "election_name" : "General Election", "election_date" : "November 4, 2014", "last_updated" : "November 14, 2014 02:35 PM", "precinct_count" : "7", "precincts_reporting" : "7", "contests" : [
+  { "name" : "SENATOR IN CONGRESS", "contest_number" : "101", "total_votes" : "5133", "votes_allowed" : "1", "candidates" : [
+    { "name" : "John F. REED", "party_code" : "DEM", "votes" : "3403" }, 
+    { "name" : "Mark S. ZACCARIA", "party_code" : "REP", "votes" : "1727" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "3" } ] },
+  { "name" : "REPRESENTATIVE IN CONGRESS DISTRICT 1", "contest_number" : "102", "total_votes" : "5108", "votes_allowed" : "1", "candidates" : [
+    { "name" : "David N. CICILLINE", "party_code" : "DEM", "votes" : "2613" }, 
+    { "name" : "Cormick Brendan LYNCH", "party_code" : "REP", "votes" : "2483" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "12" } ] },
+  { "name" : "GOVERNOR", "contest_number" : "104", "total_votes" : "5248", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Gina M. RAIMONDO", "party_code" : "DEM", "votes" : "2090" }, 
+    { "name" : "Allan W. FUNG", "party_code" : "REP", "votes" : "1882" }, 
+    { "name" : "Robert J. HEALEY, JR.", "party_code" : "MOD", "votes" : "1173" }, 
+    { "name" : "Kate L. FLETCHER", "party_code" : "IND", "votes" : "77" }, 
+    { "name" : "Leon M. KAYARIAN", "party_code" : "IND", "votes" : "22" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "4" } ] },
+  { "name" : "LIEUTENANT GOVERNOR", "contest_number" : "105", "total_votes" : "4942", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Daniel J. McKEE", "party_code" : "DEM", "votes" : "2402" }, 
+    { "name" : "Catherine Terry TAYLOR", "party_code" : "REP", "votes" : "1853" }, 
+    { "name" : "William H. GILBERT", "party_code" : "MOD", "votes" : "472" }, 
+    { "name" : "Tony JONES", "party_code" : "Lib", "votes" : "200" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "15" } ] },
+  { "name" : "SECRETARY OF STATE", "contest_number" : "106", "total_votes" : "4930", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Nellie M. GORBEA", "party_code" : "DEM", "votes" : "2824" }, 
+    { "name" : "John M. CARLEVALE, SR.", "party_code" : "REP", "votes" : "2101" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "5" } ] },
+  { "name" : "ATTORNEY GENERAL", "contest_number" : "107", "total_votes" : "5009", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Peter F. KILMARTIN", "party_code" : "DEM", "votes" : "2505" }, 
+    { "name" : "Dawson Tucker HODGSON", "party_code" : "REP", "votes" : "2498" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "6" } ] },
+  { "name" : "GENERAL TREASURER", "contest_number" : "108", "total_votes" : "4849", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Seth MAGAZINER", "party_code" : "DEM", "votes" : "2775" }, 
+    { "name" : "Ernest A. ALMONTE", "party_code" : "IND", "votes" : "2068" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "6" } ] },
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 10", "contest_number" : "118", "total_votes" : "2038", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Walter S. FELAG, JR.", "party_code" : "DEM", "votes" : "2011" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "27" } ] },
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 11", "contest_number" : "119", "total_votes" : "651", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Christopher Scott OTTIANO", "party_code" : "REP", "votes" : "458" }, 
+    { "name" : "Taylor A. DAME", "party_code" : "IND", "votes" : "188" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "5" } ] },
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 12", "contest_number" : "120", "total_votes" : "1214", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Louis P. DiPALMA", "party_code" : "DEM", "votes" : "1196" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "18" } ] },
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 70", "contest_number" : "216", "total_votes" : "2799", "votes_allowed" : "1", "candidates" : [
+    { "name" : "John G. EDWARDS", "party_code" : "DEM", "votes" : "2752" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "47" } ] },
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 71", "contest_number" : "217", "total_votes" : "1554", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Dennis M. CANARIO", "party_code" : "DEM", "votes" : "827" }, 
+    { "name" : "Norbert J. RATTAY", "party_code" : "REP", "votes" : "723" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "4" } ] },
+  { "name" : "NON-PARTISAN TOWN SERGEANT", "contest_number" : "419", "total_votes" : "314", "votes_allowed" : "1", "candidates" : [
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "314" } ] },
+  { "name" : "NON-PARTISAN TOWN CLERK TOWN OF TIVERTON", "contest_number" : "420", "total_votes" : "3871", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Nancy L. MELLO", "party_code" : "NON", "votes" : "3844" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "27" } ] },
+  { "name" : "NON-PARTISAN TOWN COUNCIL TOWN OF TIVERTON", "contest_number" : "421", "total_votes" : "24497", "votes_allowed" : "7", "candidates" : [
+    { "name" : "Joan B. CHABOT", "party_code" : "NON", "votes" : "2469" }, 
+    { "name" : "Brett N. PELLETIER", "party_code" : "NON", "votes" : "2270" }, 
+    { "name" : "Denise M. deMEDEIROS", "party_code" : "NON", "votes" : "2231" }, 
+    { "name" : "David PERRY", "party_code" : "NON", "votes" : "2047" }, 
+    { "name" : "Jay J. LAMBERT", "party_code" : "NON", "votes" : "2027" }, 
+    { "name" : "Peter A. MELLO", "party_code" : "NON", "votes" : "1999" }, 
+    { "name" : "Joseph R. SOUSA", "party_code" : "NON", "votes" : "1985" }, 
+    { "name" : "Randy J. LEBEAU", "party_code" : "NON", "votes" : "1972" }, 
+    { "name" : "Michael S. BURK", "party_code" : "NON", "votes" : "1961" }, 
+    { "name" : "James J. ARRUDA", "party_code" : "NON", "votes" : "1954" }, 
+    { "name" : "James S. O&#39;DELL", "party_code" : "NON", "votes" : "1853" }, 
+    { "name" : "Craig A. LEBEAU", "party_code" : "NON", "votes" : "1654" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "75" } ] },
+  { "name" : "NON-PARTISAN SCHOOL COMMITTEE TOWN OF TIVERTON", "contest_number" : "422", "total_votes" : "4990", "votes_allowed" : "2", "candidates" : [
+    { "name" : "Deborah Anna PALLASCH", "party_code" : "NON", "votes" : "2602" }, 
+    { "name" : "Jan W. BERGANDY", "party_code" : "NON", "votes" : "2354" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "34" } ] },
+  { "name" : "JUDGE OF PROBATE TOWN OF TIVERTON", "contest_number" : "423", "total_votes" : "3494", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Richard P. D&#39;ADDARIO", "party_code" : "DEM", "votes" : "3462" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "32" } ] },
+  { "name" : "NON-PARTISAN BUDGET COMMITTEE TOWN OF TIVERTON", "contest_number" : "424", "total_votes" : "15514", "votes_allowed" : "5", "candidates" : [
+    { "name" : "Deborah JANICK", "party_code" : "NON", "votes" : "2185" }, 
+    { "name" : "Donna J. COOK", "party_code" : "NON", "votes" : "2162" }, 
+    { "name" : "Cecil E. LEONARD", "party_code" : "NON", "votes" : "2069" }, 
+    { "name" : "John E. SOUZA", "party_code" : "NON", "votes" : "1965" }, 
+    { "name" : "Nancy L. DRIGGS", "party_code" : "NON", "votes" : "1905" }, 
+    { "name" : "John J. MARTIN", "party_code" : "NON", "votes" : "1824" }, 
+    { "name" : "Robert D. COULTER", "party_code" : "NON", "votes" : "1754" }, 
+    { "name" : "Robert William SYLVIA", "party_code" : "NON", "votes" : "1605" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "45" } ] },
+  { "name" : "QUESTION 1 - CASINO GAMING AT NEWPORT GRAND", "contest_number" : "484", "total_votes" : "5077", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 1  APPROVE", "party_code" : "NON", "votes" : "3340" }, 
+    { "name" : "Question 1  REJECT", "party_code" : "NON", "votes" : "1737" } ] },
+  { "name" : "QUESTION 2 - RESTRICTION ON GAMBLING", "contest_number" : "485", "total_votes" : "4931", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 2  APPROVE", "party_code" : "NON", "votes" : "3597" }, 
+    { "name" : "Question 2  REJECT", "party_code" : "NON", "votes" : "1334" } ] },
+  { "name" : "QUESTION 3 - CONSTITUTIONAL CONVENTION", "contest_number" : "486", "total_votes" : "4759", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 3  REJECT", "party_code" : "NON", "votes" : "2602" }, 
+    { "name" : "Question 3  APPROVE", "party_code" : "NON", "votes" : "2157" } ] },
+  { "name" : "QUESTION 4 - HIGHER EDUCATION FACILITIES BONDS", "contest_number" : "487", "total_votes" : "4818", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 4  APPROVE", "party_code" : "NON", "votes" : "2501" }, 
+    { "name" : "Question 4  REJECT", "party_code" : "NON", "votes" : "2317" } ] },
+  { "name" : "QUESTION 5 - CREATIVE AND CULTURAL ECONOMY BONDS", "contest_number" : "488", "total_votes" : "4979", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 5  REJECT", "party_code" : "NON", "votes" : "2508" }, 
+    { "name" : "Question 5  APPROVE", "party_code" : "NON", "votes" : "2471" } ] },
+  { "name" : "QUESTION 6 - MASS TRANSIT HUB INFRASTRUCTURE BONDS", "contest_number" : "489", "total_votes" : "4745", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 6  APPROVE", "party_code" : "NON", "votes" : "2609" }, 
+    { "name" : "Question 6  REJECT", "party_code" : "NON", "votes" : "2136" } ] },
+  { "name" : "QUESTION 7 - CLEAN WATER, OPEN SPACE, HEALTHY COMM BONDS", "contest_number" : "490", "total_votes" : "4919", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 7  APPROVE", "party_code" : "NON", "votes" : "3064" }, 
+    { "name" : "Question 7  REJECT", "party_code" : "NON", "votes" : "1855" } ] },
+  { "name" : "QUESTION 8 - TOWN OF TIVERTON", "contest_number" : "739", "total_votes" : "4725", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 8  APPROVE", "party_code" : "NON", "votes" : "3663" }, 
+    { "name" : "Question 8  REJECT", "party_code" : "NON", "votes" : "1062" }
+  ]}
+]}
+;

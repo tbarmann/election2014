@@ -1,1 +1,409 @@
-var ga_representative=;
+var ga_representative={ "election_name" : "General Election", "election_date" : "November 4, 2014", "last_updated" : "November 14, 2014 02:35 PM", "contests" : [
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 1", "contest_number" : "147", "precinct_count" : "9", "precincts_reporting" : "8", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Edith H. AJELLO", "party_code" : "DEM", "votes" : "2628" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "89" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 2", "contest_number" : "148", "precinct_count" : "7", "precincts_reporting" : "7", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Christopher R. BLAZEJEWSKI", "party_code" : "DEM", "votes" : "2460" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "55" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 3", "contest_number" : "149", "precinct_count" : "5", "precincts_reporting" : "5", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Thomas A. PALANGIO", "party_code" : "DEM", "votes" : "1829" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "40" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 4", "contest_number" : "150", "precinct_count" : "5", "precincts_reporting" : "5", "votes_allowed" : "1", "candidates" : [
+    { "name" : "J. Aaron REGUNBERG", "party_code" : "DEM", "votes" : "4124" }, 
+    { "name" : "Ethan C. GYLES", "party_code" : "IND", "votes" : "843" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "34" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 5", "contest_number" : "151", "precinct_count" : "6", "precincts_reporting" : "6", "votes_allowed" : "1", "candidates" : [
+    { "name" : "John J. DeSIMONE", "party_code" : "DEM", "votes" : "2491" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "74" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 6", "contest_number" : "152", "precinct_count" : "8", "precincts_reporting" : "8", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Raymond A. HULL", "party_code" : "DEM", "votes" : "3144" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "67" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 7", "contest_number" : "153", "precinct_count" : "6", "precincts_reporting" : "6", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Daniel P. McKIERNAN", "party_code" : "DEM", "votes" : "2901" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "63" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 8", "contest_number" : "154", "precinct_count" : "7", "precincts_reporting" : "7", "votes_allowed" : "1", "candidates" : [
+    { "name" : "John Joseph LOMBARDI", "party_code" : "DEM", "votes" : "2022" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "43" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 9", "contest_number" : "155", "precinct_count" : "8", "precincts_reporting" : "8", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Anastasia P. WILLIAMS", "party_code" : "DEM", "votes" : "1787" }, 
+    { "name" : "Ana Aljeimy SANTANA-SANCHEZ", "party_code" : "REP", "votes" : "423" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "12" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 10", "contest_number" : "156", "precinct_count" : "6", "precincts_reporting" : "6", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Scott A. SLATER", "party_code" : "DEM", "votes" : "2300" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "65" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 11", "contest_number" : "157", "precinct_count" : "5", "precincts_reporting" : "5", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Grace DIAZ", "party_code" : "DEM", "votes" : "2451" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "88" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 12", "contest_number" : "158", "precinct_count" : "5", "precincts_reporting" : "5", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Joseph S. ALMEIDA", "party_code" : "DEM", "votes" : "1616" }, 
+    { "name" : "Luis A. VARGAS", "party_code" : "IND", "votes" : "610" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "4" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 13", "contest_number" : "159", "precinct_count" : "4", "precincts_reporting" : "4", "votes_allowed" : "1", "candidates" : [
+    { "name" : "John M. CARNEVALE", "party_code" : "DEM", "votes" : "2277" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "39" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 14", "contest_number" : "160", "precinct_count" : "7", "precincts_reporting" : "7", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Charlene LIMA", "party_code" : "DEM", "votes" : "2358" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "61" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 15", "contest_number" : "161", "precinct_count" : "4", "precincts_reporting" : "4", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Nicholas A. MATTIELLO", "party_code" : "DEM", "votes" : "4187" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "198" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 16", "contest_number" : "162", "precinct_count" : "6", "precincts_reporting" : "6", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Robert B. LANCIA", "party_code" : "REP", "votes" : "2774" }, 
+    { "name" : "Peter G. PALUMBO", "party_code" : "DEM", "votes" : "2507" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "12" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 17", "contest_number" : "163", "precinct_count" : "7", "precincts_reporting" : "7", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Robert B. JACQUARD", "party_code" : "DEM", "votes" : "3559" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "124" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 18", "contest_number" : "164", "precinct_count" : "4", "precincts_reporting" : "4", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Arthur HANDY", "party_code" : "DEM", "votes" : "2713" }, 
+    { "name" : "Donald R. GENDRON", "party_code" : "REP", "votes" : "1417" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "13" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 19", "contest_number" : "165", "precinct_count" : "6", "precincts_reporting" : "6", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Joseph McNAMARA", "party_code" : "DEM", "votes" : "4449" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "151" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 20", "contest_number" : "166", "precinct_count" : "7", "precincts_reporting" : "7", "votes_allowed" : "1", "candidates" : [
+    { "name" : "David A. BENNETT", "party_code" : "DEM", "votes" : "2836" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "98" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 21", "contest_number" : "167", "precinct_count" : "4", "precincts_reporting" : "4", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Eileen Slattery NAUGHTON", "party_code" : "DEM", "votes" : "3492" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "131" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 22", "contest_number" : "168", "precinct_count" : "5", "precincts_reporting" : "5", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Joseph J. SOLOMON, JR.", "party_code" : "DEM", "votes" : "2868" }, 
+    { "name" : "Ralph LEONE", "party_code" : "REP", "votes" : "1585" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "5" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 23", "contest_number" : "169", "precinct_count" : "5", "precincts_reporting" : "5", "votes_allowed" : "1", "candidates" : [
+    { "name" : "K. Joseph SHEKARCHI", "party_code" : "DEM", "votes" : "3749" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "125" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 24", "contest_number" : "170", "precinct_count" : "6", "precincts_reporting" : "6", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Joseph A. TRILLO", "party_code" : "REP", "votes" : "4195" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "174" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 25", "contest_number" : "171", "precinct_count" : "6", "precincts_reporting" : "6", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Jared R. NUNES", "party_code" : "DEM", "votes" : "2422" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "90" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 26", "contest_number" : "172", "precinct_count" : "5", "precincts_reporting" : "5", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Patricia L. MORGAN", "party_code" : "REP", "votes" : "2104" }, 
+    { "name" : "Nicholas A. DENICE", "party_code" : "DEM", "votes" : "1816" }, 
+    { "name" : "Paul P. CAIANIELLO, JR.", "party_code" : "MOD", "votes" : "275" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "8" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 27", "contest_number" : "173", "precinct_count" : "5", "precincts_reporting" : "5", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Patricia A. SERPA", "party_code" : "DEM", "votes" : "3718" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "152" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 28", "contest_number" : "174", "precinct_count" : "7", "precincts_reporting" : "7", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Robert A. NARDOLILLO", "party_code" : "REP", "votes" : "3374" }, 
+    { "name" : "Scott J. GUTHRIE", "party_code" : "DEM", "votes" : "1845" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "11" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 29", "contest_number" : "175", "precinct_count" : "8", "precincts_reporting" : "8", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Sherry ROBERTS", "party_code" : "REP", "votes" : "2805" }, 
+    { "name" : "Lisa P. TOMASSO", "party_code" : "DEM", "votes" : "2558" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "11" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 30", "contest_number" : "176", "precinct_count" : "6", "precincts_reporting" : "6", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Antonio GIARRUSSO", "party_code" : "REP", "votes" : "4527" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "84" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 31", "contest_number" : "177", "precinct_count" : "5", "precincts_reporting" : "5", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Doreen Marie COSTA", "party_code" : "REP", "votes" : "2942" }, 
+    { "name" : "Julie A. CASIMIRO", "party_code" : "DEM", "votes" : "2585" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "7" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 32", "contest_number" : "178", "precinct_count" : "5", "precincts_reporting" : "5", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Robert E. CRAVEN, SR.", "party_code" : "DEM", "votes" : "3111" }, 
+    { "name" : "Sharon L. GAMBA", "party_code" : "REP", "votes" : "2867" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "20" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 33", "contest_number" : "179", "precinct_count" : "6", "precincts_reporting" : "6", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Donald J. LALLY, JR.", "party_code" : "DEM", "votes" : "4169" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "147" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 34", "contest_number" : "180", "precinct_count" : "4", "precincts_reporting" : "4", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Teresa TANZI", "party_code" : "DEM", "votes" : "2783" }, 
+    { "name" : "Stephen C. TETZNER", "party_code" : "REP", "votes" : "2436" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "14" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 35", "contest_number" : "181", "precinct_count" : "3", "precincts_reporting" : "3", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Kathleen A. FOGARTY", "party_code" : "DEM", "votes" : "2113" }, 
+    { "name" : "Lacey McGREEVY", "party_code" : "REP", "votes" : "1527" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "27" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 36", "contest_number" : "182", "precinct_count" : "8", "precincts_reporting" : "8", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Blake Anthony FILIPPI", "party_code" : "IND", "votes" : "3422" }, 
+    { "name" : "Donna M. WALSH", "party_code" : "DEM", "votes" : "2345" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "6" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 37", "contest_number" : "183", "precinct_count" : "4", "precincts_reporting" : "4", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Samuel A. AZZINARO", "party_code" : "DEM", "votes" : "2749" }, 
+    { "name" : "Caswell COOKE, JR.", "party_code" : "REP", "votes" : "2311" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "5" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 38", "contest_number" : "184", "precinct_count" : "4", "precincts_reporting" : "4", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Brian Patrick KENNEDY", "party_code" : "DEM", "votes" : "3115" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "98" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 39", "contest_number" : "185", "precinct_count" : "5", "precincts_reporting" : "5", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Justin PRICE", "party_code" : "REP", "votes" : "2899" }, 
+    { "name" : "Larry VALENCIA", "party_code" : "DEM", "votes" : "2168" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "7" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 40", "contest_number" : "186", "precinct_count" : "6", "precincts_reporting" : "6", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Michael W. CHIPPENDALE", "party_code" : "REP", "votes" : "3583" }, 
+    { "name" : "Joseph D. CARDILLO", "party_code" : "DEM", "votes" : "1668" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "10" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 41", "contest_number" : "187", "precinct_count" : "4", "precincts_reporting" : "4", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Michael J. MARCELLO", "party_code" : "DEM", "votes" : "2736" }, 
+    { "name" : "Lillian Jean DELMONICO", "party_code" : "REP", "votes" : "2478" }, 
+    { "name" : "Robert J. QUATTROCCHI", "party_code" : "IND", "votes" : "1003" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "8" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 42", "contest_number" : "188", "precinct_count" : "5", "precincts_reporting" : "5", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Stephen R. UCCI", "party_code" : "DEM", "votes" : "3747" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "70" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 43", "contest_number" : "189", "precinct_count" : "7", "precincts_reporting" : "7", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Deborah A. FELLELA", "party_code" : "DEM", "votes" : "2483" }, 
+    { "name" : "Karin N. GORMAN", "party_code" : "IND", "votes" : "2217" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "12" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 44", "contest_number" : "190", "precinct_count" : "5", "precincts_reporting" : "5", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Gregory J. COSTANTINO", "party_code" : "DEM", "votes" : "3718" }, 
+    { "name" : "Philip G. HIRONS, JR.", "party_code" : "REP", "votes" : "2064" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "10" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 45", "contest_number" : "191", "precinct_count" : "6", "precincts_reporting" : "6", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Mia A. ACKERMAN", "party_code" : "DEM", "votes" : "3556" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "110" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 46", "contest_number" : "192", "precinct_count" : "9", "precincts_reporting" : "9", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Jeremiah T. O&#39;GRADY", "party_code" : "DEM", "votes" : "3502" }, 
+    { "name" : "Matthew A. GUERRA", "party_code" : "REP", "votes" : "1786" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "25" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 47", "contest_number" : "193", "precinct_count" : "6", "precincts_reporting" : "6", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Cale P. KEABLE", "party_code" : "DEM", "votes" : "3085" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "144" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 48", "contest_number" : "194", "precinct_count" : "6", "precincts_reporting" : "6", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Brian C. NEWBERRY", "party_code" : "REP", "votes" : "3465" }, 
+    { "name" : "Steven F. GAMACHE", "party_code" : "DEM", "votes" : "1629" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "4" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 49", "contest_number" : "195", "precinct_count" : "5", "precincts_reporting" : "5", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Michael A. MORIN", "party_code" : "DEM", "votes" : "1573" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "63" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 50", "contest_number" : "196", "precinct_count" : "4", "precincts_reporting" : "4", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Stephen M. CASEY", "party_code" : "DEM", "votes" : "1463" }, 
+    { "name" : "Richard J. FAGNANT", "party_code" : "IND", "votes" : "1293" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "4" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 51", "contest_number" : "197", "precinct_count" : "4", "precincts_reporting" : "4", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Robert D. PHILLIPS", "party_code" : "DEM", "votes" : "2255" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "50" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 52", "contest_number" : "198", "precinct_count" : "5", "precincts_reporting" : "5", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Karen L. MacBETH", "party_code" : "DEM", "votes" : "4149" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "83" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 53", "contest_number" : "199", "precinct_count" : "4", "precincts_reporting" : "4", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Thomas J. WINFIELD", "party_code" : "DEM", "votes" : "3657" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "142" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 54", "contest_number" : "200", "precinct_count" : "7", "precincts_reporting" : "7", "votes_allowed" : "1", "candidates" : [
+    { "name" : "William W. O&#39;BRIEN", "party_code" : "DEM", "votes" : "3534" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "91" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 55", "contest_number" : "201", "precinct_count" : "7", "precincts_reporting" : "7", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Arthur J. CORVESE", "party_code" : "DEM", "votes" : "3803" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "106" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 56", "contest_number" : "202", "precinct_count" : "5", "precincts_reporting" : "5", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Shelby MALDONADO", "party_code" : "DEM", "votes" : "1120" }, 
+    { "name" : "Albert M. ROMANOWICZ", "party_code" : "IND", "votes" : "215" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "2" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 57", "contest_number" : "203", "precinct_count" : "6", "precincts_reporting" : "6", "votes_allowed" : "1", "candidates" : [
+    { "name" : "James N. McLAUGHLIN", "party_code" : "DEM", "votes" : "2599" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "56" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 58", "contest_number" : "204", "precinct_count" : "5", "precincts_reporting" : "5", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Carlos E. TOBON", "party_code" : "DEM", "votes" : "1759" }, 
+    { "name" : "Jonathan VALLECILLA", "party_code" : "IND", "votes" : "397" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "6" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 59", "contest_number" : "205", "precinct_count" : "6", "precincts_reporting" : "6", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Jean Philippe BARROS", "party_code" : "DEM", "votes" : "2242" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "66" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 60", "contest_number" : "206", "precinct_count" : "6", "precincts_reporting" : "6", "votes_allowed" : "1", "candidates" : [
+    { "name" : "David A. COUGHLIN, JR.", "party_code" : "DEM", "votes" : "1672" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "36" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 61", "contest_number" : "207", "precinct_count" : "6", "precincts_reporting" : "6", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Raymond H. JOHNSTON, JR.", "party_code" : "DEM", "votes" : "2682" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "61" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 62", "contest_number" : "208", "precinct_count" : "7", "precincts_reporting" : "7", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Mary Duffy MESSIER", "party_code" : "DEM", "votes" : "2106" }, 
+    { "name" : "Rodney A. BARBER", "party_code" : "IND", "votes" : "907" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "9" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 63", "contest_number" : "209", "precinct_count" : "7", "precincts_reporting" : "7", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Katherine S. KAZARIAN", "party_code" : "DEM", "votes" : "3523" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "95" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 64", "contest_number" : "210", "precinct_count" : "3", "precincts_reporting" : "3", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Helio MELO", "party_code" : "DEM", "votes" : "2137" }, 
+    { "name" : "Robert M. BOTELHO", "party_code" : "REP", "votes" : "682" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "8" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 65", "contest_number" : "211", "precinct_count" : "5", "precincts_reporting" : "5", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Gregg AMORE", "party_code" : "DEM", "votes" : "3535" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "94" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 66", "contest_number" : "212", "precinct_count" : "5", "precincts_reporting" : "5", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Joy HEARN", "party_code" : "DEM", "votes" : "3444" }, 
+    { "name" : "Joel HELLMANN", "party_code" : "IND", "votes" : "2007" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "14" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 67", "contest_number" : "213", "precinct_count" : "4", "precincts_reporting" : "4", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Jan P. MALIK", "party_code" : "DEM", "votes" : "3920" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "129" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 68", "contest_number" : "214", "precinct_count" : "5", "precincts_reporting" : "5", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Kenneth A. MARSHALL", "party_code" : "DEM", "votes" : "4059" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "89" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 69", "contest_number" : "215", "precinct_count" : "7", "precincts_reporting" : "7", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Raymond E. GALLISON, JR.", "party_code" : "DEM", "votes" : "3086" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "57" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 70", "contest_number" : "216", "precinct_count" : "6", "precincts_reporting" : "6", "votes_allowed" : "1", "candidates" : [
+    { "name" : "John G. EDWARDS", "party_code" : "DEM", "votes" : "3525" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "58" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 71", "contest_number" : "217", "precinct_count" : "5", "precincts_reporting" : "5", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Dennis M. CANARIO", "party_code" : "DEM", "votes" : "2690" }, 
+    { "name" : "Norbert J. RATTAY", "party_code" : "REP", "votes" : "2232" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "6" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 72", "contest_number" : "218", "precinct_count" : "5", "precincts_reporting" : "5", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Daniel Patrick REILLY", "party_code" : "REP", "votes" : "3114" }, 
+    { "name" : "Linda Dill FINN", "party_code" : "DEM", "votes" : "2640" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "8" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 73", "contest_number" : "219", "precinct_count" : "4", "precincts_reporting" : "4", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Marvin L. ABNEY", "party_code" : "DEM", "votes" : "2967" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "85" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 74", "contest_number" : "220", "precinct_count" : "4", "precincts_reporting" : "4", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Deborah L. RUGGIERO", "party_code" : "DEM", "votes" : "3920" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "129" }
+  ]}
+, 
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 75", "contest_number" : "221", "precinct_count" : "5", "precincts_reporting" : "5", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Lauren H. CARSON", "party_code" : "DEM", "votes" : "3036" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "128" }
+  ]}
+]}
+;

@@ -1,1 +1,153 @@
-var pawtucket=;
+var pawtucket={ "election_name" : "General Election", "election_date" : "November 4, 2014", "last_updated" : "November 14, 2014 02:35 PM", "precinct_count" : "31", "precincts_reporting" : "31", "contests" : [
+  { "name" : "SENATOR IN CONGRESS", "contest_number" : "101", "total_votes" : "13466", "votes_allowed" : "1", "candidates" : [
+    { "name" : "John F. REED", "party_code" : "DEM", "votes" : "10728" }, 
+    { "name" : "Mark S. ZACCARIA", "party_code" : "REP", "votes" : "2710" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "28" } ] },
+  { "name" : "REPRESENTATIVE IN CONGRESS DISTRICT 1", "contest_number" : "102", "total_votes" : "13535", "votes_allowed" : "1", "candidates" : [
+    { "name" : "David N. CICILLINE", "party_code" : "DEM", "votes" : "9158" }, 
+    { "name" : "Cormick Brendan LYNCH", "party_code" : "REP", "votes" : "4328" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "49" } ] },
+  { "name" : "GOVERNOR", "contest_number" : "104", "total_votes" : "13779", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Gina M. RAIMONDO", "party_code" : "DEM", "votes" : "7144" }, 
+    { "name" : "Allan W. FUNG", "party_code" : "REP", "votes" : "3391" }, 
+    { "name" : "Robert J. HEALEY, JR.", "party_code" : "MOD", "votes" : "2960" }, 
+    { "name" : "Kate L. FLETCHER", "party_code" : "IND", "votes" : "174" }, 
+    { "name" : "Leon M. KAYARIAN", "party_code" : "IND", "votes" : "65" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "45" } ] },
+  { "name" : "LIEUTENANT GOVERNOR", "contest_number" : "105", "total_votes" : "13488", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Daniel J. McKEE", "party_code" : "DEM", "votes" : "9101" }, 
+    { "name" : "Catherine Terry TAYLOR", "party_code" : "REP", "votes" : "2978" }, 
+    { "name" : "William H. GILBERT", "party_code" : "MOD", "votes" : "1024" }, 
+    { "name" : "Tony JONES", "party_code" : "Lib", "votes" : "351" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "34" } ] },
+  { "name" : "SECRETARY OF STATE", "contest_number" : "106", "total_votes" : "13334", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Nellie M. GORBEA", "party_code" : "DEM", "votes" : "9754" }, 
+    { "name" : "John M. CARLEVALE, SR.", "party_code" : "REP", "votes" : "3537" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "43" } ] },
+  { "name" : "ATTORNEY GENERAL", "contest_number" : "107", "total_votes" : "13532", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Peter F. KILMARTIN", "party_code" : "DEM", "votes" : "9861" }, 
+    { "name" : "Dawson Tucker HODGSON", "party_code" : "REP", "votes" : "3646" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "25" } ] },
+  { "name" : "GENERAL TREASURER", "contest_number" : "108", "total_votes" : "13315", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Seth MAGAZINER", "party_code" : "DEM", "votes" : "9139" }, 
+    { "name" : "Ernest A. ALMONTE", "party_code" : "IND", "votes" : "4141" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "35" } ] },
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 8", "contest_number" : "116", "total_votes" : "4524", "votes_allowed" : "1", "candidates" : [
+    { "name" : "James E. DOYLE, II", "party_code" : "DEM", "votes" : "4388" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "136" } ] },
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 15", "contest_number" : "123", "total_votes" : "4501", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Donna M. NESSELBUSH", "party_code" : "DEM", "votes" : "3508" }, 
+    { "name" : "Stephen R. LEMOIS", "party_code" : "REP", "votes" : "980" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "13" } ] },
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 16", "contest_number" : "124", "total_votes" : "902", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Elizabeth A. CROWLEY", "party_code" : "DEM", "votes" : "790" }, 
+    { "name" : "Daniel J. BIDONDI", "party_code" : "IND", "votes" : "108" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "4" } ] },
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 18", "contest_number" : "126", "total_votes" : "2139", "votes_allowed" : "1", "candidates" : [
+    { "name" : "William J. CONLEY, JR.", "party_code" : "DEM", "votes" : "2092" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "47" } ] },
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 46", "contest_number" : "192", "total_votes" : "172", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Jeremiah T. O&#39;GRADY", "party_code" : "DEM", "votes" : "124" }, 
+    { "name" : "Matthew A. GUERRA", "party_code" : "REP", "votes" : "48" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "0" } ] },
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 58", "contest_number" : "204", "total_votes" : "2162", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Carlos E. TOBON", "party_code" : "DEM", "votes" : "1759" }, 
+    { "name" : "Jonathan VALLECILLA", "party_code" : "IND", "votes" : "397" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "6" } ] },
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 59", "contest_number" : "205", "total_votes" : "2308", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Jean Philippe BARROS", "party_code" : "DEM", "votes" : "2242" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "66" } ] },
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 60", "contest_number" : "206", "total_votes" : "1708", "votes_allowed" : "1", "candidates" : [
+    { "name" : "David A. COUGHLIN, JR.", "party_code" : "DEM", "votes" : "1672" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "36" } ] },
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 61", "contest_number" : "207", "total_votes" : "2743", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Raymond H. JOHNSTON, JR.", "party_code" : "DEM", "votes" : "2682" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "61" } ] },
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 62", "contest_number" : "208", "total_votes" : "3022", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Mary Duffy MESSIER", "party_code" : "DEM", "votes" : "2106" }, 
+    { "name" : "Rodney A. BARBER", "party_code" : "IND", "votes" : "907" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "9" } ] },
+  { "name" : "MAYOR CITY OF PAWTUCKET", "contest_number" : "373", "total_votes" : "11874", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Donald R. GREBIEN", "party_code" : "DEM", "votes" : "11431" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "443" } ] },
+  { "name" : "COUNCIL-AT-LARGE CITY OF PAWTUCKET", "contest_number" : "374", "total_votes" : "23101", "votes_allowed" : "3", "candidates" : [
+    { "name" : "Sandra C. CANO", "party_code" : "DEM", "votes" : "8741" }, 
+    { "name" : "Thomas E. HODGE", "party_code" : "DEM", "votes" : "7322" }, 
+    { "name" : "Lorenzo C. TETREAULT", "party_code" : "DEM", "votes" : "6646" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "392" } ] },
+  { "name" : "COUNCIL PAWTUCKET DISTRICT 1", "contest_number" : "375", "total_votes" : "1801", "votes_allowed" : "1", "candidates" : [
+    { "name" : "David P. MORAN", "party_code" : "DEM", "votes" : "1746" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "55" } ] },
+  { "name" : "COUNCIL PAWTUCKET DISTRICT 2", "contest_number" : "376", "total_votes" : "1830", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Mark J. WILDENHAIN", "party_code" : "DEM", "votes" : "1804" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "26" } ] },
+  { "name" : "COUNCIL PAWTUCKET DISTRICT 3", "contest_number" : "377", "total_votes" : "2241", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Terrence E. MERCER", "party_code" : "DEM", "votes" : "2213" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "28" } ] },
+  { "name" : "COUNCIL PAWTUCKET DISTRICT 4", "contest_number" : "378", "total_votes" : "1776", "votes_allowed" : "1", "candidates" : [
+    { "name" : "John J. BARRY, III", "party_code" : "DEM", "votes" : "1742" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "34" } ] },
+  { "name" : "COUNCIL PAWTUCKET DISTRICT 5", "contest_number" : "379", "total_votes" : "1441", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Mary E. BRAY", "party_code" : "DEM", "votes" : "1424" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "17" } ] },
+  { "name" : "COUNCIL PAWTUCKET DISTRICT 6", "contest_number" : "380", "total_votes" : "1787", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Timothy P. RUDD, JR.", "party_code" : "DEM", "votes" : "1764" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "23" } ] },
+  { "name" : "SCHOOL COMMITTEE CITY OF PAWTUCKET", "contest_number" : "381", "total_votes" : "55595", "votes_allowed" : "7", "candidates" : [
+    { "name" : "Michael Anthony ARAUJO", "party_code" : "DEM", "votes" : "7908" }, 
+    { "name" : "Kimberly A. GRANT", "party_code" : "DEM", "votes" : "7715" }, 
+    { "name" : "Joanne M. BONOLLO", "party_code" : "DEM", "votes" : "7232" }, 
+    { "name" : "Erin DUBE", "party_code" : "DEM", "votes" : "7228" }, 
+    { "name" : "Katherine McQUADE", "party_code" : "DEM", "votes" : "7054" }, 
+    { "name" : "Gerard A. CHARBONNEAU", "party_code" : "DEM", "votes" : "6888" }, 
+    { "name" : "Joseph C. KNIGHT", "party_code" : "DEM", "votes" : "6541" }, 
+    { "name" : "John R. TELLINI", "party_code" : "IND", "votes" : "4736" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "293" } ] },
+  { "name" : "QUESTION 1 - CASINO GAMING AT NEWPORT GRAND", "contest_number" : "484", "total_votes" : "12142", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 1  APPROVE", "party_code" : "NON", "votes" : "7346" }, 
+    { "name" : "Question 1  REJECT", "party_code" : "NON", "votes" : "4796" } ] },
+  { "name" : "QUESTION 2 - RESTRICTION ON GAMBLING", "contest_number" : "485", "total_votes" : "11681", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 2  APPROVE", "party_code" : "NON", "votes" : "8096" }, 
+    { "name" : "Question 2  REJECT", "party_code" : "NON", "votes" : "3585" } ] },
+  { "name" : "QUESTION 3 - CONSTITUTIONAL CONVENTION", "contest_number" : "486", "total_votes" : "12948", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 3  REJECT", "party_code" : "NON", "votes" : "6646" }, 
+    { "name" : "Question 3  APPROVE", "party_code" : "NON", "votes" : "6302" } ] },
+  { "name" : "QUESTION 4 - HIGHER EDUCATION FACILITIES BONDS", "contest_number" : "487", "total_votes" : "12785", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 4  APPROVE", "party_code" : "NON", "votes" : "8763" }, 
+    { "name" : "Question 4  REJECT", "party_code" : "NON", "votes" : "4022" } ] },
+  { "name" : "QUESTION 5 - CREATIVE AND CULTURAL ECONOMY BONDS", "contest_number" : "488", "total_votes" : "13020", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 5  APPROVE", "party_code" : "NON", "votes" : "8391" }, 
+    { "name" : "Question 5  REJECT", "party_code" : "NON", "votes" : "4629" } ] },
+  { "name" : "QUESTION 6 - MASS TRANSIT HUB INFRASTRUCTURE BONDS", "contest_number" : "489", "total_votes" : "12005", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 6  APPROVE", "party_code" : "NON", "votes" : "7984" }, 
+    { "name" : "Question 6  REJECT", "party_code" : "NON", "votes" : "4021" } ] },
+  { "name" : "QUESTION 7 - CLEAN WATER, OPEN SPACE, HEALTHY COMM BONDS", "contest_number" : "490", "total_votes" : "12884", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 7  APPROVE", "party_code" : "NON", "votes" : "9636" }, 
+    { "name" : "Question 7  REJECT", "party_code" : "NON", "votes" : "3248" } ] },
+  { "name" : "QUESTION 8 - CITY OF PAWTUCKET", "contest_number" : "875", "total_votes" : "13260", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 8  APPROVE", "party_code" : "NON", "votes" : "11142" }, 
+    { "name" : "Question 8  REJECT", "party_code" : "NON", "votes" : "2118" } ] },
+  { "name" : "QUESTION 9 - CITY OF PAWTUCKET", "contest_number" : "876", "total_votes" : "13127", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 9  APPROVE", "party_code" : "NON", "votes" : "10760" }, 
+    { "name" : "Question 9  REJECT", "party_code" : "NON", "votes" : "2367" } ] },
+  { "name" : "QUESTION 10 - CITY OF PAWTUCKET", "contest_number" : "877", "total_votes" : "13026", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 10  APPROVE", "party_code" : "NON", "votes" : "8557" }, 
+    { "name" : "Question 10  REJECT", "party_code" : "NON", "votes" : "4469" } ] },
+  { "name" : "QUESTION 11 - CITY OF PAWTUCKET", "contest_number" : "878", "total_votes" : "11602", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 11  APPROVE", "party_code" : "NON", "votes" : "9122" }, 
+    { "name" : "Question 11  REJECT", "party_code" : "NON", "votes" : "2480" } ] },
+  { "name" : "QUESTION 12 - CITY OF PAWTUCKET", "contest_number" : "879", "total_votes" : "11109", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 12  APPROVE", "party_code" : "NON", "votes" : "8863" }, 
+    { "name" : "Question 12  REJECT", "party_code" : "NON", "votes" : "2246" } ] },
+  { "name" : "QUESTION 13 - CITY OF PAWTUCKET", "contest_number" : "880", "total_votes" : "11474", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 13  APPROVE", "party_code" : "NON", "votes" : "7749" }, 
+    { "name" : "Question 13  REJECT", "party_code" : "NON", "votes" : "3725" } ] },
+  { "name" : "QUESTION 14 - CITY OF PAWTUCKET", "contest_number" : "881", "total_votes" : "11123", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 14  APPROVE", "party_code" : "NON", "votes" : "7446" }, 
+    { "name" : "Question 14  REJECT", "party_code" : "NON", "votes" : "3677" } ] },
+  { "name" : "QUESTION 15 - CITY OF PAWTUCKET", "contest_number" : "882", "total_votes" : "11650", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 15  APPROVE", "party_code" : "NON", "votes" : "9192" }, 
+    { "name" : "Question 15  REJECT", "party_code" : "NON", "votes" : "2458" }
+  ]}
+]}
+;

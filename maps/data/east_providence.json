@@ -1,1 +1,117 @@
-var east_providence=;
+var east_providence={ "election_name" : "General Election", "election_date" : "November 4, 2014", "last_updated" : "November 14, 2014 02:35 PM", "precinct_count" : "17", "precincts_reporting" : "17", "contests" : [
+  { "name" : "SENATOR IN CONGRESS", "contest_number" : "101", "total_votes" : "13382", "votes_allowed" : "1", "candidates" : [
+    { "name" : "John F. REED", "party_code" : "DEM", "votes" : "10095" }, 
+    { "name" : "Mark S. ZACCARIA", "party_code" : "REP", "votes" : "3259" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "28" } ] },
+  { "name" : "REPRESENTATIVE IN CONGRESS DISTRICT 1", "contest_number" : "102", "total_votes" : "13413", "votes_allowed" : "1", "candidates" : [
+    { "name" : "David N. CICILLINE", "party_code" : "DEM", "votes" : "8078" }, 
+    { "name" : "Cormick Brendan LYNCH", "party_code" : "REP", "votes" : "5300" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "35" } ] },
+  { "name" : "GOVERNOR", "contest_number" : "104", "total_votes" : "13705", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Gina M. RAIMONDO", "party_code" : "DEM", "votes" : "5958" }, 
+    { "name" : "Robert J. HEALEY, JR.", "party_code" : "MOD", "votes" : "3804" }, 
+    { "name" : "Allan W. FUNG", "party_code" : "REP", "votes" : "3718" }, 
+    { "name" : "Kate L. FLETCHER", "party_code" : "IND", "votes" : "128" }, 
+    { "name" : "Leon M. KAYARIAN", "party_code" : "IND", "votes" : "57" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "40" } ] },
+  { "name" : "LIEUTENANT GOVERNOR", "contest_number" : "105", "total_votes" : "13242", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Daniel J. McKEE", "party_code" : "DEM", "votes" : "7873" }, 
+    { "name" : "Catherine Terry TAYLOR", "party_code" : "REP", "votes" : "3664" }, 
+    { "name" : "William H. GILBERT", "party_code" : "MOD", "votes" : "1244" }, 
+    { "name" : "Tony JONES", "party_code" : "Lib", "votes" : "417" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "44" } ] },
+  { "name" : "SECRETARY OF STATE", "contest_number" : "106", "total_votes" : "13142", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Nellie M. GORBEA", "party_code" : "DEM", "votes" : "8677" }, 
+    { "name" : "John M. CARLEVALE, SR.", "party_code" : "REP", "votes" : "4428" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "37" } ] },
+  { "name" : "ATTORNEY GENERAL", "contest_number" : "107", "total_votes" : "13297", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Peter F. KILMARTIN", "party_code" : "DEM", "votes" : "8253" }, 
+    { "name" : "Dawson Tucker HODGSON", "party_code" : "REP", "votes" : "5018" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "26" } ] },
+  { "name" : "GENERAL TREASURER", "contest_number" : "108", "total_votes" : "13154", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Seth MAGAZINER", "party_code" : "DEM", "votes" : "8403" }, 
+    { "name" : "Ernest A. ALMONTE", "party_code" : "IND", "votes" : "4725" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "26" } ] },
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 14", "contest_number" : "122", "total_votes" : "5498", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Daniel DaPONTE", "party_code" : "DEM", "votes" : "5370" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "128" } ] },
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 18", "contest_number" : "126", "total_votes" : "4376", "votes_allowed" : "1", "candidates" : [
+    { "name" : "William J. CONLEY, JR.", "party_code" : "DEM", "votes" : "4253" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "123" } ] },
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 32", "contest_number" : "140", "total_votes" : "1533", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Cynthia Armour COYNE", "party_code" : "DEM", "votes" : "954" }, 
+    { "name" : "Giovanni D. CICIONE", "party_code" : "REP", "votes" : "576" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "3" } ] },
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 63", "contest_number" : "209", "total_votes" : "3618", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Katherine S. KAZARIAN", "party_code" : "DEM", "votes" : "3523" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "95" } ] },
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 64", "contest_number" : "210", "total_votes" : "2827", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Helio MELO", "party_code" : "DEM", "votes" : "2137" }, 
+    { "name" : "Robert M. BOTELHO", "party_code" : "REP", "votes" : "682" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "8" } ] },
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 65", "contest_number" : "211", "total_votes" : "3629", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Gregg AMORE", "party_code" : "DEM", "votes" : "3535" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "94" } ] },
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 66", "contest_number" : "212", "total_votes" : "1668", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Joy HEARN", "party_code" : "DEM", "votes" : "1000" }, 
+    { "name" : "Joel HELLMANN", "party_code" : "IND", "votes" : "662" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "6" } ] },
+  { "name" : "COUNCIL EAST PROVIDENCE WARD 1", "contest_number" : "276", "total_votes" : "3337", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Robert BRITTO", "party_code" : "NON", "votes" : "2077" }, 
+    { "name" : "David SULLIVAN", "party_code" : "NON", "votes" : "1247" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "13" } ] },
+  { "name" : "COUNCIL EAST PROVIDENCE WARD 2", "contest_number" : "277", "total_votes" : "1975", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Helder J. CUNHA", "party_code" : "NON", "votes" : "1142" }, 
+    { "name" : "Brian D. CASTRO", "party_code" : "NON", "votes" : "812" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "21" } ] },
+  { "name" : "COUNCIL EAST PROVIDENCE WARD 3", "contest_number" : "278", "total_votes" : "2754", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Thomas A. ROSE, JR.", "party_code" : "NON", "votes" : "1440" }, 
+    { "name" : "Candace Cain SEEL", "party_code" : "NON", "votes" : "1303" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "11" } ] },
+  { "name" : "COUNCIL EAST PROVIDENCE WARD 4", "contest_number" : "279", "total_votes" : "3995", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Timothy J. CONLEY", "party_code" : "NON", "votes" : "2151" }, 
+    { "name" : "Christine A. ROSSI", "party_code" : "NON", "votes" : "1830" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "14" } ] },
+  { "name" : "COUNCIL-AT-LARGE EAST PROVIDENCE", "contest_number" : "280", "total_votes" : "9608", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Tracy Ann CAPOBIANCO", "party_code" : "NON", "votes" : "9388" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "220" } ] },
+  { "name" : "SCHOOL COMMITTEE EAST PROVIDENCE WARD 1", "contest_number" : "281", "total_votes" : "2638", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Charles S. TSONOS", "party_code" : "NON", "votes" : "2583" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "55" } ] },
+  { "name" : "SCHOOL COMMITTEE EAST PROVIDENCE WARD 2", "contest_number" : "282", "total_votes" : "1709", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Anthony J. FERREIRA", "party_code" : "NON", "votes" : "1675" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "34" } ] },
+  { "name" : "SCHOOL COMMITTEE EAST PROVIDENCE WARD 3", "contest_number" : "283", "total_votes" : "2044", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Nathan W. CAHOON", "party_code" : "NON", "votes" : "2008" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "36" } ] },
+  { "name" : "SCHOOL COMMITTEE EAST PROVIDENCE WARD 4", "contest_number" : "284", "total_votes" : "3550", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Jessica BEAUCHAINE", "party_code" : "NON", "votes" : "1866" }, 
+    { "name" : "Karen Nicole DOUCETTE", "party_code" : "NON", "votes" : "1656" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "28" } ] },
+  { "name" : "SCHOOL COMMITTEE-AT-LARGE EAST PROVIDENCE", "contest_number" : "285", "total_votes" : "9793", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Joel MONTEIRO", "party_code" : "NON", "votes" : "9616" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "177" } ] },
+  { "name" : "QUESTION 1 - CASINO GAMING AT NEWPORT GRAND", "contest_number" : "484", "total_votes" : "12910", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 1  APPROVE", "party_code" : "NON", "votes" : "7641" }, 
+    { "name" : "Question 1  REJECT", "party_code" : "NON", "votes" : "5269" } ] },
+  { "name" : "QUESTION 2 - RESTRICTION ON GAMBLING", "contest_number" : "485", "total_votes" : "12564", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 2  APPROVE", "party_code" : "NON", "votes" : "8287" }, 
+    { "name" : "Question 2  REJECT", "party_code" : "NON", "votes" : "4277" } ] },
+  { "name" : "QUESTION 3 - CONSTITUTIONAL CONVENTION", "contest_number" : "486", "total_votes" : "12588", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 3  REJECT", "party_code" : "NON", "votes" : "6999" }, 
+    { "name" : "Question 3  APPROVE", "party_code" : "NON", "votes" : "5589" } ] },
+  { "name" : "QUESTION 4 - HIGHER EDUCATION FACILITIES BONDS", "contest_number" : "487", "total_votes" : "12482", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 4  APPROVE", "party_code" : "NON", "votes" : "8075" }, 
+    { "name" : "Question 4  REJECT", "party_code" : "NON", "votes" : "4407" } ] },
+  { "name" : "QUESTION 5 - CREATIVE AND CULTURAL ECONOMY BONDS", "contest_number" : "488", "total_votes" : "12790", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 5  APPROVE", "party_code" : "NON", "votes" : "8042" }, 
+    { "name" : "Question 5  REJECT", "party_code" : "NON", "votes" : "4748" } ] },
+  { "name" : "QUESTION 6 - MASS TRANSIT HUB INFRASTRUCTURE BONDS", "contest_number" : "489", "total_votes" : "12286", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 6  APPROVE", "party_code" : "NON", "votes" : "7689" }, 
+    { "name" : "Question 6  REJECT", "party_code" : "NON", "votes" : "4597" } ] },
+  { "name" : "QUESTION 7 - CLEAN WATER, OPEN SPACE, HEALTHY COMM BONDS", "contest_number" : "490", "total_votes" : "12717", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 7  APPROVE", "party_code" : "NON", "votes" : "9434" }, 
+    { "name" : "Question 7  REJECT", "party_code" : "NON", "votes" : "3283" }
+  ]}
+]}
+;

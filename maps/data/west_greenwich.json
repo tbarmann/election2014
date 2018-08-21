@@ -1,1 +1,96 @@
-var west_greenwich=;
+var west_greenwich={ "election_name" : "General Election", "election_date" : "November 4, 2014", "last_updated" : "November 14, 2014 02:35 PM", "precinct_count" : "4", "precincts_reporting" : "4", "contests" : [
+  { "name" : "SENATOR IN CONGRESS", "contest_number" : "101", "total_votes" : "2375", "votes_allowed" : "1", "candidates" : [
+    { "name" : "John F. REED", "party_code" : "DEM", "votes" : "1291" }, 
+    { "name" : "Mark S. ZACCARIA", "party_code" : "REP", "votes" : "1081" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "3" } ] },
+  { "name" : "REPRESENTATIVE IN CONGRESS DISTRICT 2", "contest_number" : "103", "total_votes" : "2371", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Rhue R. REIS", "party_code" : "REP", "votes" : "1187" }, 
+    { "name" : "James R. LANGEVIN", "party_code" : "DEM", "votes" : "1178" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "6" } ] },
+  { "name" : "GOVERNOR", "contest_number" : "104", "total_votes" : "2419", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Allan W. FUNG", "party_code" : "REP", "votes" : "1097" }, 
+    { "name" : "Robert J. HEALEY, JR.", "party_code" : "MOD", "votes" : "684" }, 
+    { "name" : "Gina M. RAIMONDO", "party_code" : "DEM", "votes" : "605" }, 
+    { "name" : "Kate L. FLETCHER", "party_code" : "IND", "votes" : "19" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "8" }, 
+    { "name" : "Leon M. KAYARIAN", "party_code" : "IND", "votes" : "6" } ] },
+  { "name" : "LIEUTENANT GOVERNOR", "contest_number" : "105", "total_votes" : "2322", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Catherine Terry TAYLOR", "party_code" : "REP", "votes" : "1060" }, 
+    { "name" : "Daniel J. McKEE", "party_code" : "DEM", "votes" : "911" }, 
+    { "name" : "William H. GILBERT", "party_code" : "MOD", "votes" : "244" }, 
+    { "name" : "Tony JONES", "party_code" : "Lib", "votes" : "100" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "7" } ] },
+  { "name" : "SECRETARY OF STATE", "contest_number" : "106", "total_votes" : "2324", "votes_allowed" : "1", "candidates" : [
+    { "name" : "John M. CARLEVALE, SR.", "party_code" : "REP", "votes" : "1298" }, 
+    { "name" : "Nellie M. GORBEA", "party_code" : "DEM", "votes" : "1020" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "6" } ] },
+  { "name" : "ATTORNEY GENERAL", "contest_number" : "107", "total_votes" : "2346", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Dawson Tucker HODGSON", "party_code" : "REP", "votes" : "1415" }, 
+    { "name" : "Peter F. KILMARTIN", "party_code" : "DEM", "votes" : "927" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "4" } ] },
+  { "name" : "GENERAL TREASURER", "contest_number" : "108", "total_votes" : "2281", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Ernest A. ALMONTE", "party_code" : "IND", "votes" : "1243" }, 
+    { "name" : "Seth MAGAZINER", "party_code" : "DEM", "votes" : "1033" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "5" } ] },
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 21", "contest_number" : "129", "total_votes" : "723", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Nicholas D. KETTLE", "party_code" : "REP", "votes" : "447" }, 
+    { "name" : "Margaux S. MORISSEAU", "party_code" : "DEM", "votes" : "191" }, 
+    { "name" : "Zachary FARNUM", "party_code" : "IND", "votes" : "84" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "1" } ] },
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 33", "contest_number" : "141", "total_votes" : "1024", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Leonidas P. RAPTAKIS", "party_code" : "DEM", "votes" : "578" }, 
+    { "name" : "Michael E. MADONNA", "party_code" : "REP", "votes" : "443" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "3" } ] },
+  { "name" : "SENATOR IN GENERAL ASSEMBLY DISTRICT 34", "contest_number" : "142", "total_votes" : "549", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Elaine J. MORGAN", "party_code" : "REP", "votes" : "328" }, 
+    { "name" : "Catherine COOL RUMSEY", "party_code" : "DEM", "votes" : "220" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "1" } ] },
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 29", "contest_number" : "175", "total_votes" : "1885", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Sherry ROBERTS", "party_code" : "REP", "votes" : "1086" }, 
+    { "name" : "Lisa P. TOMASSO", "party_code" : "DEM", "votes" : "793" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "6" } ] },
+  { "name" : "REPRESENTATIVE IN GENERAL ASSEMBLY DISTRICT 30", "contest_number" : "176", "total_votes" : "376", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Antonio GIARRUSSO", "party_code" : "REP", "votes" : "369" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "7" } ] },
+  { "name" : "TOWN COUNCIL TOWN OF WEST GREENWICH", "contest_number" : "444", "total_votes" : "7975", "votes_allowed" : "5", "candidates" : [
+    { "name" : "Mark D. TOURGEE", "party_code" : "REP", "votes" : "1687" }, 
+    { "name" : "Robert John ANDREWS", "party_code" : "REP", "votes" : "1626" }, 
+    { "name" : "Susan G. WOLOOHOJIAN", "party_code" : "REP", "votes" : "1560" }, 
+    { "name" : "Linda Rekas SLOAN", "party_code" : "REP", "votes" : "1547" }, 
+    { "name" : "Thomas E. MULCAHEY", "party_code" : "REP", "votes" : "1507" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "48" } ] },
+  { "name" : "SCHOOL COMMITTEE TOWN OF WEST GREENWICH", "contest_number" : "445", "total_votes" : "3399", "votes_allowed" : "2", "candidates" : [
+    { "name" : "Claudine N. PANDE", "party_code" : "IND", "votes" : "1215" }, 
+    { "name" : "Sheryl R. GREEN", "party_code" : "IND", "votes" : "1107" }, 
+    { "name" : "Teresa M. MAIA-CICERO", "party_code" : "REP", "votes" : "1073" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "4" } ] },
+  { "name" : "TOWN MODERATOR TOWN OF WEST GREENWICH", "contest_number" : "446", "total_votes" : "1910", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Elaine M. ECCLESTON", "party_code" : "REP", "votes" : "1890" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "20" } ] },
+  { "name" : "TOWN SERGEANT TOWN OF WEST GREENWICH", "contest_number" : "447", "total_votes" : "1900", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Frank J. VOLLUCCI", "party_code" : "REP", "votes" : "1880" }, 
+    { "name" : "WRITE-IN", "party_code" : "NON", "votes" : "20" } ] },
+  { "name" : "QUESTION 1 - CASINO GAMING AT NEWPORT GRAND", "contest_number" : "484", "total_votes" : "2351", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 1  APPROVE", "party_code" : "NON", "votes" : "1257" }, 
+    { "name" : "Question 1  REJECT", "party_code" : "NON", "votes" : "1094" } ] },
+  { "name" : "QUESTION 2 - RESTRICTION ON GAMBLING", "contest_number" : "485", "total_votes" : "2318", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 2  APPROVE", "party_code" : "NON", "votes" : "1491" }, 
+    { "name" : "Question 2  REJECT", "party_code" : "NON", "votes" : "827" } ] },
+  { "name" : "QUESTION 3 - CONSTITUTIONAL CONVENTION", "contest_number" : "486", "total_votes" : "2296", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 3  REJECT", "party_code" : "NON", "votes" : "1339" }, 
+    { "name" : "Question 3  APPROVE", "party_code" : "NON", "votes" : "957" } ] },
+  { "name" : "QUESTION 4 - HIGHER EDUCATION FACILITIES BONDS", "contest_number" : "487", "total_votes" : "2261", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 4  APPROVE", "party_code" : "NON", "votes" : "1243" }, 
+    { "name" : "Question 4  REJECT", "party_code" : "NON", "votes" : "1018" } ] },
+  { "name" : "QUESTION 5 - CREATIVE AND CULTURAL ECONOMY BONDS", "contest_number" : "488", "total_votes" : "2338", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 5  REJECT", "party_code" : "NON", "votes" : "1209" }, 
+    { "name" : "Question 5  APPROVE", "party_code" : "NON", "votes" : "1129" } ] },
+  { "name" : "QUESTION 6 - MASS TRANSIT HUB INFRASTRUCTURE BONDS", "contest_number" : "489", "total_votes" : "2238", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 6  REJECT", "party_code" : "NON", "votes" : "1195" }, 
+    { "name" : "Question 6  APPROVE", "party_code" : "NON", "votes" : "1043" } ] },
+  { "name" : "QUESTION 7 - CLEAN WATER, OPEN SPACE, HEALTHY COMM BONDS", "contest_number" : "490", "total_votes" : "2320", "votes_allowed" : "1", "candidates" : [
+    { "name" : "Question 7  APPROVE", "party_code" : "NON", "votes" : "1461" }, 
+    { "name" : "Question 7  REJECT", "party_code" : "NON", "votes" : "859" }
+  ]}
+]}
+;
